@@ -1,0 +1,3 @@
+Time taken to learn url is: 533.0606915950775
+Total length of seeds: 682
+Total number of checks: 92011
