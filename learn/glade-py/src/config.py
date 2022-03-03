@@ -3,5 +3,5 @@
 SAMPLES_FOR_REP = [0, 2]
 
 
-# How many times to fuzz and verify
+# Number of seed inputs to generate
 FUZZ_SEEDS = 50

@@ -4,8 +4,8 @@ PyGlade is a Python implementation of the _Glade_ blackbox grammar synthesis alg
 Bastani et al. in [Synthesizing Program Input
 Grammars](https://arxiv.org/pdf/1608.01723.pdf).
 
-The main source file where _Glade_ algorithm is implemented is [glade.py](https://github.com/anonymous-pldi-2022/anonymous-pldi-2022/blob/main/learn/glade-py/src/glade.py).
-You can reproduce the experiments by running our [virtual machine](https://figshare.com/s/136eea0d984136abc300).
+The main source file where _Glade_ algorithm is implemented is [glade.py](https://github.com/bendrissou/glade-replication/blob/master/learn/glade-py/src/glade.py).
+You can reproduce the experiments by running our [virtual machine](https://zenodo.org/record/6326397).
 
 In this experiment, we learn 25 target languages. Target languages are modeled by source grammars. Most grammars are in [fuzzingbook format](https://www.fuzzingbook.org/html/Grammars.html). The rest are in ANTLR format.
 
@@ -29,7 +29,7 @@ To run all learning tasks, run command:
 This will learn all the 24 grammars.
 
 ### Evaluation
-Before running the evaluation, we compile the EarleyJava project:
+Before running any the evaluation, we compile the EarleyJava project:
 
     $ make earleyjava
 

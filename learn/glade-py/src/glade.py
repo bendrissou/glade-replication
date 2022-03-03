@@ -752,7 +752,11 @@ import statistics
 def read_seeds(program):
     inputs = []
     lengths = []
-    antlr_programs = ['xpath', 'lua', 'pascal', 'mysql', 'c', 'tinyc', 'tiny', 'basic']
+
+    f = open('config.json')
+    data = json.load(f)
+    antlr_programs = data['antlr_programs']
+    f.close()
 
     if program in antlr_programs:
         path = '../../../antlr4/' + program + '/generate/tests/*.in'   

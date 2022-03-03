@@ -1,11 +1,15 @@
 import sys
 import subprocess
-
+import json
 sys.path.append("../..")
 
 import earley_parser as parser
 
-antlr_programs = ['xpath', 'lua', 'pascal', 'mysql', 'c', 'tinyc', 'tiny', 'basic']
+f = open('config.json')
+data = json.load(f)
+antlr_programs = data['antlr_programs']
+f.close()
+
 exec_map = {}
 
 def check(s, p, label=None):
