@@ -26,10 +26,10 @@ To run all learning tasks, run command:
 
     $ make -B learn
 
-This will learn all the 24 grammars.
+This will learn all of the 24 grammars.
 
 ### Evaluation
-Before running any the evaluation, we compile the EarleyJava project:
+Before running any evaluation, we first compile the EarleyJava project:
 
     $ make earleyjava
 
