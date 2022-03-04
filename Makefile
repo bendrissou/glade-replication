@@ -32,6 +32,7 @@ analyze:
 	python3 analyze-grammar.py lisp
 	python3 analyze-grammar.py xml
 	python3 analyze-grammar.py \grep
+	python3 analyze-grammar.py json
 	python3 analyze-grammar.py ints
 	python3 analyze-grammar.py decimals
 	python3 analyze-grammar.py floats

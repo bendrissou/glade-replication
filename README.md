@@ -1,13 +1,13 @@
 
-This is the replication package for "“Synthesizing Input Grammars”: A Critical Evaluation". 
-PyGlade is a Python implementation of the _Glade_ blackbox grammar synthesis algorithm described by
+This is the replication package for "Synthesizing Input Grammars: A Replication Study".
+_PyGlade_ is a Python implementation of the _Glade_ blackbox grammar synthesis algorithm described by
 Bastani et al. in [Synthesizing Program Input
 Grammars](https://arxiv.org/pdf/1608.01723.pdf).
 
 The main source file where _Glade_ algorithm is implemented is [glade.py](https://github.com/bendrissou/glade-replication/blob/master/learn/glade-py/src/glade.py).
 You can reproduce the experiments by running our [virtual machine](https://zenodo.org/record/6326397).
 
-In this experiment, we learn 25 target languages. Target languages are modeled by source grammars. Most grammars are in [fuzzingbook format](https://www.fuzzingbook.org/html/Grammars.html). The rest are in ANTLR format.
+In this experiment, we test Glade's learnability on 24 target languages. Target languages are modeled by source grammars. Most grammars are in [fuzzingbook format](https://www.fuzzingbook.org/html/Grammars.html). The rest are in ANTLR format.
 
 ## Requirements:
 * CPU of 8 cores minimum.
