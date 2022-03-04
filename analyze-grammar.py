@@ -6,40 +6,33 @@ The goal is to provide information on size and complexity of Glade synthesized g
 
 import json
 
+f = open('antlr4/config.json')
+data = json.load(f)
+antlr_programs = data['antlr_programs']
+f.close()
+
+def is_nonterminal(t):
+    return (t[0], t[-1]) == ('<', '>')
+
 def count(grammar):
-    keys = len(grammar.keys())
+    non_terminals = len([k for k in grammar])
     rules = len([r for k in grammar for r in grammar[k]])
-
-    terminals = []
-    nonterminals = []
-    for k in grammar:
-        for r in grammar[k]:
-            index = 0
-            is_token = True
-            for t in r:
-                if t and (t[0], t[-1]) == ('<','>'):
-                    nonterminals.append(t)
-                    is_token = False
-                else:
-                    terminals.append(t)
-                    index += 1
-            if is_token and index > 1:
-                del terminals[-index:]
-                terminals.append(''.join(r))
-
-    return keys, rules, terminals
+    all_terminals = {t for k in grammar for r in grammar[k] for t in r if not is_nonterminal(t)}
+    terminals = len(all_terminals)
+    return non_terminals, rules, terminals
 
 def main(g):
     with open('learn/handwritten/%s.json' % g) as f:
         data = f.read()
-    grammar = json.loads(data)
+    if g in antlr_programs: grammar = json.loads(data)['[grammar]']
+    else: grammar = json.loads(data)
 
     keys, rules, terminals = count(grammar)
 
     output = "\n ++++++++ Stats of the " + str(g) + " handwritten grammar ++++++++ "
     output = output + "\nTotal number of non-terminals: " + str(keys)
     output = output + "\nTotal number of rules: " + str(rules)
-    output = output + "\nTotal number of terminals: " + str(len(set(terminals)))
+    output = output + "\nTotal number of terminals: " + str(terminals)
 
     with open('learn/synthesized/%s.json' % g) as f:
         data = f.read()
@@ -50,7 +43,7 @@ def main(g):
     output = output + "\n\n ++++++++ Stats of the " + str(g) + " synthesized grammar ++++++++ "
     output = output + "\nTotal number of non-terminals: " + str(keys)
     output = output + "\nTotal number of rules: " + str(rules)
-    output = output + "\nTotal number of terminals: " + str(len(set(terminals)))
+    output = output + "\nTotal number of terminals: " + str(terminals)
 
     print(output)
 
