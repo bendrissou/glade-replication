@@ -1,0 +1,4928 @@
+{
+  "[start]": "<program>",
+  "[grammar]": {
+    "<program>": [
+      [
+        "<programHeading>",
+        "<_program_re_3>",
+        "<block>",
+        "<_DOT_sp_>"
+      ]
+    ],
+    "<programHeading>": [
+      [
+        "<_PROGRAM_sp_>",
+        "<identifier>",
+        "<_programHeading_re_7>",
+        "<_SEMI_sp_>"
+      ],
+      [
+        "<_UNIT_sp_>",
+        "<identifier>",
+        "<_SEMI_sp_>"
+      ]
+    ],
+    "<_program_re_3>": [
+      [
+        "<_program_Q_0>"
+      ]
+    ],
+    "<block>": [
+      [
+        "<_block_re_17>",
+        "<compoundStatement>"
+      ]
+    ],
+    "<_DOT_sp_>": [
+      [
+        "<_SKIP>",
+        "<DOT>"
+      ]
+    ],
+    "<_PROGRAM_sp_>": [
+      [
+        "<_SKIP>",
+        "<PROGRAM>"
+      ]
+    ],
+    "<identifier>": [
+      [
+        "<_IDENT_sp_>"
+      ]
+    ],
+    "<_programHeading_re_7>": [
+      [
+        "<_programHeading_Q_4>"
+      ]
+    ],
+    "<_SEMI_sp_>": [
+      [
+        "<_SKIP>",
+        "<SEMI>"
+      ]
+    ],
+    "<_UNIT_sp_>": [
+      [
+        "<_SKIP>",
+        "<UNIT>"
+      ]
+    ],
+    "<_SKIP>": [
+      [],
+      [
+        "<_COMMENT_1_sp_>"
+      ],
+      [
+        "<_COMMENT_2_sp_>"
+      ],
+      [
+        "<_SKIP>",
+        "<_SKIP>"
+      ],
+      [
+        "<_WS_sp_>"
+      ]
+    ],
+    "<PROGRAM>": [
+      [
+        "<P>",
+        "<R>",
+        "<O>",
+        "<G>",
+        "<R>",
+        "<A>",
+        "<M>"
+      ]
+    ],
+    "<_COMMENT_1_sp_>": [
+      [
+        "<_SKIP>",
+        "<COMMENT_1>"
+      ]
+    ],
+    "<_COMMENT_2_sp_>": [
+      [
+        "<_SKIP>",
+        "<COMMENT_2>"
+      ]
+    ],
+    "<_WS_sp_>": [
+      [
+        "<_SKIP>",
+        "<WS>"
+      ]
+    ],
+    "<COMMENT_1>": [
+      [
+        "(*",
+        "<_COMMENT_1_re_279>",
+        "*)"
+      ]
+    ],
+    "<_COMMENT_1_re_279>": [
+      [
+        "<_COMMENT_1_STAR_278>"
+      ]
+    ],
+    "<_COMMENT_1_STAR_278>": [
+      [],
+      [
+        "<_DOT>",
+        "<_COMMENT_1_STAR_278>"
+      ]
+    ],
+    "<_DOT>": [
+      [
+        "\t"
+      ],
+      [
+        "\n"
+      ],
+      [
+        "\u000b"
+      ],
+      [
+        "\f"
+      ],
+      [
+        "\r"
+      ],
+      [
+        " "
+      ],
+      [
+        "!"
+      ],
+      [
+        "\""
+      ],
+      [
+        "#"
+      ],
+      [
+        "$"
+      ],
+      [
+        "%"
+      ],
+      [
+        "&"
+      ],
+      [
+        "'"
+      ],
+      [
+        "("
+      ],
+      [
+        ")"
+      ],
+      [
+        "*"
+      ],
+      [
+        "+"
+      ],
+      [
+        ","
+      ],
+      [
+        "-"
+      ],
+      [
+        "."
+      ],
+      [
+        "/"
+      ],
+      [
+        "0"
+      ],
+      [
+        "1"
+      ],
+      [
+        "2"
+      ],
+      [
+        "3"
+      ],
+      [
+        "4"
+      ],
+      [
+        "5"
+      ],
+      [
+        "6"
+      ],
+      [
+        "7"
+      ],
+      [
+        "8"
+      ],
+      [
+        "9"
+      ],
+      [
+        ":"
+      ],
+      [
+        ";"
+      ],
+      [
+        "<"
+      ],
+      [
+        "="
+      ],
+      [
+        ">"
+      ],
+      [
+        "?"
+      ],
+      [
+        "@"
+      ],
+      [
+        "A"
+      ],
+      [
+        "B"
+      ],
+      [
+        "C"
+      ],
+      [
+        "D"
+      ],
+      [
+        "E"
+      ],
+      [
+        "F"
+      ],
+      [
+        "G"
+      ],
+      [
+        "H"
+      ],
+      [
+        "I"
+      ],
+      [
+        "J"
+      ],
+      [
+        "K"
+      ],
+      [
+        "L"
+      ],
+      [
+        "M"
+      ],
+      [
+        "N"
+      ],
+      [
+        "O"
+      ],
+      [
+        "P"
+      ],
+      [
+        "Q"
+      ],
+      [
+        "R"
+      ],
+      [
+        "S"
+      ],
+      [
+        "T"
+      ],
+      [
+        "U"
+      ],
+      [
+        "V"
+      ],
+      [
+        "W"
+      ],
+      [
+        "X"
+      ],
+      [
+        "Y"
+      ],
+      [
+        "Z"
+      ],
+      [
+        "["
+      ],
+      [
+        "\\"
+      ],
+      [
+        "]"
+      ],
+      [
+        "^"
+      ],
+      [
+        "_"
+      ],
+      [
+        "`"
+      ],
+      [
+        "a"
+      ],
+      [
+        "b"
+      ],
+      [
+        "c"
+      ],
+      [
+        "d"
+      ],
+      [
+        "e"
+      ],
+      [
+        "f"
+      ],
+      [
+        "g"
+      ],
+      [
+        "h"
+      ],
+      [
+        "i"
+      ],
+      [
+        "j"
+      ],
+      [
+        "k"
+      ],
+      [
+        "l"
+      ],
+      [
+        "m"
+      ],
+      [
+        "n"
+      ],
+      [
+        "o"
+      ],
+      [
+        "p"
+      ],
+      [
+        "q"
+      ],
+      [
+        "r"
+      ],
+      [
+        "s"
+      ],
+      [
+        "t"
+      ],
+      [
+        "u"
+      ],
+      [
+        "v"
+      ],
+      [
+        "w"
+      ],
+      [
+        "x"
+      ],
+      [
+        "y"
+      ],
+      [
+        "z"
+      ],
+      [
+        "{"
+      ],
+      [
+        "|"
+      ],
+      [
+        "}"
+      ],
+      [
+        "~"
+      ]
+    ],
+    "<COMMENT_2>": [
+      [
+        "{",
+        "<_COMMENT_2_re_281>",
+        "}"
+      ]
+    ],
+    "<_COMMENT_2_re_281>": [
+      [
+        "<_COMMENT_2_STAR_280>"
+      ]
+    ],
+    "<_COMMENT_2_STAR_280>": [
+      [],
+      [
+        "<_DOT>",
+        "<_COMMENT_2_STAR_280>"
+      ]
+    ],
+    "<WS>": [
+      [
+        "<_WS_re_277>"
+      ]
+    ],
+    "<_WS_re_277>": [
+      [
+        "<_WS_CSET_276>"
+      ]
+    ],
+    "<_WS_CSET_276>": [
+      [
+        "\t"
+      ],
+      [
+        "\n"
+      ],
+      [
+        "\r"
+      ],
+      [
+        " "
+      ]
+    ],
+    "<P>": [
+      [
+        "<_P_re_235>"
+      ]
+    ],
+    "<R>": [
+      [
+        "<_R_re_243>"
+      ]
+    ],
+    "<O>": [
+      [
+        "<_O_re_231>"
+      ]
+    ],
+    "<G>": [
+      [
+        "<_G_re_199>"
+      ]
+    ],
+    "<A>": [
+      [
+        "<_A_re_175>"
+      ]
+    ],
+    "<M>": [
+      [
+        "<_M_re_223>"
+      ]
+    ],
+    "<_P_re_235>": [
+      [
+        "<_P_OR_232>"
+      ]
+    ],
+    "<_P_OR_232>": [
+      [
+        "<_P_SEQ_233>"
+      ],
+      [
+        "<_P_SEQ_234>"
+      ]
+    ],
+    "<_P_SEQ_233>": [
+      [
+        "p"
+      ]
+    ],
+    "<_P_SEQ_234>": [
+      [
+        "P"
+      ]
+    ],
+    "<_R_re_243>": [
+      [
+        "<_R_OR_240>"
+      ]
+    ],
+    "<_R_OR_240>": [
+      [
+        "<_R_SEQ_241>"
+      ],
+      [
+        "<_R_SEQ_242>"
+      ]
+    ],
+    "<_R_SEQ_241>": [
+      [
+        "r"
+      ]
+    ],
+    "<_R_SEQ_242>": [
+      [
+        "R"
+      ]
+    ],
+    "<_O_re_231>": [
+      [
+        "<_O_OR_228>"
+      ]
+    ],
+    "<_O_OR_228>": [
+      [
+        "<_O_SEQ_229>"
+      ],
+      [
+        "<_O_SEQ_230>"
+      ]
+    ],
+    "<_O_SEQ_229>": [
+      [
+        "o"
+      ]
+    ],
+    "<_O_SEQ_230>": [
+      [
+        "O"
+      ]
+    ],
+    "<_G_re_199>": [
+      [
+        "<_G_OR_196>"
+      ]
+    ],
+    "<_G_OR_196>": [
+      [
+        "<_G_SEQ_197>"
+      ],
+      [
+        "<_G_SEQ_198>"
+      ]
+    ],
+    "<_G_SEQ_197>": [
+      [
+        "g"
+      ]
+    ],
+    "<_G_SEQ_198>": [
+      [
+        "G"
+      ]
+    ],
+    "<_A_re_175>": [
+      [
+        "<_A_OR_172>"
+      ]
+    ],
+    "<_A_OR_172>": [
+      [
+        "<_A_SEQ_173>"
+      ],
+      [
+        "<_A_SEQ_174>"
+      ]
+    ],
+    "<_A_SEQ_173>": [
+      [
+        "a"
+      ]
+    ],
+    "<_A_SEQ_174>": [
+      [
+        "A"
+      ]
+    ],
+    "<_M_re_223>": [
+      [
+        "<_M_OR_220>"
+      ]
+    ],
+    "<_M_OR_220>": [
+      [
+        "<_M_SEQ_221>"
+      ],
+      [
+        "<_M_SEQ_222>"
+      ]
+    ],
+    "<_M_SEQ_221>": [
+      [
+        "m"
+      ]
+    ],
+    "<_M_SEQ_222>": [
+      [
+        "M"
+      ]
+    ],
+    "<_IDENT_sp_>": [
+      [
+        "<_SKIP>",
+        "<IDENT>"
+      ]
+    ],
+    "<IDENT>": [
+      [
+        "<_IDENT_re_287>",
+        "<_IDENT_re_297>"
+      ]
+    ],
+    "<_IDENT_re_287>": [
+      [
+        "<_IDENT_OR_282>"
+      ]
+    ],
+    "<_IDENT_re_297>": [
+      [
+        "<_IDENT_STAR_288>"
+      ]
+    ],
+    "<_IDENT_OR_282>": [
+      [
+        "<_IDENT_SEQ_283>"
+      ],
+      [
+        "<_IDENT_SEQ_285>"
+      ]
+    ],
+    "<_IDENT_SEQ_283>": [
+      [
+        "<_IDENT_CHARRANGE_284>"
+      ]
+    ],
+    "<_IDENT_SEQ_285>": [
+      [
+        "<_IDENT_CHARRANGE_286>"
+      ]
+    ],
+    "<_IDENT_CHARRANGE_284>": [
+      [
+        "a"
+      ],
+      [
+        "b"
+      ],
+      [
+        "c"
+      ],
+      [
+        "d"
+      ],
+      [
+        "e"
+      ],
+      [
+        "f"
+      ],
+      [
+        "g"
+      ],
+      [
+        "h"
+      ],
+      [
+        "i"
+      ],
+      [
+        "j"
+      ],
+      [
+        "k"
+      ],
+      [
+        "l"
+      ],
+      [
+        "m"
+      ],
+      [
+        "n"
+      ],
+      [
+        "o"
+      ],
+      [
+        "p"
+      ],
+      [
+        "q"
+      ],
+      [
+        "r"
+      ],
+      [
+        "s"
+      ],
+      [
+        "t"
+      ],
+      [
+        "u"
+      ],
+      [
+        "v"
+      ],
+      [
+        "w"
+      ],
+      [
+        "x"
+      ],
+      [
+        "y"
+      ],
+      [
+        "z"
+      ]
+    ],
+    "<_IDENT_CHARRANGE_286>": [
+      [
+        "A"
+      ],
+      [
+        "B"
+      ],
+      [
+        "C"
+      ],
+      [
+        "D"
+      ],
+      [
+        "E"
+      ],
+      [
+        "F"
+      ],
+      [
+        "G"
+      ],
+      [
+        "H"
+      ],
+      [
+        "I"
+      ],
+      [
+        "J"
+      ],
+      [
+        "K"
+      ],
+      [
+        "L"
+      ],
+      [
+        "M"
+      ],
+      [
+        "N"
+      ],
+      [
+        "O"
+      ],
+      [
+        "P"
+      ],
+      [
+        "Q"
+      ],
+      [
+        "R"
+      ],
+      [
+        "S"
+      ],
+      [
+        "T"
+      ],
+      [
+        "U"
+      ],
+      [
+        "V"
+      ],
+      [
+        "W"
+      ],
+      [
+        "X"
+      ],
+      [
+        "Y"
+      ],
+      [
+        "Z"
+      ]
+    ],
+    "<_IDENT_STAR_288>": [
+      [],
+      [
+        "<_IDENT_OR_289>",
+        "<_IDENT_STAR_288>"
+      ]
+    ],
+    "<_IDENT_OR_289>": [
+      [
+        "<_IDENT_SEQ_290>"
+      ],
+      [
+        "<_IDENT_SEQ_292>"
+      ],
+      [
+        "<_IDENT_SEQ_294>"
+      ],
+      [
+        "<_IDENT_SEQ_296>"
+      ]
+    ],
+    "<_IDENT_SEQ_290>": [
+      [
+        "<_IDENT_CHARRANGE_291>"
+      ]
+    ],
+    "<_IDENT_SEQ_292>": [
+      [
+        "<_IDENT_CHARRANGE_293>"
+      ]
+    ],
+    "<_IDENT_SEQ_294>": [
+      [
+        "<_IDENT_CHARRANGE_295>"
+      ]
+    ],
+    "<_IDENT_SEQ_296>": [
+      [
+        "_"
+      ]
+    ],
+    "<_IDENT_CHARRANGE_291>": [
+      [
+        "a"
+      ],
+      [
+        "b"
+      ],
+      [
+        "c"
+      ],
+      [
+        "d"
+      ],
+      [
+        "e"
+      ],
+      [
+        "f"
+      ],
+      [
+        "g"
+      ],
+      [
+        "h"
+      ],
+      [
+        "i"
+      ],
+      [
+        "j"
+      ],
+      [
+        "k"
+      ],
+      [
+        "l"
+      ],
+      [
+        "m"
+      ],
+      [
+        "n"
+      ],
+      [
+        "o"
+      ],
+      [
+        "p"
+      ],
+      [
+        "q"
+      ],
+      [
+        "r"
+      ],
+      [
+        "s"
+      ],
+      [
+        "t"
+      ],
+      [
+        "u"
+      ],
+      [
+        "v"
+      ],
+      [
+        "w"
+      ],
+      [
+        "x"
+      ],
+      [
+        "y"
+      ],
+      [
+        "z"
+      ]
+    ],
+    "<_IDENT_CHARRANGE_293>": [
+      [
+        "A"
+      ],
+      [
+        "B"
+      ],
+      [
+        "C"
+      ],
+      [
+        "D"
+      ],
+      [
+        "E"
+      ],
+      [
+        "F"
+      ],
+      [
+        "G"
+      ],
+      [
+        "H"
+      ],
+      [
+        "I"
+      ],
+      [
+        "J"
+      ],
+      [
+        "K"
+      ],
+      [
+        "L"
+      ],
+      [
+        "M"
+      ],
+      [
+        "N"
+      ],
+      [
+        "O"
+      ],
+      [
+        "P"
+      ],
+      [
+        "Q"
+      ],
+      [
+        "R"
+      ],
+      [
+        "S"
+      ],
+      [
+        "T"
+      ],
+      [
+        "U"
+      ],
+      [
+        "V"
+      ],
+      [
+        "W"
+      ],
+      [
+        "X"
+      ],
+      [
+        "Y"
+      ],
+      [
+        "Z"
+      ]
+    ],
+    "<_IDENT_CHARRANGE_295>": [
+      [
+        "0"
+      ],
+      [
+        "1"
+      ],
+      [
+        "2"
+      ],
+      [
+        "3"
+      ],
+      [
+        "4"
+      ],
+      [
+        "5"
+      ],
+      [
+        "6"
+      ],
+      [
+        "7"
+      ],
+      [
+        "8"
+      ],
+      [
+        "9"
+      ]
+    ],
+    "<_programHeading_Q_4>": [
+      [],
+      [
+        "<_programHeading_OR_5>"
+      ]
+    ],
+    "<_programHeading_OR_5>": [
+      [
+        "<_programHeading_SEQ_6>"
+      ]
+    ],
+    "<_programHeading_SEQ_6>": [
+      [
+        "<_LPAREN_sp_>",
+        "<identifierList>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<_LPAREN_sp_>": [
+      [
+        "<_SKIP>",
+        "<LPAREN>"
+      ]
+    ],
+    "<identifierList>": [
+      [
+        "<identifier>",
+        "<_identifierList_re_87>"
+      ]
+    ],
+    "<_RPAREN_sp_>": [
+      [
+        "<_SKIP>",
+        "<RPAREN>"
+      ]
+    ],
+    "<LPAREN>": [
+      [
+        "("
+      ]
+    ],
+    "<_identifierList_re_87>": [
+      [
+        "<_identifierList_STAR_84>"
+      ]
+    ],
+    "<_identifierList_STAR_84>": [
+      [],
+      [
+        "<_identifierList_OR_85>",
+        "<_identifierList_STAR_84>"
+      ]
+    ],
+    "<_identifierList_OR_85>": [
+      [
+        "<_identifierList_SEQ_86>"
+      ]
+    ],
+    "<_identifierList_SEQ_86>": [
+      [
+        "<_COMMA_sp_>",
+        "<identifier>"
+      ]
+    ],
+    "<_COMMA_sp_>": [
+      [
+        "<_SKIP>",
+        "<COMMA>"
+      ]
+    ],
+    "<COMMA>": [
+      [
+        ","
+      ]
+    ],
+    "<RPAREN>": [
+      [
+        ")"
+      ]
+    ],
+    "<SEMI>": [
+      [
+        ";"
+      ]
+    ],
+    "<UNIT>": [
+      [
+        "<U>",
+        "<N>",
+        "<I>",
+        "<T>"
+      ]
+    ],
+    "<U>": [
+      [
+        "<_U_re_255>"
+      ]
+    ],
+    "<N>": [
+      [
+        "<_N_re_227>"
+      ]
+    ],
+    "<I>": [
+      [
+        "<_I_re_207>"
+      ]
+    ],
+    "<T>": [
+      [
+        "<_T_re_251>"
+      ]
+    ],
+    "<_U_re_255>": [
+      [
+        "<_U_OR_252>"
+      ]
+    ],
+    "<_U_OR_252>": [
+      [
+        "<_U_SEQ_253>"
+      ],
+      [
+        "<_U_SEQ_254>"
+      ]
+    ],
+    "<_U_SEQ_253>": [
+      [
+        "u"
+      ]
+    ],
+    "<_U_SEQ_254>": [
+      [
+        "U"
+      ]
+    ],
+    "<_N_re_227>": [
+      [
+        "<_N_OR_224>"
+      ]
+    ],
+    "<_N_OR_224>": [
+      [
+        "<_N_SEQ_225>"
+      ],
+      [
+        "<_N_SEQ_226>"
+      ]
+    ],
+    "<_N_SEQ_225>": [
+      [
+        "n"
+      ]
+    ],
+    "<_N_SEQ_226>": [
+      [
+        "N"
+      ]
+    ],
+    "<_I_re_207>": [
+      [
+        "<_I_OR_204>"
+      ]
+    ],
+    "<_I_OR_204>": [
+      [
+        "<_I_SEQ_205>"
+      ],
+      [
+        "<_I_SEQ_206>"
+      ]
+    ],
+    "<_I_SEQ_205>": [
+      [
+        "i"
+      ]
+    ],
+    "<_I_SEQ_206>": [
+      [
+        "I"
+      ]
+    ],
+    "<_T_re_251>": [
+      [
+        "<_T_OR_248>"
+      ]
+    ],
+    "<_T_OR_248>": [
+      [
+        "<_T_SEQ_249>"
+      ],
+      [
+        "<_T_SEQ_250>"
+      ]
+    ],
+    "<_T_SEQ_249>": [
+      [
+        "t"
+      ]
+    ],
+    "<_T_SEQ_250>": [
+      [
+        "T"
+      ]
+    ],
+    "<_program_Q_0>": [
+      [],
+      [
+        "<_program_OR_1>"
+      ]
+    ],
+    "<_program_OR_1>": [
+      [
+        "<_program_SEQ_2>"
+      ]
+    ],
+    "<_program_SEQ_2>": [
+      [
+        "<_INTERFACE_sp_>"
+      ]
+    ],
+    "<_INTERFACE_sp_>": [
+      [
+        "<_SKIP>",
+        "<INTERFACE>"
+      ]
+    ],
+    "<INTERFACE>": [
+      [
+        "<I>",
+        "<N>",
+        "<T>",
+        "<E>",
+        "<R>",
+        "<F>",
+        "<A>",
+        "<C>",
+        "<E>"
+      ]
+    ],
+    "<E>": [
+      [
+        "<_E_re_191>"
+      ]
+    ],
+    "<F>": [
+      [
+        "<_F_re_195>"
+      ]
+    ],
+    "<C>": [
+      [
+        "<_C_re_183>"
+      ]
+    ],
+    "<_E_re_191>": [
+      [
+        "<_E_OR_188>"
+      ]
+    ],
+    "<_E_OR_188>": [
+      [
+        "<_E_SEQ_189>"
+      ],
+      [
+        "<_E_SEQ_190>"
+      ]
+    ],
+    "<_E_SEQ_189>": [
+      [
+        "e"
+      ]
+    ],
+    "<_E_SEQ_190>": [
+      [
+        "E"
+      ]
+    ],
+    "<_F_re_195>": [
+      [
+        "<_F_OR_192>"
+      ]
+    ],
+    "<_F_OR_192>": [
+      [
+        "<_F_SEQ_193>"
+      ],
+      [
+        "<_F_SEQ_194>"
+      ]
+    ],
+    "<_F_SEQ_193>": [
+      [
+        "f"
+      ]
+    ],
+    "<_F_SEQ_194>": [
+      [
+        "F"
+      ]
+    ],
+    "<_C_re_183>": [
+      [
+        "<_C_OR_180>"
+      ]
+    ],
+    "<_C_OR_180>": [
+      [
+        "<_C_SEQ_181>"
+      ],
+      [
+        "<_C_SEQ_182>"
+      ]
+    ],
+    "<_C_SEQ_181>": [
+      [
+        "c"
+      ]
+    ],
+    "<_C_SEQ_182>": [
+      [
+        "C"
+      ]
+    ],
+    "<_block_re_17>": [
+      [
+        "<_block_STAR_8>"
+      ]
+    ],
+    "<compoundStatement>": [
+      [
+        "<_BEGIN_sp_>",
+        "<statements>",
+        "<_END_sp_>"
+      ]
+    ],
+    "<_block_STAR_8>": [
+      [],
+      [
+        "<_block_OR_9>",
+        "<_block_STAR_8>"
+      ]
+    ],
+    "<_block_OR_9>": [
+      [
+        "<_block_SEQ_10>"
+      ],
+      [
+        "<_block_SEQ_11>"
+      ],
+      [
+        "<_block_SEQ_12>"
+      ],
+      [
+        "<_block_SEQ_13>"
+      ],
+      [
+        "<_block_SEQ_14>"
+      ],
+      [
+        "<_block_SEQ_15>"
+      ],
+      [
+        "<_block_SEQ_16>"
+      ]
+    ],
+    "<_block_SEQ_10>": [
+      [
+        "<labelDeclarationPart>"
+      ]
+    ],
+    "<_block_SEQ_11>": [
+      [
+        "<constantDefinitionPart>"
+      ]
+    ],
+    "<_block_SEQ_12>": [
+      [
+        "<typeDefinitionPart>"
+      ]
+    ],
+    "<_block_SEQ_13>": [
+      [
+        "<variableDeclarationPart>"
+      ]
+    ],
+    "<_block_SEQ_14>": [
+      [
+        "<procedureAndFunctionDeclarationPart>"
+      ]
+    ],
+    "<_block_SEQ_15>": [
+      [
+        "<usesUnitsPart>"
+      ]
+    ],
+    "<_block_SEQ_16>": [
+      [
+        "<_IMPLEMENTATION_sp_>"
+      ]
+    ],
+    "<labelDeclarationPart>": [
+      [
+        "<_LABEL_sp_>",
+        "<label>",
+        "<_labelDeclarationPart_re_21>",
+        "<_SEMI_sp_>"
+      ]
+    ],
+    "<_LABEL_sp_>": [
+      [
+        "<_SKIP>",
+        "<LABEL>"
+      ]
+    ],
+    "<label>": [
+      [
+        "<unsignedInteger>"
+      ]
+    ],
+    "<_labelDeclarationPart_re_21>": [
+      [
+        "<_labelDeclarationPart_STAR_18>"
+      ]
+    ],
+    "<LABEL>": [
+      [
+        "<L>",
+        "<A>",
+        "<B>",
+        "<E>",
+        "<L>"
+      ]
+    ],
+    "<L>": [
+      [
+        "<_L_re_219>"
+      ]
+    ],
+    "<B>": [
+      [
+        "<_B_re_179>"
+      ]
+    ],
+    "<_L_re_219>": [
+      [
+        "<_L_OR_216>"
+      ]
+    ],
+    "<_L_OR_216>": [
+      [
+        "<_L_SEQ_217>"
+      ],
+      [
+        "<_L_SEQ_218>"
+      ]
+    ],
+    "<_L_SEQ_217>": [
+      [
+        "l"
+      ]
+    ],
+    "<_L_SEQ_218>": [
+      [
+        "L"
+      ]
+    ],
+    "<_B_re_179>": [
+      [
+        "<_B_OR_176>"
+      ]
+    ],
+    "<_B_OR_176>": [
+      [
+        "<_B_SEQ_177>"
+      ],
+      [
+        "<_B_SEQ_178>"
+      ]
+    ],
+    "<_B_SEQ_177>": [
+      [
+        "b"
+      ]
+    ],
+    "<_B_SEQ_178>": [
+      [
+        "B"
+      ]
+    ],
+    "<unsignedInteger>": [
+      [
+        "<_NUM_INT_sp_>"
+      ]
+    ],
+    "<_NUM_INT_sp_>": [
+      [
+        "<_SKIP>",
+        "<NUM_INT>"
+      ]
+    ],
+    "<NUM_INT>": [
+      [
+        "<_NUM_INT_re_308>"
+      ]
+    ],
+    "<_NUM_INT_re_308>": [
+      [
+        "<_NUM_INT_PLUS_304>"
+      ]
+    ],
+    "<_NUM_INT_PLUS_304>": [
+      [
+        "<_NUM_INT_OR_305>"
+      ],
+      [
+        "<_NUM_INT_OR_305>",
+        "<_NUM_INT_PLUS_304>"
+      ]
+    ],
+    "<_NUM_INT_OR_305>": [
+      [
+        "<_NUM_INT_SEQ_306>"
+      ]
+    ],
+    "<_NUM_INT_SEQ_306>": [
+      [
+        "<_NUM_INT_CHARRANGE_307>"
+      ]
+    ],
+    "<_NUM_INT_CHARRANGE_307>": [
+      [
+        "0"
+      ],
+      [
+        "1"
+      ],
+      [
+        "2"
+      ],
+      [
+        "3"
+      ],
+      [
+        "4"
+      ],
+      [
+        "5"
+      ],
+      [
+        "6"
+      ],
+      [
+        "7"
+      ],
+      [
+        "8"
+      ],
+      [
+        "9"
+      ]
+    ],
+    "<_labelDeclarationPart_STAR_18>": [
+      [],
+      [
+        "<_labelDeclarationPart_OR_19>",
+        "<_labelDeclarationPart_STAR_18>"
+      ]
+    ],
+    "<_labelDeclarationPart_OR_19>": [
+      [
+        "<_labelDeclarationPart_SEQ_20>"
+      ]
+    ],
+    "<_labelDeclarationPart_SEQ_20>": [
+      [
+        "<_COMMA_sp_>",
+        "<label>"
+      ]
+    ],
+    "<constantDefinitionPart>": [
+      [
+        "<_CONST_sp_>",
+        "<_constantDefinitionPart_re_25>"
+      ]
+    ],
+    "<_CONST_sp_>": [
+      [
+        "<_SKIP>",
+        "<CONST>"
+      ]
+    ],
+    "<_constantDefinitionPart_re_25>": [
+      [
+        "<_constantDefinitionPart_PLUS_22>"
+      ]
+    ],
+    "<CONST>": [
+      [
+        "<C>",
+        "<O>",
+        "<N>",
+        "<S>",
+        "<T>"
+      ]
+    ],
+    "<S>": [
+      [
+        "<_S_re_247>"
+      ]
+    ],
+    "<_S_re_247>": [
+      [
+        "<_S_OR_244>"
+      ]
+    ],
+    "<_S_OR_244>": [
+      [
+        "<_S_SEQ_245>"
+      ],
+      [
+        "<_S_SEQ_246>"
+      ]
+    ],
+    "<_S_SEQ_245>": [
+      [
+        "s"
+      ]
+    ],
+    "<_S_SEQ_246>": [
+      [
+        "S"
+      ]
+    ],
+    "<_constantDefinitionPart_PLUS_22>": [
+      [
+        "<_constantDefinitionPart_OR_23>"
+      ],
+      [
+        "<_constantDefinitionPart_OR_23>",
+        "<_constantDefinitionPart_PLUS_22>"
+      ]
+    ],
+    "<_constantDefinitionPart_OR_23>": [
+      [
+        "<_constantDefinitionPart_SEQ_24>"
+      ]
+    ],
+    "<_constantDefinitionPart_SEQ_24>": [
+      [
+        "<constantDefinition>",
+        "<_SEMI_sp_>"
+      ]
+    ],
+    "<constantDefinition>": [
+      [
+        "<identifier>",
+        "<_EQUAL_sp_>",
+        "<constant>"
+      ]
+    ],
+    "<_EQUAL_sp_>": [
+      [
+        "<_SKIP>",
+        "<EQUAL>"
+      ]
+    ],
+    "<constant>": [
+      [
+        "<constantChr>"
+      ],
+      [
+        "<identifier>"
+      ],
+      [
+        "<sign>",
+        "<identifier>"
+      ],
+      [
+        "<sign>",
+        "<unsignedNumber>"
+      ],
+      [
+        "<string>"
+      ],
+      [
+        "<unsignedNumber>"
+      ]
+    ],
+    "<EQUAL>": [
+      [
+        "="
+      ]
+    ],
+    "<constantChr>": [
+      [
+        "<_CHR_sp_>",
+        "<_LPAREN_sp_>",
+        "<unsignedInteger>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<sign>": [
+      [
+        "<_MINUS_sp_>"
+      ],
+      [
+        "<_PLUS_sp_>"
+      ]
+    ],
+    "<unsignedNumber>": [
+      [
+        "<unsignedInteger>"
+      ],
+      [
+        "<unsignedReal>"
+      ]
+    ],
+    "<string>": [
+      [
+        "<_STRING_LITERAL_sp_>"
+      ]
+    ],
+    "<_CHR_sp_>": [
+      [
+        "<_SKIP>",
+        "<CHR>"
+      ]
+    ],
+    "<CHR>": [
+      [
+        "<C>",
+        "<H>",
+        "<R>"
+      ]
+    ],
+    "<H>": [
+      [
+        "<_H_re_203>"
+      ]
+    ],
+    "<_H_re_203>": [
+      [
+        "<_H_OR_200>"
+      ]
+    ],
+    "<_H_OR_200>": [
+      [
+        "<_H_SEQ_201>"
+      ],
+      [
+        "<_H_SEQ_202>"
+      ]
+    ],
+    "<_H_SEQ_201>": [
+      [
+        "h"
+      ]
+    ],
+    "<_H_SEQ_202>": [
+      [
+        "H"
+      ]
+    ],
+    "<_MINUS_sp_>": [
+      [
+        "<_SKIP>",
+        "<MINUS>"
+      ]
+    ],
+    "<_PLUS_sp_>": [
+      [
+        "<_SKIP>",
+        "<PLUS>"
+      ]
+    ],
+    "<MINUS>": [
+      [
+        "-"
+      ]
+    ],
+    "<PLUS>": [
+      [
+        "+"
+      ]
+    ],
+    "<unsignedReal>": [
+      [
+        "<_NUM_REAL_sp_>"
+      ]
+    ],
+    "<_NUM_REAL_sp_>": [
+      [
+        "<_SKIP>",
+        "<NUM_REAL>"
+      ]
+    ],
+    "<NUM_REAL>": [
+      [
+        "<_NUM_REAL_re_313>",
+        "<_NUM_REAL_re_327>"
+      ]
+    ],
+    "<_NUM_REAL_re_313>": [
+      [
+        "<_NUM_REAL_PLUS_309>"
+      ]
+    ],
+    "<_NUM_REAL_re_327>": [
+      [
+        "<_NUM_REAL_OR_314>"
+      ]
+    ],
+    "<_NUM_REAL_PLUS_309>": [
+      [
+        "<_NUM_REAL_OR_310>"
+      ],
+      [
+        "<_NUM_REAL_OR_310>",
+        "<_NUM_REAL_PLUS_309>"
+      ]
+    ],
+    "<_NUM_REAL_OR_310>": [
+      [
+        "<_NUM_REAL_SEQ_311>"
+      ]
+    ],
+    "<_NUM_REAL_SEQ_311>": [
+      [
+        "<_NUM_REAL_CHARRANGE_312>"
+      ]
+    ],
+    "<_NUM_REAL_CHARRANGE_312>": [
+      [
+        "0"
+      ],
+      [
+        "1"
+      ],
+      [
+        "2"
+      ],
+      [
+        "3"
+      ],
+      [
+        "4"
+      ],
+      [
+        "5"
+      ],
+      [
+        "6"
+      ],
+      [
+        "7"
+      ],
+      [
+        "8"
+      ],
+      [
+        "9"
+      ]
+    ],
+    "<_NUM_REAL_OR_314>": [
+      [
+        "<_NUM_REAL_SEQ_315>"
+      ],
+      [
+        "<_NUM_REAL_SEQ_326>"
+      ]
+    ],
+    "<_NUM_REAL_SEQ_315>": [
+      [
+        "<_NUM_REAL_Q_316>"
+      ]
+    ],
+    "<_NUM_REAL_SEQ_326>": [
+      [
+        "<_EXPONENT_sp_>"
+      ]
+    ],
+    "<_NUM_REAL_Q_316>": [
+      [],
+      [
+        "<_NUM_REAL_OR_317>"
+      ]
+    ],
+    "<_NUM_REAL_OR_317>": [
+      [
+        "<_NUM_REAL_SEQ_318>"
+      ]
+    ],
+    "<_NUM_REAL_SEQ_318>": [
+      [
+        ".",
+        "<_NUM_REAL_PLUS_319>",
+        "<_NUM_REAL_Q_323>"
+      ]
+    ],
+    "<_NUM_REAL_PLUS_319>": [
+      [
+        "<_NUM_REAL_OR_320>"
+      ],
+      [
+        "<_NUM_REAL_OR_320>",
+        "<_NUM_REAL_PLUS_319>"
+      ]
+    ],
+    "<_NUM_REAL_Q_323>": [
+      [],
+      [
+        "<_NUM_REAL_OR_324>"
+      ]
+    ],
+    "<_NUM_REAL_OR_320>": [
+      [
+        "<_NUM_REAL_SEQ_321>"
+      ]
+    ],
+    "<_NUM_REAL_SEQ_321>": [
+      [
+        "<_NUM_REAL_CHARRANGE_322>"
+      ]
+    ],
+    "<_NUM_REAL_CHARRANGE_322>": [
+      [
+        "0"
+      ],
+      [
+        "1"
+      ],
+      [
+        "2"
+      ],
+      [
+        "3"
+      ],
+      [
+        "4"
+      ],
+      [
+        "5"
+      ],
+      [
+        "6"
+      ],
+      [
+        "7"
+      ],
+      [
+        "8"
+      ],
+      [
+        "9"
+      ]
+    ],
+    "<_NUM_REAL_OR_324>": [
+      [
+        "<_NUM_REAL_SEQ_325>"
+      ]
+    ],
+    "<_NUM_REAL_SEQ_325>": [
+      [
+        "<_EXPONENT_sp_>"
+      ]
+    ],
+    "<_EXPONENT_sp_>": [
+      [
+        "<_SKIP>",
+        "<EXPONENT>"
+      ]
+    ],
+    "<EXPONENT>": [
+      [
+        "<_EXPONENT_re_330>",
+        "<_EXPONENT_re_335>",
+        "<_EXPONENT_re_340>"
+      ]
+    ],
+    "<_EXPONENT_re_330>": [
+      [
+        "<_EXPONENT_OR_328>"
+      ]
+    ],
+    "<_EXPONENT_re_335>": [
+      [
+        "<_EXPONENT_Q_331>"
+      ]
+    ],
+    "<_EXPONENT_re_340>": [
+      [
+        "<_EXPONENT_PLUS_336>"
+      ]
+    ],
+    "<_EXPONENT_OR_328>": [
+      [
+        "<_EXPONENT_SEQ_329>"
+      ]
+    ],
+    "<_EXPONENT_SEQ_329>": [
+      [
+        "e"
+      ]
+    ],
+    "<_EXPONENT_Q_331>": [
+      [],
+      [
+        "<_EXPONENT_OR_332>"
+      ]
+    ],
+    "<_EXPONENT_OR_332>": [
+      [
+        "<_EXPONENT_SEQ_333>"
+      ],
+      [
+        "<_EXPONENT_SEQ_334>"
+      ]
+    ],
+    "<_EXPONENT_SEQ_333>": [
+      [
+        "+"
+      ]
+    ],
+    "<_EXPONENT_SEQ_334>": [
+      [
+        "-"
+      ]
+    ],
+    "<_EXPONENT_PLUS_336>": [
+      [
+        "<_EXPONENT_OR_337>"
+      ],
+      [
+        "<_EXPONENT_OR_337>",
+        "<_EXPONENT_PLUS_336>"
+      ]
+    ],
+    "<_EXPONENT_OR_337>": [
+      [
+        "<_EXPONENT_SEQ_338>"
+      ]
+    ],
+    "<_EXPONENT_SEQ_338>": [
+      [
+        "<_EXPONENT_CHARRANGE_339>"
+      ]
+    ],
+    "<_EXPONENT_CHARRANGE_339>": [
+      [
+        "0"
+      ],
+      [
+        "1"
+      ],
+      [
+        "2"
+      ],
+      [
+        "3"
+      ],
+      [
+        "4"
+      ],
+      [
+        "5"
+      ],
+      [
+        "6"
+      ],
+      [
+        "7"
+      ],
+      [
+        "8"
+      ],
+      [
+        "9"
+      ]
+    ],
+    "<_STRING_LITERAL_sp_>": [
+      [
+        "<_SKIP>",
+        "<STRING_LITERAL>"
+      ]
+    ],
+    "<STRING_LITERAL>": [
+      [
+        "'",
+        "<_STRING_LITERAL_re_303>",
+        "'"
+      ]
+    ],
+    "<_STRING_LITERAL_re_303>": [
+      [
+        "<_STRING_LITERAL_STAR_298>"
+      ]
+    ],
+    "<_STRING_LITERAL_STAR_298>": [
+      [],
+      [
+        "<_STRING_LITERAL_OR_299>",
+        "<_STRING_LITERAL_STAR_298>"
+      ]
+    ],
+    "<_STRING_LITERAL_OR_299>": [
+      [
+        "<_STRING_LITERAL_SEQ_300>"
+      ],
+      [
+        "<_STRING_LITERAL_SEQ_301>"
+      ]
+    ],
+    "<_STRING_LITERAL_SEQ_300>": [
+      [
+        "''"
+      ]
+    ],
+    "<_STRING_LITERAL_SEQ_301>": [
+      [
+        "<_STRING_LITERAL_CNOT_302>"
+      ]
+    ],
+    "<_STRING_LITERAL_CNOT_302>": [
+      [
+        "\t"
+      ],
+      [
+        "\n"
+      ],
+      [
+        "\u000b"
+      ],
+      [
+        "\f"
+      ],
+      [
+        "\r"
+      ],
+      [
+        " "
+      ],
+      [
+        "!"
+      ],
+      [
+        "\""
+      ],
+      [
+        "#"
+      ],
+      [
+        "$"
+      ],
+      [
+        "%"
+      ],
+      [
+        "&"
+      ],
+      [
+        "("
+      ],
+      [
+        ")"
+      ],
+      [
+        "*"
+      ],
+      [
+        "+"
+      ],
+      [
+        ","
+      ],
+      [
+        "-"
+      ],
+      [
+        "."
+      ],
+      [
+        "/"
+      ],
+      [
+        "0"
+      ],
+      [
+        "1"
+      ],
+      [
+        "2"
+      ],
+      [
+        "3"
+      ],
+      [
+        "4"
+      ],
+      [
+        "5"
+      ],
+      [
+        "6"
+      ],
+      [
+        "7"
+      ],
+      [
+        "8"
+      ],
+      [
+        "9"
+      ],
+      [
+        ":"
+      ],
+      [
+        ";"
+      ],
+      [
+        "<"
+      ],
+      [
+        "="
+      ],
+      [
+        ">"
+      ],
+      [
+        "?"
+      ],
+      [
+        "@"
+      ],
+      [
+        "A"
+      ],
+      [
+        "B"
+      ],
+      [
+        "C"
+      ],
+      [
+        "D"
+      ],
+      [
+        "E"
+      ],
+      [
+        "F"
+      ],
+      [
+        "G"
+      ],
+      [
+        "H"
+      ],
+      [
+        "I"
+      ],
+      [
+        "J"
+      ],
+      [
+        "K"
+      ],
+      [
+        "L"
+      ],
+      [
+        "M"
+      ],
+      [
+        "N"
+      ],
+      [
+        "O"
+      ],
+      [
+        "P"
+      ],
+      [
+        "Q"
+      ],
+      [
+        "R"
+      ],
+      [
+        "S"
+      ],
+      [
+        "T"
+      ],
+      [
+        "U"
+      ],
+      [
+        "V"
+      ],
+      [
+        "W"
+      ],
+      [
+        "X"
+      ],
+      [
+        "Y"
+      ],
+      [
+        "Z"
+      ],
+      [
+        "["
+      ],
+      [
+        "\\"
+      ],
+      [
+        "]"
+      ],
+      [
+        "^"
+      ],
+      [
+        "_"
+      ],
+      [
+        "`"
+      ],
+      [
+        "a"
+      ],
+      [
+        "b"
+      ],
+      [
+        "c"
+      ],
+      [
+        "d"
+      ],
+      [
+        "e"
+      ],
+      [
+        "f"
+      ],
+      [
+        "g"
+      ],
+      [
+        "h"
+      ],
+      [
+        "i"
+      ],
+      [
+        "j"
+      ],
+      [
+        "k"
+      ],
+      [
+        "l"
+      ],
+      [
+        "m"
+      ],
+      [
+        "n"
+      ],
+      [
+        "o"
+      ],
+      [
+        "p"
+      ],
+      [
+        "q"
+      ],
+      [
+        "r"
+      ],
+      [
+        "s"
+      ],
+      [
+        "t"
+      ],
+      [
+        "u"
+      ],
+      [
+        "v"
+      ],
+      [
+        "w"
+      ],
+      [
+        "x"
+      ],
+      [
+        "y"
+      ],
+      [
+        "z"
+      ],
+      [
+        "{"
+      ],
+      [
+        "|"
+      ],
+      [
+        "}"
+      ],
+      [
+        "~"
+      ]
+    ],
+    "<typeDefinitionPart>": [
+      [
+        "<_TYPE_sp_>",
+        "<_typeDefinitionPart_re_29>"
+      ]
+    ],
+    "<_TYPE_sp_>": [
+      [
+        "<_SKIP>",
+        "<TYPE>"
+      ]
+    ],
+    "<_typeDefinitionPart_re_29>": [
+      [
+        "<_typeDefinitionPart_PLUS_26>"
+      ]
+    ],
+    "<TYPE>": [
+      [
+        "<T>",
+        "<Y>",
+        "<P>",
+        "<E>"
+      ]
+    ],
+    "<Y>": [
+      [
+        "<_Y_re_271>"
+      ]
+    ],
+    "<_Y_re_271>": [
+      [
+        "<_Y_OR_268>"
+      ]
+    ],
+    "<_Y_OR_268>": [
+      [
+        "<_Y_SEQ_269>"
+      ],
+      [
+        "<_Y_SEQ_270>"
+      ]
+    ],
+    "<_Y_SEQ_269>": [
+      [
+        "y"
+      ]
+    ],
+    "<_Y_SEQ_270>": [
+      [
+        "Y"
+      ]
+    ],
+    "<_typeDefinitionPart_PLUS_26>": [
+      [
+        "<_typeDefinitionPart_OR_27>"
+      ],
+      [
+        "<_typeDefinitionPart_OR_27>",
+        "<_typeDefinitionPart_PLUS_26>"
+      ]
+    ],
+    "<_typeDefinitionPart_OR_27>": [
+      [
+        "<_typeDefinitionPart_SEQ_28>"
+      ]
+    ],
+    "<_typeDefinitionPart_SEQ_28>": [
+      [
+        "<typeDefinition>",
+        "<_SEMI_sp_>"
+      ]
+    ],
+    "<typeDefinition>": [
+      [
+        "<identifier>",
+        "<_EQUAL_sp_>",
+        "<_typeDefinition_re_34>"
+      ]
+    ],
+    "<_typeDefinition_re_34>": [
+      [
+        "<_typeDefinition_OR_30>"
+      ]
+    ],
+    "<_typeDefinition_OR_30>": [
+      [
+        "<_typeDefinition_SEQ_31>"
+      ],
+      [
+        "<_typeDefinition_SEQ_32>"
+      ],
+      [
+        "<_typeDefinition_SEQ_33>"
+      ]
+    ],
+    "<_typeDefinition_SEQ_31>": [
+      [
+        "<type_>"
+      ]
+    ],
+    "<_typeDefinition_SEQ_32>": [
+      [
+        "<functionType>"
+      ]
+    ],
+    "<_typeDefinition_SEQ_33>": [
+      [
+        "<procedureType>"
+      ]
+    ],
+    "<type_>": [
+      [
+        "<pointerType>"
+      ],
+      [
+        "<simpleType>"
+      ],
+      [
+        "<structuredType>"
+      ]
+    ],
+    "<pointerType>": [
+      [
+        "<_POINTER_sp_>",
+        "<typeIdentifier>"
+      ]
+    ],
+    "<simpleType>": [
+      [
+        "<scalarType>"
+      ],
+      [
+        "<stringtype>"
+      ],
+      [
+        "<subrangeType>"
+      ],
+      [
+        "<typeIdentifier>"
+      ]
+    ],
+    "<structuredType>": [
+      [
+        "<_PACKED_sp_>",
+        "<unpackedStructuredType>"
+      ],
+      [
+        "<unpackedStructuredType>"
+      ]
+    ],
+    "<_POINTER_sp_>": [
+      [
+        "<_SKIP>",
+        "<POINTER>"
+      ]
+    ],
+    "<typeIdentifier>": [
+      [
+        "<_typeIdentifier_re_49>"
+      ],
+      [
+        "<identifier>"
+      ]
+    ],
+    "<POINTER>": [
+      [
+        "^"
+      ]
+    ],
+    "<_typeIdentifier_re_49>": [
+      [
+        "<_typeIdentifier_OR_43>"
+      ]
+    ],
+    "<_typeIdentifier_OR_43>": [
+      [
+        "<_typeIdentifier_SEQ_44>"
+      ],
+      [
+        "<_typeIdentifier_SEQ_45>"
+      ],
+      [
+        "<_typeIdentifier_SEQ_46>"
+      ],
+      [
+        "<_typeIdentifier_SEQ_47>"
+      ],
+      [
+        "<_typeIdentifier_SEQ_48>"
+      ]
+    ],
+    "<_typeIdentifier_SEQ_44>": [
+      [
+        "<_CHAR_sp_>"
+      ]
+    ],
+    "<_typeIdentifier_SEQ_45>": [
+      [
+        "<_BOOLEAN_sp_>"
+      ]
+    ],
+    "<_typeIdentifier_SEQ_46>": [
+      [
+        "<_INTEGER_sp_>"
+      ]
+    ],
+    "<_typeIdentifier_SEQ_47>": [
+      [
+        "<_REAL_sp_>"
+      ]
+    ],
+    "<_typeIdentifier_SEQ_48>": [
+      [
+        "<_STRING_sp_>"
+      ]
+    ],
+    "<_CHAR_sp_>": [
+      [
+        "<_SKIP>",
+        "<CHAR>"
+      ]
+    ],
+    "<CHAR>": [
+      [
+        "<C>",
+        "<H>",
+        "<A>",
+        "<R>"
+      ]
+    ],
+    "<_BOOLEAN_sp_>": [
+      [
+        "<_SKIP>",
+        "<BOOLEAN>"
+      ]
+    ],
+    "<BOOLEAN>": [
+      [
+        "<B>",
+        "<O>",
+        "<O>",
+        "<L>",
+        "<E>",
+        "<A>",
+        "<N>"
+      ]
+    ],
+    "<_INTEGER_sp_>": [
+      [
+        "<_SKIP>",
+        "<INTEGER>"
+      ]
+    ],
+    "<INTEGER>": [
+      [
+        "<I>",
+        "<N>",
+        "<T>",
+        "<E>",
+        "<G>",
+        "<E>",
+        "<R>"
+      ]
+    ],
+    "<_REAL_sp_>": [
+      [
+        "<_SKIP>",
+        "<REAL>"
+      ]
+    ],
+    "<REAL>": [
+      [
+        "<R>",
+        "<E>",
+        "<A>",
+        "<L>"
+      ]
+    ],
+    "<_STRING_sp_>": [
+      [
+        "<_SKIP>",
+        "<STRING>"
+      ]
+    ],
+    "<STRING>": [
+      [
+        "<S>",
+        "<T>",
+        "<R>",
+        "<I>",
+        "<N>",
+        "<G>"
+      ]
+    ],
+    "<scalarType>": [
+      [
+        "<_LPAREN_sp_>",
+        "<identifierList>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<stringtype>": [
+      [
+        "<_STRING_sp_>",
+        "<_LBRACK_sp_>",
+        "<_stringtype_re_53>",
+        "<_RBRACK_sp_>"
+      ]
+    ],
+    "<subrangeType>": [
+      [
+        "<constant>",
+        "<_DOTDOT_sp_>",
+        "<constant>"
+      ]
+    ],
+    "<_LBRACK_sp_>": [
+      [
+        "<_SKIP>",
+        "<LBRACK>"
+      ]
+    ],
+    "<_stringtype_re_53>": [
+      [
+        "<_stringtype_OR_50>"
+      ]
+    ],
+    "<_RBRACK_sp_>": [
+      [
+        "<_SKIP>",
+        "<RBRACK>"
+      ]
+    ],
+    "<LBRACK>": [
+      [
+        "["
+      ]
+    ],
+    "<_stringtype_OR_50>": [
+      [
+        "<_stringtype_SEQ_51>"
+      ],
+      [
+        "<_stringtype_SEQ_52>"
+      ]
+    ],
+    "<_stringtype_SEQ_51>": [
+      [
+        "<identifier>"
+      ]
+    ],
+    "<_stringtype_SEQ_52>": [
+      [
+        "<unsignedNumber>"
+      ]
+    ],
+    "<RBRACK>": [
+      [
+        "]"
+      ]
+    ],
+    "<_DOTDOT_sp_>": [
+      [
+        "<_SKIP>",
+        "<DOTDOT>"
+      ]
+    ],
+    "<DOTDOT>": [
+      [
+        ".."
+      ]
+    ],
+    "<_PACKED_sp_>": [
+      [
+        "<_SKIP>",
+        "<PACKED>"
+      ]
+    ],
+    "<unpackedStructuredType>": [
+      [
+        "<arrayType>"
+      ],
+      [
+        "<fileType>"
+      ],
+      [
+        "<recordType>"
+      ],
+      [
+        "<setType>"
+      ]
+    ],
+    "<PACKED>": [
+      [
+        "<P>",
+        "<A>",
+        "<C>",
+        "<K>",
+        "<E>",
+        "<D>"
+      ]
+    ],
+    "<K>": [
+      [
+        "<_K_re_215>"
+      ]
+    ],
+    "<D>": [
+      [
+        "<_D_re_187>"
+      ]
+    ],
+    "<_K_re_215>": [
+      [
+        "<_K_OR_212>"
+      ]
+    ],
+    "<_K_OR_212>": [
+      [
+        "<_K_SEQ_213>"
+      ],
+      [
+        "<_K_SEQ_214>"
+      ]
+    ],
+    "<_K_SEQ_213>": [
+      [
+        "k"
+      ]
+    ],
+    "<_K_SEQ_214>": [
+      [
+        "K"
+      ]
+    ],
+    "<_D_re_187>": [
+      [
+        "<_D_OR_184>"
+      ]
+    ],
+    "<_D_OR_184>": [
+      [
+        "<_D_SEQ_185>"
+      ],
+      [
+        "<_D_SEQ_186>"
+      ]
+    ],
+    "<_D_SEQ_185>": [
+      [
+        "d"
+      ]
+    ],
+    "<_D_SEQ_186>": [
+      [
+        "D"
+      ]
+    ],
+    "<arrayType>": [
+      [
+        "<_ARRAY_sp_>",
+        "<_LBRACK2_sp_>",
+        "<typeList>",
+        "<_RBRACK2_sp_>",
+        "<_OF_sp_>",
+        "<componentType>"
+      ],
+      [
+        "<_ARRAY_sp_>",
+        "<_LBRACK_sp_>",
+        "<typeList>",
+        "<_RBRACK_sp_>",
+        "<_OF_sp_>",
+        "<componentType>"
+      ]
+    ],
+    "<fileType>": [
+      [
+        "<_FILE_sp_>"
+      ],
+      [
+        "<_FILE_sp_>",
+        "<_OF_sp_>",
+        "<type_>"
+      ]
+    ],
+    "<recordType>": [
+      [
+        "<_RECORD_sp_>",
+        "<_recordType_re_59>",
+        "<_END_sp_>"
+      ]
+    ],
+    "<setType>": [
+      [
+        "<_SET_sp_>",
+        "<_OF_sp_>",
+        "<baseType>"
+      ]
+    ],
+    "<_ARRAY_sp_>": [
+      [
+        "<_SKIP>",
+        "<ARRAY>"
+      ]
+    ],
+    "<_LBRACK2_sp_>": [
+      [
+        "<_SKIP>",
+        "<LBRACK2>"
+      ]
+    ],
+    "<typeList>": [
+      [
+        "<indexType>",
+        "<_typeList_re_57>"
+      ]
+    ],
+    "<_RBRACK2_sp_>": [
+      [
+        "<_SKIP>",
+        "<RBRACK2>"
+      ]
+    ],
+    "<_OF_sp_>": [
+      [
+        "<_SKIP>",
+        "<OF>"
+      ]
+    ],
+    "<componentType>": [
+      [
+        "<type_>"
+      ]
+    ],
+    "<ARRAY>": [
+      [
+        "<A>",
+        "<R>",
+        "<R>",
+        "<A>",
+        "<Y>"
+      ]
+    ],
+    "<LBRACK2>": [
+      [
+        "(."
+      ]
+    ],
+    "<indexType>": [
+      [
+        "<simpleType>"
+      ]
+    ],
+    "<_typeList_re_57>": [
+      [
+        "<_typeList_STAR_54>"
+      ]
+    ],
+    "<_typeList_STAR_54>": [
+      [],
+      [
+        "<_typeList_OR_55>",
+        "<_typeList_STAR_54>"
+      ]
+    ],
+    "<_typeList_OR_55>": [
+      [
+        "<_typeList_SEQ_56>"
+      ]
+    ],
+    "<_typeList_SEQ_56>": [
+      [
+        "<_COMMA_sp_>",
+        "<indexType>"
+      ]
+    ],
+    "<RBRACK2>": [
+      [
+        ".)"
+      ]
+    ],
+    "<OF>": [
+      [
+        "<O>",
+        "<F>"
+      ]
+    ],
+    "<_FILE_sp_>": [
+      [
+        "<_SKIP>",
+        "<FILE>"
+      ]
+    ],
+    "<FILE>": [
+      [
+        "<F>",
+        "<I>",
+        "<L>",
+        "<E>"
+      ]
+    ],
+    "<_RECORD_sp_>": [
+      [
+        "<_SKIP>",
+        "<RECORD>"
+      ]
+    ],
+    "<_recordType_re_59>": [
+      [
+        "<_recordType_Q_58>"
+      ]
+    ],
+    "<_END_sp_>": [
+      [
+        "<_SKIP>",
+        "<END>"
+      ]
+    ],
+    "<RECORD>": [
+      [
+        "<R>",
+        "<E>",
+        "<C>",
+        "<O>",
+        "<R>",
+        "<D>"
+      ]
+    ],
+    "<_recordType_Q_58>": [
+      [],
+      [
+        "<fieldList>"
+      ]
+    ],
+    "<fieldList>": [
+      [
+        "<fixedPart>",
+        "<_fieldList_re_63>"
+      ],
+      [
+        "<variantPart>"
+      ]
+    ],
+    "<fixedPart>": [
+      [
+        "<recordSection>",
+        "<_fixedPart_re_67>"
+      ]
+    ],
+    "<_fieldList_re_63>": [
+      [
+        "<_fieldList_Q_60>"
+      ]
+    ],
+    "<variantPart>": [
+      [
+        "<_CASE_sp_>",
+        "<tag>",
+        "<_OF_sp_>",
+        "<variant>",
+        "<_variantPart_re_71>"
+      ]
+    ],
+    "<recordSection>": [
+      [
+        "<identifierList>",
+        "<_COLON_sp_>",
+        "<type_>"
+      ]
+    ],
+    "<_fixedPart_re_67>": [
+      [
+        "<_fixedPart_STAR_64>"
+      ]
+    ],
+    "<_COLON_sp_>": [
+      [
+        "<_SKIP>",
+        "<COLON>"
+      ]
+    ],
+    "<COLON>": [
+      [
+        ":"
+      ]
+    ],
+    "<_fixedPart_STAR_64>": [
+      [],
+      [
+        "<_fixedPart_OR_65>",
+        "<_fixedPart_STAR_64>"
+      ]
+    ],
+    "<_fixedPart_OR_65>": [
+      [
+        "<_fixedPart_SEQ_66>"
+      ]
+    ],
+    "<_fixedPart_SEQ_66>": [
+      [
+        "<_SEMI_sp_>",
+        "<recordSection>"
+      ]
+    ],
+    "<_fieldList_Q_60>": [
+      [],
+      [
+        "<_fieldList_OR_61>"
+      ]
+    ],
+    "<_fieldList_OR_61>": [
+      [
+        "<_fieldList_SEQ_62>"
+      ]
+    ],
+    "<_fieldList_SEQ_62>": [
+      [
+        "<_SEMI_sp_>",
+        "<variantPart>"
+      ]
+    ],
+    "<_CASE_sp_>": [
+      [
+        "<_SKIP>",
+        "<CASE>"
+      ]
+    ],
+    "<tag>": [
+      [
+        "<identifier>",
+        "<_COLON_sp_>",
+        "<typeIdentifier>"
+      ],
+      [
+        "<typeIdentifier>"
+      ]
+    ],
+    "<variant>": [
+      [
+        "<constList>",
+        "<_COLON_sp_>",
+        "<_LPAREN_sp_>",
+        "<fieldList>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<_variantPart_re_71>": [
+      [
+        "<_variantPart_STAR_68>"
+      ]
+    ],
+    "<CASE>": [
+      [
+        "<C>",
+        "<A>",
+        "<S>",
+        "<E>"
+      ]
+    ],
+    "<constList>": [
+      [
+        "<constant>",
+        "<_constList_re_91>"
+      ]
+    ],
+    "<_constList_re_91>": [
+      [
+        "<_constList_STAR_88>"
+      ]
+    ],
+    "<_constList_STAR_88>": [
+      [],
+      [
+        "<_constList_OR_89>",
+        "<_constList_STAR_88>"
+      ]
+    ],
+    "<_constList_OR_89>": [
+      [
+        "<_constList_SEQ_90>"
+      ]
+    ],
+    "<_constList_SEQ_90>": [
+      [
+        "<_COMMA_sp_>",
+        "<constant>"
+      ]
+    ],
+    "<_variantPart_STAR_68>": [
+      [],
+      [
+        "<_variantPart_OR_69>",
+        "<_variantPart_STAR_68>"
+      ]
+    ],
+    "<_variantPart_OR_69>": [
+      [
+        "<_variantPart_SEQ_70>"
+      ]
+    ],
+    "<_variantPart_SEQ_70>": [
+      [
+        "<_SEMI_sp_>",
+        "<variant>"
+      ]
+    ],
+    "<END>": [
+      [
+        "<E>",
+        "<N>",
+        "<D>"
+      ]
+    ],
+    "<_SET_sp_>": [
+      [
+        "<_SKIP>",
+        "<SET>"
+      ]
+    ],
+    "<baseType>": [
+      [
+        "<simpleType>"
+      ]
+    ],
+    "<SET>": [
+      [
+        "<S>",
+        "<E>",
+        "<T>"
+      ]
+    ],
+    "<functionType>": [
+      [
+        "<_FUNCTION_sp_>",
+        "<_functionType_re_38>",
+        "<_COLON_sp_>",
+        "<resultType>"
+      ]
+    ],
+    "<_FUNCTION_sp_>": [
+      [
+        "<_SKIP>",
+        "<FUNCTION>"
+      ]
+    ],
+    "<_functionType_re_38>": [
+      [
+        "<_functionType_Q_35>"
+      ]
+    ],
+    "<resultType>": [
+      [
+        "<typeIdentifier>"
+      ]
+    ],
+    "<FUNCTION>": [
+      [
+        "<F>",
+        "<U>",
+        "<N>",
+        "<C>",
+        "<T>",
+        "<I>",
+        "<O>",
+        "<N>"
+      ]
+    ],
+    "<_functionType_Q_35>": [
+      [],
+      [
+        "<_functionType_OR_36>"
+      ]
+    ],
+    "<_functionType_OR_36>": [
+      [
+        "<_functionType_SEQ_37>"
+      ]
+    ],
+    "<_functionType_SEQ_37>": [
+      [
+        "<formalParameterList>"
+      ]
+    ],
+    "<formalParameterList>": [
+      [
+        "<_LPAREN_sp_>",
+        "<formalParameterSection>",
+        "<_formalParameterList_re_83>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<formalParameterSection>": [
+      [
+        "<_FUNCTION_sp_>",
+        "<parameterGroup>"
+      ],
+      [
+        "<_PROCEDURE_sp_>",
+        "<parameterGroup>"
+      ],
+      [
+        "<_VAR_sp_>",
+        "<parameterGroup>"
+      ],
+      [
+        "<parameterGroup>"
+      ]
+    ],
+    "<_formalParameterList_re_83>": [
+      [
+        "<_formalParameterList_STAR_80>"
+      ]
+    ],
+    "<parameterGroup>": [
+      [
+        "<identifierList>",
+        "<_COLON_sp_>",
+        "<typeIdentifier>"
+      ]
+    ],
+    "<_PROCEDURE_sp_>": [
+      [
+        "<_SKIP>",
+        "<PROCEDURE>"
+      ]
+    ],
+    "<_VAR_sp_>": [
+      [
+        "<_SKIP>",
+        "<VAR>"
+      ]
+    ],
+    "<PROCEDURE>": [
+      [
+        "<P>",
+        "<R>",
+        "<O>",
+        "<C>",
+        "<E>",
+        "<D>",
+        "<U>",
+        "<R>",
+        "<E>"
+      ]
+    ],
+    "<VAR>": [
+      [
+        "<V>",
+        "<A>",
+        "<R>"
+      ]
+    ],
+    "<V>": [
+      [
+        "<_V_re_259>"
+      ]
+    ],
+    "<_V_re_259>": [
+      [
+        "<_V_OR_256>"
+      ]
+    ],
+    "<_V_OR_256>": [
+      [
+        "<_V_SEQ_257>"
+      ],
+      [
+        "<_V_SEQ_258>"
+      ]
+    ],
+    "<_V_SEQ_257>": [
+      [
+        "v"
+      ]
+    ],
+    "<_V_SEQ_258>": [
+      [
+        "V"
+      ]
+    ],
+    "<_formalParameterList_STAR_80>": [
+      [],
+      [
+        "<_formalParameterList_OR_81>",
+        "<_formalParameterList_STAR_80>"
+      ]
+    ],
+    "<_formalParameterList_OR_81>": [
+      [
+        "<_formalParameterList_SEQ_82>"
+      ]
+    ],
+    "<_formalParameterList_SEQ_82>": [
+      [
+        "<_SEMI_sp_>",
+        "<formalParameterSection>"
+      ]
+    ],
+    "<procedureType>": [
+      [
+        "<_PROCEDURE_sp_>",
+        "<_procedureType_re_42>"
+      ]
+    ],
+    "<_procedureType_re_42>": [
+      [
+        "<_procedureType_Q_39>"
+      ]
+    ],
+    "<_procedureType_Q_39>": [
+      [],
+      [
+        "<_procedureType_OR_40>"
+      ]
+    ],
+    "<_procedureType_OR_40>": [
+      [
+        "<_procedureType_SEQ_41>"
+      ]
+    ],
+    "<_procedureType_SEQ_41>": [
+      [
+        "<formalParameterList>"
+      ]
+    ],
+    "<variableDeclarationPart>": [
+      [
+        "<_VAR_sp_>",
+        "<variableDeclaration>",
+        "<_variableDeclarationPart_re_75>",
+        "<_SEMI_sp_>"
+      ]
+    ],
+    "<variableDeclaration>": [
+      [
+        "<identifierList>",
+        "<_COLON_sp_>",
+        "<type_>"
+      ]
+    ],
+    "<_variableDeclarationPart_re_75>": [
+      [
+        "<_variableDeclarationPart_STAR_72>"
+      ]
+    ],
+    "<_variableDeclarationPart_STAR_72>": [
+      [],
+      [
+        "<_variableDeclarationPart_OR_73>",
+        "<_variableDeclarationPart_STAR_72>"
+      ]
+    ],
+    "<_variableDeclarationPart_OR_73>": [
+      [
+        "<_variableDeclarationPart_SEQ_74>"
+      ]
+    ],
+    "<_variableDeclarationPart_SEQ_74>": [
+      [
+        "<_SEMI_sp_>",
+        "<variableDeclaration>"
+      ]
+    ],
+    "<procedureAndFunctionDeclarationPart>": [
+      [
+        "<procedureOrFunctionDeclaration>",
+        "<_SEMI_sp_>"
+      ]
+    ],
+    "<procedureOrFunctionDeclaration>": [
+      [
+        "<functionDeclaration>"
+      ],
+      [
+        "<procedureDeclaration>"
+      ]
+    ],
+    "<functionDeclaration>": [
+      [
+        "<_FUNCTION_sp_>",
+        "<identifier>",
+        "<_functionDeclaration_re_95>",
+        "<_COLON_sp_>",
+        "<resultType>",
+        "<_SEMI_sp_>",
+        "<block>"
+      ]
+    ],
+    "<procedureDeclaration>": [
+      [
+        "<_PROCEDURE_sp_>",
+        "<identifier>",
+        "<_procedureDeclaration_re_79>",
+        "<_SEMI_sp_>",
+        "<block>"
+      ]
+    ],
+    "<_functionDeclaration_re_95>": [
+      [
+        "<_functionDeclaration_Q_92>"
+      ]
+    ],
+    "<_functionDeclaration_Q_92>": [
+      [],
+      [
+        "<_functionDeclaration_OR_93>"
+      ]
+    ],
+    "<_functionDeclaration_OR_93>": [
+      [
+        "<_functionDeclaration_SEQ_94>"
+      ]
+    ],
+    "<_functionDeclaration_SEQ_94>": [
+      [
+        "<formalParameterList>"
+      ]
+    ],
+    "<_procedureDeclaration_re_79>": [
+      [
+        "<_procedureDeclaration_Q_76>"
+      ]
+    ],
+    "<_procedureDeclaration_Q_76>": [
+      [],
+      [
+        "<_procedureDeclaration_OR_77>"
+      ]
+    ],
+    "<_procedureDeclaration_OR_77>": [
+      [
+        "<_procedureDeclaration_SEQ_78>"
+      ]
+    ],
+    "<_procedureDeclaration_SEQ_78>": [
+      [
+        "<formalParameterList>"
+      ]
+    ],
+    "<usesUnitsPart>": [
+      [
+        "<_USES_sp_>",
+        "<identifierList>",
+        "<_SEMI_sp_>"
+      ]
+    ],
+    "<_USES_sp_>": [
+      [
+        "<_SKIP>",
+        "<USES>"
+      ]
+    ],
+    "<USES>": [
+      [
+        "<U>",
+        "<S>",
+        "<E>",
+        "<S>"
+      ]
+    ],
+    "<_IMPLEMENTATION_sp_>": [
+      [
+        "<_SKIP>",
+        "<IMPLEMENTATION>"
+      ]
+    ],
+    "<IMPLEMENTATION>": [
+      [
+        "<I>",
+        "<M>",
+        "<P>",
+        "<L>",
+        "<E>",
+        "<M>",
+        "<E>",
+        "<N>",
+        "<T>",
+        "<A>",
+        "<T>",
+        "<I>",
+        "<O>",
+        "<N>"
+      ]
+    ],
+    "<_BEGIN_sp_>": [
+      [
+        "<_SKIP>",
+        "<BEGIN>"
+      ]
+    ],
+    "<statements>": [
+      [
+        "<statement>",
+        "<_statements_re_151>"
+      ]
+    ],
+    "<BEGIN>": [
+      [
+        "<B>",
+        "<E>",
+        "<G>",
+        "<I>",
+        "<N>"
+      ]
+    ],
+    "<statement>": [
+      [
+        "<label>",
+        "<_COLON_sp_>",
+        "<unlabelledStatement>"
+      ],
+      [
+        "<unlabelledStatement>"
+      ]
+    ],
+    "<_statements_re_151>": [
+      [
+        "<_statements_STAR_148>"
+      ]
+    ],
+    "<unlabelledStatement>": [
+      [
+        "<simpleStatement>"
+      ],
+      [
+        "<structuredStatement>"
+      ]
+    ],
+    "<simpleStatement>": [
+      [
+        "<assignmentStatement>"
+      ],
+      [
+        "<emptyStatement>"
+      ],
+      [
+        "<gotoStatement>"
+      ],
+      [
+        "<procedureStatement>"
+      ]
+    ],
+    "<structuredStatement>": [
+      [
+        "<compoundStatement>"
+      ],
+      [
+        "<conditionalStatement>"
+      ],
+      [
+        "<repetetiveStatement>"
+      ],
+      [
+        "<withStatement>"
+      ]
+    ],
+    "<assignmentStatement>": [
+      [
+        "<variable>",
+        "<_ASSIGN_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<emptyStatement>": [
+      []
+    ],
+    "<gotoStatement>": [
+      [
+        "<_GOTO_sp_>",
+        "<label>"
+      ]
+    ],
+    "<procedureStatement>": [
+      [
+        "<identifier>",
+        "<_procedureStatement_re_145>"
+      ]
+    ],
+    "<variable>": [
+      [
+        "<_variable_re_99>",
+        "<_variable_re_112>"
+      ]
+    ],
+    "<_ASSIGN_sp_>": [
+      [
+        "<_SKIP>",
+        "<ASSIGN>"
+      ]
+    ],
+    "<expression>": [
+      [
+        "<simpleExpression>",
+        "<_expression_re_116>"
+      ]
+    ],
+    "<_variable_re_99>": [
+      [
+        "<_variable_OR_96>"
+      ]
+    ],
+    "<_variable_re_112>": [
+      [
+        "<_variable_STAR_100>"
+      ]
+    ],
+    "<_variable_OR_96>": [
+      [
+        "<_variable_SEQ_97>"
+      ],
+      [
+        "<_variable_SEQ_98>"
+      ]
+    ],
+    "<_variable_SEQ_97>": [
+      [
+        "<_AT_sp_>",
+        "<identifier>"
+      ]
+    ],
+    "<_variable_SEQ_98>": [
+      [
+        "<identifier>"
+      ]
+    ],
+    "<_AT_sp_>": [
+      [
+        "<_SKIP>",
+        "<AT>"
+      ]
+    ],
+    "<AT>": [
+      [
+        "@"
+      ]
+    ],
+    "<_variable_STAR_100>": [
+      [],
+      [
+        "<_variable_OR_101>",
+        "<_variable_STAR_100>"
+      ]
+    ],
+    "<_variable_OR_101>": [
+      [
+        "<_variable_SEQ_102>"
+      ],
+      [
+        "<_variable_SEQ_106>"
+      ],
+      [
+        "<_variable_SEQ_110>"
+      ],
+      [
+        "<_variable_SEQ_111>"
+      ]
+    ],
+    "<_variable_SEQ_102>": [
+      [
+        "<_LBRACK_sp_>",
+        "<expression>",
+        "<_variable_STAR_103>",
+        "<_RBRACK_sp_>"
+      ]
+    ],
+    "<_variable_SEQ_106>": [
+      [
+        "<_LBRACK2_sp_>",
+        "<expression>",
+        "<_variable_STAR_107>",
+        "<_RBRACK2_sp_>"
+      ]
+    ],
+    "<_variable_SEQ_110>": [
+      [
+        "<_DOT_sp_>",
+        "<identifier>"
+      ]
+    ],
+    "<_variable_SEQ_111>": [
+      [
+        "<_POINTER_sp_>"
+      ]
+    ],
+    "<_variable_STAR_103>": [
+      [],
+      [
+        "<_variable_OR_104>",
+        "<_variable_STAR_103>"
+      ]
+    ],
+    "<_variable_OR_104>": [
+      [
+        "<_variable_SEQ_105>"
+      ]
+    ],
+    "<_variable_SEQ_105>": [
+      [
+        "<_COMMA_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<_variable_STAR_107>": [
+      [],
+      [
+        "<_variable_OR_108>",
+        "<_variable_STAR_107>"
+      ]
+    ],
+    "<_variable_OR_108>": [
+      [
+        "<_variable_SEQ_109>"
+      ]
+    ],
+    "<_variable_SEQ_109>": [
+      [
+        "<_COMMA_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<ASSIGN>": [
+      [
+        ":="
+      ]
+    ],
+    "<simpleExpression>": [
+      [
+        "<term>",
+        "<_simpleExpression_re_120>"
+      ]
+    ],
+    "<_expression_re_116>": [
+      [
+        "<_expression_Q_113>"
+      ]
+    ],
+    "<term>": [
+      [
+        "<signedFactor>",
+        "<_term_re_124>"
+      ]
+    ],
+    "<_simpleExpression_re_120>": [
+      [
+        "<_simpleExpression_Q_117>"
+      ]
+    ],
+    "<signedFactor>": [
+      [
+        "<_signedFactor_re_129>",
+        "<factor>"
+      ]
+    ],
+    "<_term_re_124>": [
+      [
+        "<_term_Q_121>"
+      ]
+    ],
+    "<_signedFactor_re_129>": [
+      [
+        "<_signedFactor_Q_125>"
+      ]
+    ],
+    "<factor>": [
+      [
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ],
+      [
+        "<_NOT_sp_>",
+        "<factor>"
+      ],
+      [
+        "<bool_>"
+      ],
+      [
+        "<functionDesignator>"
+      ],
+      [
+        "<set_>"
+      ],
+      [
+        "<unsignedConstant>"
+      ],
+      [
+        "<variable>"
+      ]
+    ],
+    "<_signedFactor_Q_125>": [
+      [],
+      [
+        "<_signedFactor_OR_126>"
+      ]
+    ],
+    "<_signedFactor_OR_126>": [
+      [
+        "<_signedFactor_SEQ_127>"
+      ],
+      [
+        "<_signedFactor_SEQ_128>"
+      ]
+    ],
+    "<_signedFactor_SEQ_127>": [
+      [
+        "<_PLUS_sp_>"
+      ]
+    ],
+    "<_signedFactor_SEQ_128>": [
+      [
+        "<_MINUS_sp_>"
+      ]
+    ],
+    "<_NOT_sp_>": [
+      [
+        "<_SKIP>",
+        "<NOT>"
+      ]
+    ],
+    "<bool_>": [
+      [
+        "<_FALSE_sp_>"
+      ],
+      [
+        "<_TRUE_sp_>"
+      ]
+    ],
+    "<functionDesignator>": [
+      [
+        "<identifier>",
+        "<_LPAREN_sp_>",
+        "<parameterList>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<set_>": [
+      [
+        "<_LBRACK2_sp_>",
+        "<elementList>",
+        "<_RBRACK2_sp_>"
+      ],
+      [
+        "<_LBRACK_sp_>",
+        "<elementList>",
+        "<_RBRACK_sp_>"
+      ]
+    ],
+    "<unsignedConstant>": [
+      [
+        "<_NIL_sp_>"
+      ],
+      [
+        "<constantChr>"
+      ],
+      [
+        "<string>"
+      ],
+      [
+        "<unsignedNumber>"
+      ]
+    ],
+    "<NOT>": [
+      [
+        "<N>",
+        "<O>",
+        "<T>"
+      ]
+    ],
+    "<_FALSE_sp_>": [
+      [
+        "<_SKIP>",
+        "<FALSE>"
+      ]
+    ],
+    "<_TRUE_sp_>": [
+      [
+        "<_SKIP>",
+        "<TRUE>"
+      ]
+    ],
+    "<FALSE>": [
+      [
+        "<F>",
+        "<A>",
+        "<L>",
+        "<S>",
+        "<E>"
+      ]
+    ],
+    "<TRUE>": [
+      [
+        "<T>",
+        "<R>",
+        "<U>",
+        "<E>"
+      ]
+    ],
+    "<parameterList>": [
+      [
+        "<actualParameter>",
+        "<_parameterList_re_133>"
+      ]
+    ],
+    "<actualParameter>": [
+      [
+        "<expression>",
+        "<_actualParameter_re_147>"
+      ]
+    ],
+    "<_parameterList_re_133>": [
+      [
+        "<_parameterList_STAR_130>"
+      ]
+    ],
+    "<_actualParameter_re_147>": [
+      [
+        "<_actualParameter_STAR_146>"
+      ]
+    ],
+    "<_actualParameter_STAR_146>": [
+      [],
+      [
+        "<parameterwidth>",
+        "<_actualParameter_STAR_146>"
+      ]
+    ],
+    "<parameterwidth>": [
+      [
+        "<_SKIP>",
+        ":",
+        "<expression>"
+      ]
+    ],
+    "<_parameterList_STAR_130>": [
+      [],
+      [
+        "<_parameterList_OR_131>",
+        "<_parameterList_STAR_130>"
+      ]
+    ],
+    "<_parameterList_OR_131>": [
+      [
+        "<_parameterList_SEQ_132>"
+      ]
+    ],
+    "<_parameterList_SEQ_132>": [
+      [
+        "<_COMMA_sp_>",
+        "<actualParameter>"
+      ]
+    ],
+    "<elementList>": [
+      [],
+      [
+        "<element>",
+        "<_elementList_re_137>"
+      ]
+    ],
+    "<element>": [
+      [
+        "<expression>",
+        "<_element_re_141>"
+      ]
+    ],
+    "<_elementList_re_137>": [
+      [
+        "<_elementList_STAR_134>"
+      ]
+    ],
+    "<_element_re_141>": [
+      [
+        "<_element_Q_138>"
+      ]
+    ],
+    "<_element_Q_138>": [
+      [],
+      [
+        "<_element_OR_139>"
+      ]
+    ],
+    "<_element_OR_139>": [
+      [
+        "<_element_SEQ_140>"
+      ]
+    ],
+    "<_element_SEQ_140>": [
+      [
+        "<_DOTDOT_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<_elementList_STAR_134>": [
+      [],
+      [
+        "<_elementList_OR_135>",
+        "<_elementList_STAR_134>"
+      ]
+    ],
+    "<_elementList_OR_135>": [
+      [
+        "<_elementList_SEQ_136>"
+      ]
+    ],
+    "<_elementList_SEQ_136>": [
+      [
+        "<_COMMA_sp_>",
+        "<element>"
+      ]
+    ],
+    "<_NIL_sp_>": [
+      [
+        "<_SKIP>",
+        "<NIL>"
+      ]
+    ],
+    "<NIL>": [
+      [
+        "<N>",
+        "<I>",
+        "<L>"
+      ]
+    ],
+    "<_term_Q_121>": [
+      [],
+      [
+        "<_term_OR_122>"
+      ]
+    ],
+    "<_term_OR_122>": [
+      [
+        "<_term_SEQ_123>"
+      ]
+    ],
+    "<_term_SEQ_123>": [
+      [
+        "<multiplicativeoperator>",
+        "<term>"
+      ]
+    ],
+    "<multiplicativeoperator>": [
+      [
+        "<_AND_sp_>"
+      ],
+      [
+        "<_DIV_sp_>"
+      ],
+      [
+        "<_MOD_sp_>"
+      ],
+      [
+        "<_SLASH_sp_>"
+      ],
+      [
+        "<_STAR_sp_>"
+      ]
+    ],
+    "<_AND_sp_>": [
+      [
+        "<_SKIP>",
+        "<AND>"
+      ]
+    ],
+    "<_DIV_sp_>": [
+      [
+        "<_SKIP>",
+        "<DIV>"
+      ]
+    ],
+    "<_MOD_sp_>": [
+      [
+        "<_SKIP>",
+        "<MOD>"
+      ]
+    ],
+    "<_SLASH_sp_>": [
+      [
+        "<_SKIP>",
+        "<SLASH>"
+      ]
+    ],
+    "<_STAR_sp_>": [
+      [
+        "<_SKIP>",
+        "<STAR>"
+      ]
+    ],
+    "<AND>": [
+      [
+        "<A>",
+        "<N>",
+        "<D>"
+      ]
+    ],
+    "<DIV>": [
+      [
+        "<D>",
+        "<I>",
+        "<V>"
+      ]
+    ],
+    "<MOD>": [
+      [
+        "<M>",
+        "<O>",
+        "<D>"
+      ]
+    ],
+    "<SLASH>": [
+      [
+        "/"
+      ]
+    ],
+    "<STAR>": [
+      [
+        "*"
+      ]
+    ],
+    "<_simpleExpression_Q_117>": [
+      [],
+      [
+        "<_simpleExpression_OR_118>"
+      ]
+    ],
+    "<_simpleExpression_OR_118>": [
+      [
+        "<_simpleExpression_SEQ_119>"
+      ]
+    ],
+    "<_simpleExpression_SEQ_119>": [
+      [
+        "<additiveoperator>",
+        "<simpleExpression>"
+      ]
+    ],
+    "<additiveoperator>": [
+      [
+        "<_MINUS_sp_>"
+      ],
+      [
+        "<_OR_sp_>"
+      ],
+      [
+        "<_PLUS_sp_>"
+      ]
+    ],
+    "<_OR_sp_>": [
+      [
+        "<_SKIP>",
+        "<OR>"
+      ]
+    ],
+    "<OR>": [
+      [
+        "<O>",
+        "<R>"
+      ]
+    ],
+    "<_expression_Q_113>": [
+      [],
+      [
+        "<_expression_OR_114>"
+      ]
+    ],
+    "<_expression_OR_114>": [
+      [
+        "<_expression_SEQ_115>"
+      ]
+    ],
+    "<_expression_SEQ_115>": [
+      [
+        "<relationaloperator>",
+        "<expression>"
+      ]
+    ],
+    "<relationaloperator>": [
+      [
+        "<_EQUAL_sp_>"
+      ],
+      [
+        "<_GE_sp_>"
+      ],
+      [
+        "<_GT_sp_>"
+      ],
+      [
+        "<_IN_sp_>"
+      ],
+      [
+        "<_LE_sp_>"
+      ],
+      [
+        "<_LT_sp_>"
+      ],
+      [
+        "<_NOT_EQUAL_sp_>"
+      ]
+    ],
+    "<_GE_sp_>": [
+      [
+        "<_SKIP>",
+        "<GE>"
+      ]
+    ],
+    "<_GT_sp_>": [
+      [
+        "<_SKIP>",
+        "<GT>"
+      ]
+    ],
+    "<_IN_sp_>": [
+      [
+        "<_SKIP>",
+        "<IN>"
+      ]
+    ],
+    "<_LE_sp_>": [
+      [
+        "<_SKIP>",
+        "<LE>"
+      ]
+    ],
+    "<_LT_sp_>": [
+      [
+        "<_SKIP>",
+        "<LT>"
+      ]
+    ],
+    "<_NOT_EQUAL_sp_>": [
+      [
+        "<_SKIP>",
+        "<NOT_EQUAL>"
+      ]
+    ],
+    "<GE>": [
+      [
+        ">="
+      ]
+    ],
+    "<GT>": [
+      [
+        ">"
+      ]
+    ],
+    "<IN>": [
+      [
+        "<I>",
+        "<N>"
+      ]
+    ],
+    "<LE>": [
+      [
+        "<="
+      ]
+    ],
+    "<LT>": [
+      [
+        "<"
+      ]
+    ],
+    "<NOT_EQUAL>": [
+      [
+        "<LT>",
+        "<GT>"
+      ]
+    ],
+    "<_GOTO_sp_>": [
+      [
+        "<_SKIP>",
+        "<GOTO>"
+      ]
+    ],
+    "<GOTO>": [
+      [
+        "<G>",
+        "<O>",
+        "<T>",
+        "<O>"
+      ]
+    ],
+    "<_procedureStatement_re_145>": [
+      [
+        "<_procedureStatement_Q_142>"
+      ]
+    ],
+    "<_procedureStatement_Q_142>": [
+      [],
+      [
+        "<_procedureStatement_OR_143>"
+      ]
+    ],
+    "<_procedureStatement_OR_143>": [
+      [
+        "<_procedureStatement_SEQ_144>"
+      ]
+    ],
+    "<_procedureStatement_SEQ_144>": [
+      [
+        "<_LPAREN_sp_>",
+        "<parameterList>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<conditionalStatement>": [
+      [
+        "<caseStatement>"
+      ],
+      [
+        "<ifStatement>"
+      ]
+    ],
+    "<repetetiveStatement>": [
+      [
+        "<forStatement>"
+      ],
+      [
+        "<repeatStatement>"
+      ],
+      [
+        "<whileStatement>"
+      ]
+    ],
+    "<withStatement>": [
+      [
+        "<_WITH_sp_>",
+        "<recordVariableList>",
+        "<_DO_sp_>",
+        "<statement>"
+      ]
+    ],
+    "<caseStatement>": [
+      [
+        "<_CASE_sp_>",
+        "<expression>",
+        "<_OF_sp_>",
+        "<caseListElement>",
+        "<_caseStatement_re_159>",
+        "<_caseStatement_re_163>",
+        "<_END_sp_>"
+      ]
+    ],
+    "<ifStatement>": [
+      [
+        "<_IF_sp_>",
+        "<expression>",
+        "<_THEN_sp_>",
+        "<statement>",
+        "<_ifStatement_re_155>"
+      ]
+    ],
+    "<caseListElement>": [
+      [
+        "<constList>",
+        "<_COLON_sp_>",
+        "<statement>"
+      ]
+    ],
+    "<_caseStatement_re_159>": [
+      [
+        "<_caseStatement_STAR_156>"
+      ]
+    ],
+    "<_caseStatement_re_163>": [
+      [
+        "<_caseStatement_Q_160>"
+      ]
+    ],
+    "<_caseStatement_STAR_156>": [
+      [],
+      [
+        "<_caseStatement_OR_157>",
+        "<_caseStatement_STAR_156>"
+      ]
+    ],
+    "<_caseStatement_OR_157>": [
+      [
+        "<_caseStatement_SEQ_158>"
+      ]
+    ],
+    "<_caseStatement_SEQ_158>": [
+      [
+        "<_SEMI_sp_>",
+        "<caseListElement>"
+      ]
+    ],
+    "<_caseStatement_Q_160>": [
+      [],
+      [
+        "<_caseStatement_OR_161>"
+      ]
+    ],
+    "<_caseStatement_OR_161>": [
+      [
+        "<_caseStatement_SEQ_162>"
+      ]
+    ],
+    "<_caseStatement_SEQ_162>": [
+      [
+        "<_SEMI_sp_>",
+        "<_ELSE_sp_>",
+        "<statements>"
+      ]
+    ],
+    "<_ELSE_sp_>": [
+      [
+        "<_SKIP>",
+        "<ELSE>"
+      ]
+    ],
+    "<ELSE>": [
+      [
+        "<E>",
+        "<L>",
+        "<S>",
+        "<E>"
+      ]
+    ],
+    "<_IF_sp_>": [
+      [
+        "<_SKIP>",
+        "<IF>"
+      ]
+    ],
+    "<_THEN_sp_>": [
+      [
+        "<_SKIP>",
+        "<THEN>"
+      ]
+    ],
+    "<_ifStatement_re_155>": [
+      [
+        "<_ifStatement_Q_152>"
+      ]
+    ],
+    "<IF>": [
+      [
+        "<I>",
+        "<F>"
+      ]
+    ],
+    "<THEN>": [
+      [
+        "<T>",
+        "<H>",
+        "<E>",
+        "<N>"
+      ]
+    ],
+    "<_ifStatement_Q_152>": [
+      [],
+      [
+        "<_ifStatement_OR_153>"
+      ]
+    ],
+    "<_ifStatement_OR_153>": [
+      [
+        "<_ifStatement_SEQ_154>"
+      ]
+    ],
+    "<_ifStatement_SEQ_154>": [
+      [
+        "<_ELSE_sp_>",
+        "<statement>"
+      ]
+    ],
+    "<forStatement>": [
+      [
+        "<_FOR_sp_>",
+        "<identifier>",
+        "<_ASSIGN_sp_>",
+        "<forList>",
+        "<_DO_sp_>",
+        "<statement>"
+      ]
+    ],
+    "<repeatStatement>": [
+      [
+        "<_REPEAT_sp_>",
+        "<statements>",
+        "<_UNTIL_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<whileStatement>": [
+      [
+        "<_WHILE_sp_>",
+        "<expression>",
+        "<_DO_sp_>",
+        "<statement>"
+      ]
+    ],
+    "<_FOR_sp_>": [
+      [
+        "<_SKIP>",
+        "<FOR>"
+      ]
+    ],
+    "<forList>": [
+      [
+        "<initialValue>",
+        "<_forList_re_167>",
+        "<finalValue>"
+      ]
+    ],
+    "<_DO_sp_>": [
+      [
+        "<_SKIP>",
+        "<DO>"
+      ]
+    ],
+    "<FOR>": [
+      [
+        "<F>",
+        "<O>",
+        "<R>"
+      ]
+    ],
+    "<initialValue>": [
+      [
+        "<expression>"
+      ]
+    ],
+    "<_forList_re_167>": [
+      [
+        "<_forList_OR_164>"
+      ]
+    ],
+    "<finalValue>": [
+      [
+        "<expression>"
+      ]
+    ],
+    "<_forList_OR_164>": [
+      [
+        "<_forList_SEQ_165>"
+      ],
+      [
+        "<_forList_SEQ_166>"
+      ]
+    ],
+    "<_forList_SEQ_165>": [
+      [
+        "<_TO_sp_>"
+      ]
+    ],
+    "<_forList_SEQ_166>": [
+      [
+        "<_DOWNTO_sp_>"
+      ]
+    ],
+    "<_TO_sp_>": [
+      [
+        "<_SKIP>",
+        "<TO>"
+      ]
+    ],
+    "<TO>": [
+      [
+        "<T>",
+        "<O>"
+      ]
+    ],
+    "<_DOWNTO_sp_>": [
+      [
+        "<_SKIP>",
+        "<DOWNTO>"
+      ]
+    ],
+    "<DOWNTO>": [
+      [
+        "<D>",
+        "<O>",
+        "<W>",
+        "<N>",
+        "<T>",
+        "<O>"
+      ]
+    ],
+    "<W>": [
+      [
+        "<_W_re_263>"
+      ]
+    ],
+    "<_W_re_263>": [
+      [
+        "<_W_OR_260>"
+      ]
+    ],
+    "<_W_OR_260>": [
+      [
+        "<_W_SEQ_261>"
+      ],
+      [
+        "<_W_SEQ_262>"
+      ]
+    ],
+    "<_W_SEQ_261>": [
+      [
+        "w"
+      ]
+    ],
+    "<_W_SEQ_262>": [
+      [
+        "W"
+      ]
+    ],
+    "<DO>": [
+      [
+        "<D>",
+        "<O>"
+      ]
+    ],
+    "<_REPEAT_sp_>": [
+      [
+        "<_SKIP>",
+        "<REPEAT>"
+      ]
+    ],
+    "<_UNTIL_sp_>": [
+      [
+        "<_SKIP>",
+        "<UNTIL>"
+      ]
+    ],
+    "<REPEAT>": [
+      [
+        "<R>",
+        "<E>",
+        "<P>",
+        "<E>",
+        "<A>",
+        "<T>"
+      ]
+    ],
+    "<UNTIL>": [
+      [
+        "<U>",
+        "<N>",
+        "<T>",
+        "<I>",
+        "<L>"
+      ]
+    ],
+    "<_WHILE_sp_>": [
+      [
+        "<_SKIP>",
+        "<WHILE>"
+      ]
+    ],
+    "<WHILE>": [
+      [
+        "<W>",
+        "<H>",
+        "<I>",
+        "<L>",
+        "<E>"
+      ]
+    ],
+    "<_WITH_sp_>": [
+      [
+        "<_SKIP>",
+        "<WITH>"
+      ]
+    ],
+    "<recordVariableList>": [
+      [
+        "<variable>",
+        "<_recordVariableList_re_171>"
+      ]
+    ],
+    "<WITH>": [
+      [
+        "<W>",
+        "<I>",
+        "<T>",
+        "<H>"
+      ]
+    ],
+    "<_recordVariableList_re_171>": [
+      [
+        "<_recordVariableList_STAR_168>"
+      ]
+    ],
+    "<_recordVariableList_STAR_168>": [
+      [],
+      [
+        "<_recordVariableList_OR_169>",
+        "<_recordVariableList_STAR_168>"
+      ]
+    ],
+    "<_recordVariableList_OR_169>": [
+      [
+        "<_recordVariableList_SEQ_170>"
+      ]
+    ],
+    "<_recordVariableList_SEQ_170>": [
+      [
+        "<_COMMA_sp_>",
+        "<variable>"
+      ]
+    ],
+    "<_statements_STAR_148>": [
+      [],
+      [
+        "<_statements_OR_149>",
+        "<_statements_STAR_148>"
+      ]
+    ],
+    "<_statements_OR_149>": [
+      [
+        "<_statements_SEQ_150>"
+      ]
+    ],
+    "<_statements_SEQ_150>": [
+      [
+        "<_SEMI_sp_>",
+        "<statement>"
+      ]
+    ],
+    "<DOT>": [
+      [
+        "."
+      ]
+    ]
+  }
+}

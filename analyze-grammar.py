@@ -6,11 +6,7 @@ The goal is to provide information on size and complexity of Glade synthesized g
 
 import json
 
-def main(g):
-    with open('learn/synthesized/%s.json' % g) as f:
-        data = f.read()
-    grammar = json.loads(data)
-
+def count(grammar):
     keys = len(grammar.keys())
     rules = len([r for k in grammar for r in grammar[k]])
 
@@ -31,10 +27,31 @@ def main(g):
                 del terminals[-index:]
                 terminals.append(''.join(r))
 
-    output = "\n ++++++++ Stats of the " + str(g) + " synthesized grammar ++++++++ "
+    return keys, rules, terminals
+
+def main(g):
+    with open('learn/handwritten/%s.json' % g) as f:
+        data = f.read()
+    grammar = json.loads(data)
+
+    keys, rules, terminals = count(grammar)
+
+    output = "\n ++++++++ Stats of the " + str(g) + " handwritten grammar ++++++++ "
     output = output + "\nTotal number of non-terminals: " + str(keys)
     output = output + "\nTotal number of rules: " + str(rules)
     output = output + "\nTotal number of terminals: " + str(len(set(terminals)))
+
+    with open('learn/synthesized/%s.json' % g) as f:
+        data = f.read()
+    grammar = json.loads(data)
+
+    keys, rules, terminals = count(grammar)
+
+    output = "\n\n ++++++++ Stats of the " + str(g) + " synthesized grammar ++++++++ "
+    output = output + "\nTotal number of non-terminals: " + str(keys)
+    output = output + "\nTotal number of rules: " + str(rules)
+    output = output + "\nTotal number of terminals: " + str(len(set(terminals)))
+
     print(output)
 
     file2 = open('learn/results/eval_%s_grammar.txt' % g, 'w')

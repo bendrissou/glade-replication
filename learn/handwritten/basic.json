@@ -1,0 +1,5112 @@
+{
+  "[start]": "<prog>",
+  "[grammar]": {
+    "<prog>": [
+      [
+        "<_prog_re_1>",
+        "<_EOF_sp_>"
+      ]
+    ],
+    "<_prog_re_1>": [
+      [
+        "<_prog_PLUS_0>"
+      ]
+    ],
+    "<_EOF_sp_>": [
+      [
+        "<_SKIP>"
+      ]
+    ],
+    "<_prog_PLUS_0>": [
+      [
+        "<line>"
+      ],
+      [
+        "<line>",
+        "<_prog_PLUS_0>"
+      ]
+    ],
+    "<line>": [
+      [
+        "<_line_re_16>"
+      ]
+    ],
+    "<_line_re_16>": [
+      [
+        "<_line_OR_2>"
+      ]
+    ],
+    "<_line_OR_2>": [
+      [
+        "<_line_SEQ_3>"
+      ]
+    ],
+    "<_line_SEQ_3>": [
+      [
+        "<linenumber>",
+        "<_line_OR_4>"
+      ]
+    ],
+    "<linenumber>": [
+      [
+        "<_NUMBER_sp_>"
+      ]
+    ],
+    "<_line_OR_4>": [
+      [
+        "<_line_SEQ_12>"
+      ],
+      [
+        "<_line_SEQ_5>"
+      ]
+    ],
+    "<_NUMBER_sp_>": [
+      [
+        "<_SKIP>",
+        "<NUMBER>"
+      ]
+    ],
+    "<_SKIP>": [
+      [],
+      [
+        "<_SKIP>",
+        "<_SKIP>"
+      ],
+      [
+        "<_WS_sp_>"
+      ]
+    ],
+    "<NUMBER>": [
+      [
+        "<_NUMBER_re_249>",
+        "<_NUMBER_re_256>"
+      ]
+    ],
+    "<_WS_sp_>": [
+      [
+        "<_SKIP>",
+        "<WS>"
+      ]
+    ],
+    "<WS>": [
+      [
+        "<_WS_re_280>"
+      ]
+    ],
+    "<_WS_re_280>": [
+      [
+        "<_WS_PLUS_278>"
+      ]
+    ],
+    "<_WS_PLUS_278>": [
+      [
+        "<_WS_CSET_279>"
+      ],
+      [
+        "<_WS_CSET_279>",
+        "<_WS_PLUS_278>"
+      ]
+    ],
+    "<_WS_CSET_279>": [
+      [
+        "\t"
+      ],
+      [
+        "\n"
+      ],
+      [
+        "\r"
+      ],
+      [
+        " "
+      ]
+    ],
+    "<_NUMBER_re_249>": [
+      [
+        "<_NUMBER_PLUS_245>"
+      ]
+    ],
+    "<_NUMBER_re_256>": [
+      [
+        "<_NUMBER_STAR_250>"
+      ]
+    ],
+    "<_NUMBER_PLUS_245>": [
+      [
+        "<_NUMBER_OR_246>"
+      ],
+      [
+        "<_NUMBER_OR_246>",
+        "<_NUMBER_PLUS_245>"
+      ]
+    ],
+    "<_NUMBER_OR_246>": [
+      [
+        "<_NUMBER_SEQ_247>"
+      ]
+    ],
+    "<_NUMBER_SEQ_247>": [
+      [
+        "<_NUMBER_CHARRANGE_248>"
+      ]
+    ],
+    "<_NUMBER_CHARRANGE_248>": [
+      [
+        "0"
+      ],
+      [
+        "1"
+      ],
+      [
+        "2"
+      ],
+      [
+        "3"
+      ],
+      [
+        "4"
+      ],
+      [
+        "5"
+      ],
+      [
+        "6"
+      ],
+      [
+        "7"
+      ],
+      [
+        "8"
+      ],
+      [
+        "9"
+      ]
+    ],
+    "<_NUMBER_STAR_250>": [
+      [],
+      [
+        "<_NUMBER_OR_251>",
+        "<_NUMBER_STAR_250>"
+      ]
+    ],
+    "<_NUMBER_OR_251>": [
+      [
+        "<_NUMBER_SEQ_252>"
+      ]
+    ],
+    "<_NUMBER_SEQ_252>": [
+      [
+        "<_NUMBER_OR_253>",
+        "<_NUMBER_sp_>"
+      ]
+    ],
+    "<_NUMBER_OR_253>": [
+      [
+        "<_NUMBER_SEQ_254>"
+      ],
+      [
+        "<_NUMBER_SEQ_255>"
+      ]
+    ],
+    "<_NUMBER_SEQ_254>": [
+      [
+        "e"
+      ]
+    ],
+    "<_NUMBER_SEQ_255>": [
+      [
+        "E"
+      ]
+    ],
+    "<_line_SEQ_12>": [
+      [
+        "<_line_OR_13>"
+      ]
+    ],
+    "<_line_SEQ_5>": [
+      [
+        "<_line_OR_6>"
+      ]
+    ],
+    "<_line_OR_13>": [
+      [
+        "<_line_SEQ_14>"
+      ],
+      [
+        "<_line_SEQ_15>"
+      ]
+    ],
+    "<_line_SEQ_14>": [
+      [
+        "<_COMMENT_sp_>"
+      ]
+    ],
+    "<_line_SEQ_15>": [
+      [
+        "<_REM_sp_>"
+      ]
+    ],
+    "<_COMMENT_sp_>": [
+      [
+        "<_SKIP>",
+        "<COMMENT>"
+      ]
+    ],
+    "<COMMENT>": [
+      [
+        "<REM>",
+        "<_COMMENT_re_234>"
+      ]
+    ],
+    "<REM>": [
+      [
+        "REM"
+      ],
+      [
+        "rem"
+      ]
+    ],
+    "<_COMMENT_re_234>": [
+      [
+        "<_COMMENT_STAR_232>"
+      ]
+    ],
+    "<_COMMENT_STAR_232>": [
+      [],
+      [
+        "<_COMMENT_CNOT_233>",
+        "<_COMMENT_STAR_232>"
+      ]
+    ],
+    "<_COMMENT_CNOT_233>": [
+      [
+        "\t"
+      ],
+      [
+        "\n"
+      ],
+      [
+        "\u000b"
+      ],
+      [
+        "\f"
+      ],
+      [
+        "\r"
+      ],
+      [
+        " "
+      ],
+      [
+        "!"
+      ],
+      [
+        "\""
+      ],
+      [
+        "#"
+      ],
+      [
+        "$"
+      ],
+      [
+        "%"
+      ],
+      [
+        "&"
+      ],
+      [
+        "'"
+      ],
+      [
+        "("
+      ],
+      [
+        ")"
+      ],
+      [
+        "*"
+      ],
+      [
+        "+"
+      ],
+      [
+        ","
+      ],
+      [
+        "-"
+      ],
+      [
+        "."
+      ],
+      [
+        "/"
+      ],
+      [
+        "0"
+      ],
+      [
+        "1"
+      ],
+      [
+        "2"
+      ],
+      [
+        "3"
+      ],
+      [
+        "4"
+      ],
+      [
+        "5"
+      ],
+      [
+        "6"
+      ],
+      [
+        "7"
+      ],
+      [
+        "8"
+      ],
+      [
+        "9"
+      ],
+      [
+        ":"
+      ],
+      [
+        ";"
+      ],
+      [
+        "<"
+      ],
+      [
+        "="
+      ],
+      [
+        ">"
+      ],
+      [
+        "?"
+      ],
+      [
+        "@"
+      ],
+      [
+        "A"
+      ],
+      [
+        "B"
+      ],
+      [
+        "C"
+      ],
+      [
+        "D"
+      ],
+      [
+        "E"
+      ],
+      [
+        "F"
+      ],
+      [
+        "G"
+      ],
+      [
+        "H"
+      ],
+      [
+        "I"
+      ],
+      [
+        "J"
+      ],
+      [
+        "K"
+      ],
+      [
+        "L"
+      ],
+      [
+        "M"
+      ],
+      [
+        "N"
+      ],
+      [
+        "O"
+      ],
+      [
+        "P"
+      ],
+      [
+        "Q"
+      ],
+      [
+        "R"
+      ],
+      [
+        "S"
+      ],
+      [
+        "T"
+      ],
+      [
+        "U"
+      ],
+      [
+        "V"
+      ],
+      [
+        "W"
+      ],
+      [
+        "X"
+      ],
+      [
+        "Y"
+      ],
+      [
+        "Z"
+      ],
+      [
+        "^"
+      ],
+      [
+        "_"
+      ],
+      [
+        "`"
+      ],
+      [
+        "a"
+      ],
+      [
+        "b"
+      ],
+      [
+        "c"
+      ],
+      [
+        "d"
+      ],
+      [
+        "e"
+      ],
+      [
+        "f"
+      ],
+      [
+        "g"
+      ],
+      [
+        "h"
+      ],
+      [
+        "i"
+      ],
+      [
+        "j"
+      ],
+      [
+        "k"
+      ],
+      [
+        "l"
+      ],
+      [
+        "m"
+      ],
+      [
+        "o"
+      ],
+      [
+        "p"
+      ],
+      [
+        "q"
+      ],
+      [
+        "s"
+      ],
+      [
+        "t"
+      ],
+      [
+        "u"
+      ],
+      [
+        "v"
+      ],
+      [
+        "w"
+      ],
+      [
+        "x"
+      ],
+      [
+        "y"
+      ],
+      [
+        "z"
+      ],
+      [
+        "{"
+      ],
+      [
+        "|"
+      ],
+      [
+        "}"
+      ],
+      [
+        "~"
+      ]
+    ],
+    "<_REM_sp_>": [
+      [
+        "<_SKIP>",
+        "<REM>"
+      ]
+    ],
+    "<_line_OR_6>": [
+      [
+        "<_line_SEQ_7>"
+      ]
+    ],
+    "<_line_SEQ_7>": [
+      [
+        "<amprstmt>",
+        "<_line_STAR_8>"
+      ]
+    ],
+    "<amprstmt>": [
+      [
+        "<_amprstmt_re_20>"
+      ],
+      [
+        "<_amprstmt_re_24>"
+      ]
+    ],
+    "<_line_STAR_8>": [
+      [],
+      [
+        "<_line_OR_9>",
+        "<_line_STAR_8>"
+      ]
+    ],
+    "<_amprstmt_re_20>": [
+      [
+        "<_amprstmt_OR_17>"
+      ]
+    ],
+    "<_amprstmt_re_24>": [
+      [
+        "<_amprstmt_OR_21>"
+      ]
+    ],
+    "<_amprstmt_OR_17>": [
+      [
+        "<_amprstmt_SEQ_18>"
+      ]
+    ],
+    "<_amprstmt_SEQ_18>": [
+      [
+        "<_amprstmt_Q_19>",
+        "<statement>"
+      ]
+    ],
+    "<_amprstmt_Q_19>": [
+      [],
+      [
+        "<amperoper>"
+      ]
+    ],
+    "<statement>": [
+      [
+        "<_statement_re_43>"
+      ],
+      [
+        "<amptstmt>"
+      ],
+      [
+        "<callstmt>"
+      ],
+      [
+        "<colorstmt>"
+      ],
+      [
+        "<datastmt>"
+      ],
+      [
+        "<defstmt>"
+      ],
+      [
+        "<dimstmt>"
+      ],
+      [
+        "<drawstmt>"
+      ],
+      [
+        "<endstmt>"
+      ],
+      [
+        "<forstmt1>"
+      ],
+      [
+        "<forstmt2>"
+      ],
+      [
+        "<getstmt>"
+      ],
+      [
+        "<gosubstmt>"
+      ],
+      [
+        "<gotostmt>"
+      ],
+      [
+        "<hcolorstmt>"
+      ],
+      [
+        "<himemstmt>"
+      ],
+      [
+        "<hlinstmt>"
+      ],
+      [
+        "<hplotstmt>"
+      ],
+      [
+        "<htabstmnt>"
+      ],
+      [
+        "<ifstmt>"
+      ],
+      [
+        "<includestmt>"
+      ],
+      [
+        "<inputstmt>"
+      ],
+      [
+        "<instmt>"
+      ],
+      [
+        "<letstmt>"
+      ],
+      [
+        "<liststmt>"
+      ],
+      [
+        "<lomemstmt>"
+      ],
+      [
+        "<nextstmt>"
+      ],
+      [
+        "<onerrstmt>"
+      ],
+      [
+        "<ongosubstmt>"
+      ],
+      [
+        "<ongotostmt>"
+      ],
+      [
+        "<plotstmt>"
+      ],
+      [
+        "<pokestmt>"
+      ],
+      [
+        "<popstmt>"
+      ],
+      [
+        "<printstmt1>"
+      ],
+      [
+        "<prstmt>"
+      ],
+      [
+        "<readstmt>"
+      ],
+      [
+        "<recallstmt>"
+      ],
+      [
+        "<restorestmt>"
+      ],
+      [
+        "<returnstmt>"
+      ],
+      [
+        "<rotstmt>"
+      ],
+      [
+        "<scalestmt>"
+      ],
+      [
+        "<speedstmt>"
+      ],
+      [
+        "<storestmt>"
+      ],
+      [
+        "<tabstmt>"
+      ],
+      [
+        "<vlinstmt>"
+      ],
+      [
+        "<vplotstmt>"
+      ],
+      [
+        "<vtabstmnt>"
+      ],
+      [
+        "<waitstmt>"
+      ],
+      [
+        "<xdrawstmt>"
+      ]
+    ],
+    "<amperoper>": [
+      [
+        "<_AMPERSAND_sp_>"
+      ]
+    ],
+    "<_AMPERSAND_sp_>": [
+      [
+        "<_SKIP>",
+        "<AMPERSAND>"
+      ]
+    ],
+    "<AMPERSAND>": [
+      [
+        "&"
+      ]
+    ],
+    "<_statement_re_43>": [
+      [
+        "<_statement_OR_25>"
+      ]
+    ],
+    "<amptstmt>": [
+      [
+        "<_AMPERSAND_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<callstmt>": [
+      [
+        "<_CALL_sp_>",
+        "<exprlist>"
+      ]
+    ],
+    "<colorstmt>": [
+      [
+        "<_COLOR_sp_>",
+        "<_EQ_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<datastmt>": [
+      [
+        "<_DATA_sp_>",
+        "<datum>",
+        "<_datastmt_re_140>"
+      ]
+    ],
+    "<defstmt>": [
+      [
+        "<_DEF_sp_>",
+        "<_defstmt_re_154>",
+        "<var_>",
+        "<_LPAREN_sp_>",
+        "<var_>",
+        "<_RPAREN_sp_>",
+        "<_EQ_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<dimstmt>": [
+      [
+        "<_DIM_sp_>",
+        "<varlist>"
+      ]
+    ],
+    "<drawstmt>": [
+      [
+        "<_DRAW_sp_>",
+        "<expression>",
+        "<_drawstmt_re_152>"
+      ]
+    ],
+    "<endstmt>": [
+      [
+        "<_END_sp_>"
+      ]
+    ],
+    "<forstmt1>": [
+      [
+        "<_FOR_sp_>",
+        "<vardecl>",
+        "<_EQ_sp_>",
+        "<expression>",
+        "<_TO_sp_>",
+        "<expression>",
+        "<_forstmt1_re_88>",
+        "<_forstmt1_re_93>"
+      ]
+    ],
+    "<forstmt2>": [
+      [
+        "<_FOR_sp_>",
+        "<vardecl>",
+        "<_EQ_sp_>",
+        "<expression>",
+        "<_TO_sp_>",
+        "<expression>",
+        "<_forstmt2_re_97>"
+      ]
+    ],
+    "<getstmt>": [
+      [
+        "<_GET_sp_>",
+        "<exprlist>"
+      ]
+    ],
+    "<gosubstmt>": [
+      [
+        "<_GOSUB_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<gotostmt>": [
+      [
+        "<_GOTO_sp_>",
+        "<linenumber>"
+      ]
+    ],
+    "<hcolorstmt>": [
+      [
+        "<_HCOLOR_sp_>",
+        "<_EQ_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<himemstmt>": [
+      [
+        "<_HIMEM_sp_>",
+        "<_COLON_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<hlinstmt>": [
+      [
+        "<_HLIN_sp_>",
+        "<expression>",
+        "<_COMMA_sp_>",
+        "<expression>",
+        "<_AT_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<hplotstmt>": [
+      [
+        "<_HPLOT_sp_>",
+        "<_hplotstmt_re_115>",
+        "<_hplotstmt_re_119>"
+      ]
+    ],
+    "<htabstmnt>": [
+      [
+        "<_HTAB_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<ifstmt>": [
+      [
+        "<_IF_sp_>",
+        "<expression>",
+        "<_ifstmt_re_80>",
+        "<_ifstmt_re_84>"
+      ]
+    ],
+    "<includestmt>": [
+      [
+        "<_INCLUDE_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<inputstmt>": [
+      [
+        "<_INPUT_sp_>",
+        "<_inputstmt_re_111>",
+        "<varlist>"
+      ]
+    ],
+    "<instmt>": [
+      [
+        "<_INNUMBER_sp_>",
+        "<_NUMBER_sp_>"
+      ]
+    ],
+    "<letstmt>": [
+      [
+        "<_letstmt_re_63>",
+        "<variableassignment>"
+      ]
+    ],
+    "<liststmt>": [
+      [
+        "<_LIST_sp_>",
+        "<_liststmt_re_156>"
+      ]
+    ],
+    "<lomemstmt>": [
+      [
+        "<_LOMEM_sp_>",
+        "<_COLON_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<nextstmt>": [
+      [
+        "<_NEXT_sp_>",
+        "<_nextstmt_re_104>"
+      ]
+    ],
+    "<onerrstmt>": [
+      [
+        "<_ONERR_sp_>",
+        "<_GOTO_sp_>",
+        "<linenumber>"
+      ]
+    ],
+    "<ongosubstmt>": [
+      [
+        "<_ON_sp_>",
+        "<expression>",
+        "<_GOSUB_sp_>",
+        "<linenumber>",
+        "<_ongosubstmt_re_135>"
+      ]
+    ],
+    "<ongotostmt>": [
+      [
+        "<_ON_sp_>",
+        "<expression>",
+        "<_GOTO_sp_>",
+        "<linenumber>",
+        "<_ongotostmt_re_131>"
+      ]
+    ],
+    "<plotstmt>": [
+      [
+        "<_PLOT_sp_>",
+        "<expression>",
+        "<_COMMA_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<pokestmt>": [
+      [
+        "<_POKE_sp_>",
+        "<expression>",
+        "<_COMMA_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<popstmt>": [
+      [
+        "<_POP_sp_>",
+        "<_popstmt_re_160>"
+      ]
+    ],
+    "<printstmt1>": [
+      [
+        "<_printstmt1_re_51>",
+        "<_printstmt1_re_53>"
+      ]
+    ],
+    "<prstmt>": [
+      [
+        "<_PRNUMBER_sp_>",
+        "<_NUMBER_sp_>"
+      ]
+    ],
+    "<readstmt>": [
+      [
+        "<_READ_sp_>",
+        "<varlist>"
+      ]
+    ],
+    "<recallstmt>": [
+      [
+        "<_RECALL_sp_>",
+        "<vardecl>"
+      ]
+    ],
+    "<restorestmt>": [
+      [
+        "<_RESTORE_sp_>"
+      ]
+    ],
+    "<returnstmt>": [
+      [
+        "<_RETURN_sp_>"
+      ]
+    ],
+    "<rotstmt>": [
+      [
+        "<_ROT_sp_>",
+        "<_EQ_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<scalestmt>": [
+      [
+        "<_SCALE_sp_>",
+        "<_EQ_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<speedstmt>": [
+      [
+        "<_SPEED_sp_>",
+        "<_EQ_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<storestmt>": [
+      [
+        "<_STORE_sp_>",
+        "<vardecl>"
+      ]
+    ],
+    "<tabstmt>": [
+      [
+        "<_TAB_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<vlinstmt>": [
+      [
+        "<_VLIN_sp_>",
+        "<expression>",
+        "<_COMMA_sp_>",
+        "<expression>",
+        "<_AT_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<vplotstmt>": [
+      [
+        "<_VPLOT_sp_>",
+        "<_vplotstmt_re_123>",
+        "<_vplotstmt_re_127>"
+      ]
+    ],
+    "<vtabstmnt>": [
+      [
+        "<_VTAB_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<waitstmt>": [
+      [
+        "<_WAIT_sp_>",
+        "<expression>",
+        "<_COMMA_sp_>",
+        "<expression>",
+        "<_waitstmt_re_144>"
+      ]
+    ],
+    "<xdrawstmt>": [
+      [
+        "<_XDRAW_sp_>",
+        "<expression>",
+        "<_xdrawstmt_re_148>"
+      ]
+    ],
+    "<_statement_OR_25>": [
+      [
+        "<_statement_SEQ_26>"
+      ],
+      [
+        "<_statement_SEQ_27>"
+      ],
+      [
+        "<_statement_SEQ_28>"
+      ],
+      [
+        "<_statement_SEQ_29>"
+      ],
+      [
+        "<_statement_SEQ_30>"
+      ],
+      [
+        "<_statement_SEQ_31>"
+      ],
+      [
+        "<_statement_SEQ_32>"
+      ],
+      [
+        "<_statement_SEQ_33>"
+      ],
+      [
+        "<_statement_SEQ_34>"
+      ],
+      [
+        "<_statement_SEQ_35>"
+      ],
+      [
+        "<_statement_SEQ_36>"
+      ],
+      [
+        "<_statement_SEQ_37>"
+      ],
+      [
+        "<_statement_SEQ_38>"
+      ],
+      [
+        "<_statement_SEQ_39>"
+      ],
+      [
+        "<_statement_SEQ_40>"
+      ],
+      [
+        "<_statement_SEQ_41>"
+      ],
+      [
+        "<_statement_SEQ_42>"
+      ]
+    ],
+    "<_statement_SEQ_26>": [
+      [
+        "<_CLS_sp_>"
+      ]
+    ],
+    "<_statement_SEQ_27>": [
+      [
+        "<_LOAD_sp_>"
+      ]
+    ],
+    "<_statement_SEQ_28>": [
+      [
+        "<_SAVE_sp_>"
+      ]
+    ],
+    "<_statement_SEQ_29>": [
+      [
+        "<_TRACE_sp_>"
+      ]
+    ],
+    "<_statement_SEQ_30>": [
+      [
+        "<_NOTRACE_sp_>"
+      ]
+    ],
+    "<_statement_SEQ_31>": [
+      [
+        "<_FLASH_sp_>"
+      ]
+    ],
+    "<_statement_SEQ_32>": [
+      [
+        "<_INVERSE_sp_>"
+      ]
+    ],
+    "<_statement_SEQ_33>": [
+      [
+        "<_GR_sp_>"
+      ]
+    ],
+    "<_statement_SEQ_34>": [
+      [
+        "<_NORMAL_sp_>"
+      ]
+    ],
+    "<_statement_SEQ_35>": [
+      [
+        "<_SHLOAD_sp_>"
+      ]
+    ],
+    "<_statement_SEQ_36>": [
+      [
+        "<_CLEAR_sp_>"
+      ]
+    ],
+    "<_statement_SEQ_37>": [
+      [
+        "<_RUN_sp_>"
+      ]
+    ],
+    "<_statement_SEQ_38>": [
+      [
+        "<_STOP_sp_>"
+      ]
+    ],
+    "<_statement_SEQ_39>": [
+      [
+        "<_TEXT_sp_>"
+      ]
+    ],
+    "<_statement_SEQ_40>": [
+      [
+        "<_HOME_sp_>"
+      ]
+    ],
+    "<_statement_SEQ_41>": [
+      [
+        "<_HGR_sp_>"
+      ]
+    ],
+    "<_statement_SEQ_42>": [
+      [
+        "<_HGR2_sp_>"
+      ]
+    ],
+    "<_CLS_sp_>": [
+      [
+        "<_SKIP>",
+        "<CLS>"
+      ]
+    ],
+    "<CLS>": [
+      [
+        "CLS"
+      ],
+      [
+        "cls"
+      ]
+    ],
+    "<_LOAD_sp_>": [
+      [
+        "<_SKIP>",
+        "<LOAD>"
+      ]
+    ],
+    "<LOAD>": [
+      [
+        "LOAD"
+      ],
+      [
+        "load"
+      ]
+    ],
+    "<_SAVE_sp_>": [
+      [
+        "<_SKIP>",
+        "<SAVE>"
+      ]
+    ],
+    "<SAVE>": [
+      [
+        "SAVE"
+      ],
+      [
+        "save"
+      ]
+    ],
+    "<_TRACE_sp_>": [
+      [
+        "<_SKIP>",
+        "<TRACE>"
+      ]
+    ],
+    "<TRACE>": [
+      [
+        "TRACE"
+      ],
+      [
+        "trace"
+      ]
+    ],
+    "<_NOTRACE_sp_>": [
+      [
+        "<_SKIP>",
+        "<NOTRACE>"
+      ]
+    ],
+    "<NOTRACE>": [
+      [
+        "NOTRACE"
+      ],
+      [
+        "notrace"
+      ]
+    ],
+    "<_FLASH_sp_>": [
+      [
+        "<_SKIP>",
+        "<FLASH>"
+      ]
+    ],
+    "<FLASH>": [
+      [
+        "FLASH"
+      ],
+      [
+        "flash"
+      ]
+    ],
+    "<_INVERSE_sp_>": [
+      [
+        "<_SKIP>",
+        "<INVERSE>"
+      ]
+    ],
+    "<INVERSE>": [
+      [
+        "INVERSE"
+      ],
+      [
+        "inverse"
+      ]
+    ],
+    "<_GR_sp_>": [
+      [
+        "<_SKIP>",
+        "<GR>"
+      ]
+    ],
+    "<GR>": [
+      [
+        "GR"
+      ],
+      [
+        "gr"
+      ]
+    ],
+    "<_NORMAL_sp_>": [
+      [
+        "<_SKIP>",
+        "<NORMAL>"
+      ]
+    ],
+    "<NORMAL>": [
+      [
+        "NORMAL"
+      ],
+      [
+        "normal"
+      ]
+    ],
+    "<_SHLOAD_sp_>": [
+      [
+        "<_SKIP>",
+        "<SHLOAD>"
+      ]
+    ],
+    "<SHLOAD>": [
+      [
+        "SHLOAD"
+      ],
+      [
+        "shload"
+      ]
+    ],
+    "<_CLEAR_sp_>": [
+      [
+        "<_SKIP>",
+        "<CLEAR>"
+      ]
+    ],
+    "<CLEAR>": [
+      [
+        "CLEAR"
+      ],
+      [
+        "clear"
+      ]
+    ],
+    "<_RUN_sp_>": [
+      [
+        "<_SKIP>",
+        "<RUN>"
+      ]
+    ],
+    "<RUN>": [
+      [
+        "RUN"
+      ],
+      [
+        "run"
+      ]
+    ],
+    "<_STOP_sp_>": [
+      [
+        "<_SKIP>",
+        "<STOP>"
+      ]
+    ],
+    "<STOP>": [
+      [
+        "STOP"
+      ],
+      [
+        "stop"
+      ]
+    ],
+    "<_TEXT_sp_>": [
+      [
+        "<_SKIP>",
+        "<TEXT>"
+      ]
+    ],
+    "<TEXT>": [
+      [
+        "TEXT"
+      ],
+      [
+        "text"
+      ]
+    ],
+    "<_HOME_sp_>": [
+      [
+        "<_SKIP>",
+        "<HOME>"
+      ]
+    ],
+    "<HOME>": [
+      [
+        "HOME"
+      ],
+      [
+        "home"
+      ]
+    ],
+    "<_HGR_sp_>": [
+      [
+        "<_SKIP>",
+        "<HGR>"
+      ]
+    ],
+    "<HGR>": [
+      [
+        "HGR"
+      ],
+      [
+        "hgr"
+      ]
+    ],
+    "<_HGR2_sp_>": [
+      [
+        "<_SKIP>",
+        "<HGR2>"
+      ]
+    ],
+    "<HGR2>": [
+      [
+        "HGR2"
+      ],
+      [
+        "hgr2"
+      ]
+    ],
+    "<expression>": [
+      [
+        "<_expression_re_212>"
+      ],
+      [
+        "<func_>"
+      ]
+    ],
+    "<_expression_re_212>": [
+      [
+        "<_expression_OR_204>"
+      ]
+    ],
+    "<func_>": [
+      [
+        "<_STRINGLITERAL_sp_>"
+      ],
+      [
+        "<_func__re_172>"
+      ],
+      [
+        "<absfunc>"
+      ],
+      [
+        "<ascfunc>"
+      ],
+      [
+        "<atnfunc>"
+      ],
+      [
+        "<chrfunc>"
+      ],
+      [
+        "<cosfunc>"
+      ],
+      [
+        "<expfunc>"
+      ],
+      [
+        "<fnfunc>"
+      ],
+      [
+        "<frefunc>"
+      ],
+      [
+        "<intfunc>"
+      ],
+      [
+        "<leftfunc>"
+      ],
+      [
+        "<lenfunc>"
+      ],
+      [
+        "<logfunc>"
+      ],
+      [
+        "<midfunc>"
+      ],
+      [
+        "<number>"
+      ],
+      [
+        "<pdlfunc>"
+      ],
+      [
+        "<peekfunc>"
+      ],
+      [
+        "<posfunc>"
+      ],
+      [
+        "<rightfunc>"
+      ],
+      [
+        "<rndfunc>"
+      ],
+      [
+        "<scrnfunc>"
+      ],
+      [
+        "<sgnfunc>"
+      ],
+      [
+        "<sinfunc>"
+      ],
+      [
+        "<spcfunc>"
+      ],
+      [
+        "<sqrfunc>"
+      ],
+      [
+        "<strfunc>"
+      ],
+      [
+        "<tabfunc>"
+      ],
+      [
+        "<tanfunc>"
+      ],
+      [
+        "<usrfunc>"
+      ],
+      [
+        "<valfunc>"
+      ],
+      [
+        "<vardecl>"
+      ]
+    ],
+    "<_expression_OR_204>": [
+      [
+        "<_expression_SEQ_205>"
+      ]
+    ],
+    "<_expression_SEQ_205>": [
+      [
+        "<relationalExpression>",
+        "<_expression_STAR_206>"
+      ]
+    ],
+    "<relationalExpression>": [
+      [
+        "<addingExpression>",
+        "<_relationalExpression_re_203>"
+      ]
+    ],
+    "<_expression_STAR_206>": [
+      [],
+      [
+        "<_expression_OR_207>",
+        "<_expression_STAR_206>"
+      ]
+    ],
+    "<addingExpression>": [
+      [
+        "<multiplyingExpression>",
+        "<_addingExpression_re_197>"
+      ]
+    ],
+    "<_relationalExpression_re_203>": [
+      [
+        "<_relationalExpression_Q_198>"
+      ]
+    ],
+    "<multiplyingExpression>": [
+      [
+        "<exponentExpression>",
+        "<_multiplyingExpression_re_190>"
+      ]
+    ],
+    "<_addingExpression_re_197>": [
+      [
+        "<_addingExpression_STAR_191>"
+      ]
+    ],
+    "<exponentExpression>": [
+      [
+        "<signExpression>",
+        "<_exponentExpression_re_183>"
+      ]
+    ],
+    "<_multiplyingExpression_re_190>": [
+      [
+        "<_multiplyingExpression_STAR_184>"
+      ]
+    ],
+    "<signExpression>": [
+      [
+        "<_signExpression_re_174>",
+        "<_signExpression_re_179>",
+        "<func_>"
+      ]
+    ],
+    "<_exponentExpression_re_183>": [
+      [
+        "<_exponentExpression_STAR_180>"
+      ]
+    ],
+    "<_signExpression_re_174>": [
+      [
+        "<_signExpression_Q_173>"
+      ]
+    ],
+    "<_signExpression_re_179>": [
+      [
+        "<_signExpression_Q_175>"
+      ]
+    ],
+    "<_signExpression_Q_173>": [
+      [],
+      [
+        "<_NOT_sp_>"
+      ]
+    ],
+    "<_NOT_sp_>": [
+      [
+        "<_SKIP>",
+        "<NOT>"
+      ]
+    ],
+    "<NOT>": [
+      [
+        "NOT"
+      ],
+      [
+        "not"
+      ]
+    ],
+    "<_signExpression_Q_175>": [
+      [],
+      [
+        "<_signExpression_OR_176>"
+      ]
+    ],
+    "<_signExpression_OR_176>": [
+      [
+        "<_signExpression_SEQ_177>"
+      ],
+      [
+        "<_signExpression_SEQ_178>"
+      ]
+    ],
+    "<_signExpression_SEQ_177>": [
+      [
+        "<_PLUS_sp_>"
+      ]
+    ],
+    "<_signExpression_SEQ_178>": [
+      [
+        "<_MINUS_sp_>"
+      ]
+    ],
+    "<_PLUS_sp_>": [
+      [
+        "<_SKIP>",
+        "<PLUS>"
+      ]
+    ],
+    "<PLUS>": [
+      [
+        "+"
+      ]
+    ],
+    "<_MINUS_sp_>": [
+      [
+        "<_SKIP>",
+        "<MINUS>"
+      ]
+    ],
+    "<MINUS>": [
+      [
+        "-"
+      ]
+    ],
+    "<_exponentExpression_STAR_180>": [
+      [],
+      [
+        "<_exponentExpression_OR_181>",
+        "<_exponentExpression_STAR_180>"
+      ]
+    ],
+    "<_exponentExpression_OR_181>": [
+      [
+        "<_exponentExpression_SEQ_182>"
+      ]
+    ],
+    "<_exponentExpression_SEQ_182>": [
+      [
+        "<_EXPONENT_sp_>",
+        "<signExpression>"
+      ]
+    ],
+    "<_EXPONENT_sp_>": [
+      [
+        "<_SKIP>",
+        "<EXPONENT>"
+      ]
+    ],
+    "<EXPONENT>": [
+      [
+        "^"
+      ]
+    ],
+    "<_multiplyingExpression_STAR_184>": [
+      [],
+      [
+        "<_multiplyingExpression_OR_185>",
+        "<_multiplyingExpression_STAR_184>"
+      ]
+    ],
+    "<_multiplyingExpression_OR_185>": [
+      [
+        "<_multiplyingExpression_SEQ_186>"
+      ]
+    ],
+    "<_multiplyingExpression_SEQ_186>": [
+      [
+        "<_multiplyingExpression_OR_187>",
+        "<exponentExpression>"
+      ]
+    ],
+    "<_multiplyingExpression_OR_187>": [
+      [
+        "<_multiplyingExpression_SEQ_188>"
+      ],
+      [
+        "<_multiplyingExpression_SEQ_189>"
+      ]
+    ],
+    "<_multiplyingExpression_SEQ_188>": [
+      [
+        "<_TIMES_sp_>"
+      ]
+    ],
+    "<_multiplyingExpression_SEQ_189>": [
+      [
+        "<_DIV_sp_>"
+      ]
+    ],
+    "<_TIMES_sp_>": [
+      [
+        "<_SKIP>",
+        "<TIMES>"
+      ]
+    ],
+    "<TIMES>": [
+      [
+        "*"
+      ]
+    ],
+    "<_DIV_sp_>": [
+      [
+        "<_SKIP>",
+        "<DIV>"
+      ]
+    ],
+    "<DIV>": [
+      [
+        "/"
+      ]
+    ],
+    "<_addingExpression_STAR_191>": [
+      [],
+      [
+        "<_addingExpression_OR_192>",
+        "<_addingExpression_STAR_191>"
+      ]
+    ],
+    "<_addingExpression_OR_192>": [
+      [
+        "<_addingExpression_SEQ_193>"
+      ]
+    ],
+    "<_addingExpression_SEQ_193>": [
+      [
+        "<_addingExpression_OR_194>",
+        "<multiplyingExpression>"
+      ]
+    ],
+    "<_addingExpression_OR_194>": [
+      [
+        "<_addingExpression_SEQ_195>"
+      ],
+      [
+        "<_addingExpression_SEQ_196>"
+      ]
+    ],
+    "<_addingExpression_SEQ_195>": [
+      [
+        "<_PLUS_sp_>"
+      ]
+    ],
+    "<_addingExpression_SEQ_196>": [
+      [
+        "<_MINUS_sp_>"
+      ]
+    ],
+    "<_relationalExpression_Q_198>": [
+      [],
+      [
+        "<_relationalExpression_OR_199>"
+      ]
+    ],
+    "<_relationalExpression_OR_199>": [
+      [
+        "<_relationalExpression_SEQ_200>"
+      ]
+    ],
+    "<_relationalExpression_SEQ_200>": [
+      [
+        "<_relationalExpression_OR_201>",
+        "<addingExpression>"
+      ]
+    ],
+    "<_relationalExpression_OR_201>": [
+      [
+        "<_relationalExpression_SEQ_202>"
+      ]
+    ],
+    "<_relationalExpression_SEQ_202>": [
+      [
+        "<relop>"
+      ]
+    ],
+    "<relop>": [
+      [
+        "<_EQ_sp_>"
+      ],
+      [
+        "<_GT_sp_>"
+      ],
+      [
+        "<_LTE_sp_>"
+      ],
+      [
+        "<_LT_sp_>"
+      ],
+      [
+        "<_relop_re_66>"
+      ],
+      [
+        "<_relop_re_69>"
+      ],
+      [
+        "<_relop_re_72>"
+      ],
+      [
+        "<_relop_re_75>"
+      ],
+      [
+        "<_relop_re_78>"
+      ],
+      [
+        "<neq>"
+      ]
+    ],
+    "<_EQ_sp_>": [
+      [
+        "<_SKIP>",
+        "<EQ>"
+      ]
+    ],
+    "<_GT_sp_>": [
+      [
+        "<_SKIP>",
+        "<GT>"
+      ]
+    ],
+    "<_LTE_sp_>": [
+      [
+        "<_SKIP>",
+        "<LTE>"
+      ]
+    ],
+    "<_LT_sp_>": [
+      [
+        "<_SKIP>",
+        "<LT>"
+      ]
+    ],
+    "<_relop_re_66>": [
+      [
+        "<_relop_OR_64>"
+      ]
+    ],
+    "<_relop_re_69>": [
+      [
+        "<_relop_OR_67>"
+      ]
+    ],
+    "<_relop_re_72>": [
+      [
+        "<_relop_OR_70>"
+      ]
+    ],
+    "<_relop_re_75>": [
+      [
+        "<_relop_OR_73>"
+      ]
+    ],
+    "<_relop_re_78>": [
+      [
+        "<_relop_OR_76>"
+      ]
+    ],
+    "<neq>": [
+      [
+        "<_LT_sp_>",
+        "<_GT_sp_>"
+      ]
+    ],
+    "<EQ>": [
+      [
+        "="
+      ]
+    ],
+    "<GT>": [
+      [
+        ">"
+      ]
+    ],
+    "<LTE>": [
+      [
+        "<: "
+      ]
+    ],
+    "<LT>": [
+      [
+        "<"
+      ]
+    ],
+    "<_relop_OR_64>": [
+      [
+        "<_relop_SEQ_65>"
+      ]
+    ],
+    "<_relop_SEQ_65>": [
+      [
+        "<_GTE_sp_>"
+      ]
+    ],
+    "<_GTE_sp_>": [
+      [
+        "<_SKIP>",
+        "<GTE>"
+      ]
+    ],
+    "<GTE>": [
+      [
+        ">: "
+      ]
+    ],
+    "<_relop_OR_67>": [
+      [
+        "<_relop_SEQ_68>"
+      ]
+    ],
+    "<_relop_SEQ_68>": [
+      [
+        "<_GT_sp_>",
+        "<_EQ_sp_>"
+      ]
+    ],
+    "<_relop_OR_70>": [
+      [
+        "<_relop_SEQ_71>"
+      ]
+    ],
+    "<_relop_SEQ_71>": [
+      [
+        "<_EQ_sp_>",
+        "<_GT_sp_>"
+      ]
+    ],
+    "<_relop_OR_73>": [
+      [
+        "<_relop_SEQ_74>"
+      ]
+    ],
+    "<_relop_SEQ_74>": [
+      [
+        "<_LT_sp_>",
+        "<_EQ_sp_>"
+      ]
+    ],
+    "<_relop_OR_76>": [
+      [
+        "<_relop_SEQ_77>"
+      ]
+    ],
+    "<_relop_SEQ_77>": [
+      [
+        "<_EQ_sp_>",
+        "<_LT_sp_>"
+      ]
+    ],
+    "<_expression_OR_207>": [
+      [
+        "<_expression_SEQ_208>"
+      ]
+    ],
+    "<_expression_SEQ_208>": [
+      [
+        "<_expression_OR_209>",
+        "<relationalExpression>"
+      ]
+    ],
+    "<_expression_OR_209>": [
+      [
+        "<_expression_SEQ_210>"
+      ],
+      [
+        "<_expression_SEQ_211>"
+      ]
+    ],
+    "<_expression_SEQ_210>": [
+      [
+        "<_AND_sp_>"
+      ]
+    ],
+    "<_expression_SEQ_211>": [
+      [
+        "<_OR_sp_>"
+      ]
+    ],
+    "<_AND_sp_>": [
+      [
+        "<_SKIP>",
+        "<AND>"
+      ]
+    ],
+    "<AND>": [
+      [
+        "AND"
+      ],
+      [
+        "and"
+      ]
+    ],
+    "<_OR_sp_>": [
+      [
+        "<_SKIP>",
+        "<OR>"
+      ]
+    ],
+    "<OR>": [
+      [
+        "OR"
+      ],
+      [
+        "or"
+      ]
+    ],
+    "<_STRINGLITERAL_sp_>": [
+      [
+        "<_SKIP>",
+        "<STRINGLITERAL>"
+      ]
+    ],
+    "<_func__re_172>": [
+      [
+        "<_func__OR_170>"
+      ]
+    ],
+    "<absfunc>": [
+      [
+        "<_ABS_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<ascfunc>": [
+      [
+        "<_ASC_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<atnfunc>": [
+      [
+        "<_ATN_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<chrfunc>": [
+      [
+        "<_CHR_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<cosfunc>": [
+      [
+        "<_COS_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<expfunc>": [
+      [
+        "<_EXP_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<fnfunc>": [
+      [
+        "<_FN_sp_>",
+        "<var_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<frefunc>": [
+      [
+        "<_FRE_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<intfunc>": [
+      [
+        "<_INTF_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<leftfunc>": [
+      [
+        "<_LEFT_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_COMMA_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<lenfunc>": [
+      [
+        "<_LEN_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<logfunc>": [
+      [
+        "<_LOG_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<midfunc>": [
+      [
+        "<_MID_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_COMMA_sp_>",
+        "<expression>",
+        "<_COMMA_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<number>": [
+      [
+        "<_number_re_165>",
+        "<_number_re_169>"
+      ]
+    ],
+    "<pdlfunc>": [
+      [
+        "<_PDL_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<peekfunc>": [
+      [
+        "<_PEEK_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<posfunc>": [
+      [
+        "<_POS_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<rightfunc>": [
+      [
+        "<_RIGHT_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_COMMA_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<rndfunc>": [
+      [
+        "<_RND_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<scrnfunc>": [
+      [
+        "<_SCRN_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_COMMA_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<sgnfunc>": [
+      [
+        "<_SGN_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<sinfunc>": [
+      [
+        "<_SIN_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<spcfunc>": [
+      [
+        "<_SPC_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<sqrfunc>": [
+      [
+        "<_SQR_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<strfunc>": [
+      [
+        "<_STR_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<tabfunc>": [
+      [
+        "<_TAB_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<tanfunc>": [
+      [
+        "<_TAN_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<usrfunc>": [
+      [
+        "<_USR_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<valfunc>": [
+      [
+        "<_VAL_sp_>",
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<vardecl>": [
+      [
+        "<var_>",
+        "<_vardecl_re_47>"
+      ]
+    ],
+    "<STRINGLITERAL>": [
+      [
+        "\"",
+        "<_STRINGLITERAL_re_237>",
+        "\""
+      ]
+    ],
+    "<_STRINGLITERAL_re_237>": [
+      [
+        "<_STRINGLITERAL_STAR_235>"
+      ]
+    ],
+    "<_STRINGLITERAL_STAR_235>": [
+      [],
+      [
+        "<_STRINGLITERAL_CNOT_236>",
+        "<_STRINGLITERAL_STAR_235>"
+      ]
+    ],
+    "<_STRINGLITERAL_CNOT_236>": [
+      [
+        "\t"
+      ],
+      [
+        "\n"
+      ],
+      [
+        "\u000b"
+      ],
+      [
+        "\f"
+      ],
+      [
+        "\r"
+      ],
+      [
+        " "
+      ],
+      [
+        "!"
+      ],
+      [
+        "#"
+      ],
+      [
+        "$"
+      ],
+      [
+        "%"
+      ],
+      [
+        "&"
+      ],
+      [
+        "'"
+      ],
+      [
+        "("
+      ],
+      [
+        ")"
+      ],
+      [
+        "*"
+      ],
+      [
+        "+"
+      ],
+      [
+        ","
+      ],
+      [
+        "-"
+      ],
+      [
+        "."
+      ],
+      [
+        "/"
+      ],
+      [
+        "0"
+      ],
+      [
+        "1"
+      ],
+      [
+        "2"
+      ],
+      [
+        "3"
+      ],
+      [
+        "4"
+      ],
+      [
+        "5"
+      ],
+      [
+        "6"
+      ],
+      [
+        "7"
+      ],
+      [
+        "8"
+      ],
+      [
+        "9"
+      ],
+      [
+        ":"
+      ],
+      [
+        ";"
+      ],
+      [
+        "<"
+      ],
+      [
+        "="
+      ],
+      [
+        ">"
+      ],
+      [
+        "?"
+      ],
+      [
+        "@"
+      ],
+      [
+        "A"
+      ],
+      [
+        "B"
+      ],
+      [
+        "C"
+      ],
+      [
+        "D"
+      ],
+      [
+        "E"
+      ],
+      [
+        "F"
+      ],
+      [
+        "G"
+      ],
+      [
+        "H"
+      ],
+      [
+        "I"
+      ],
+      [
+        "J"
+      ],
+      [
+        "K"
+      ],
+      [
+        "L"
+      ],
+      [
+        "M"
+      ],
+      [
+        "N"
+      ],
+      [
+        "O"
+      ],
+      [
+        "P"
+      ],
+      [
+        "Q"
+      ],
+      [
+        "R"
+      ],
+      [
+        "S"
+      ],
+      [
+        "T"
+      ],
+      [
+        "U"
+      ],
+      [
+        "V"
+      ],
+      [
+        "W"
+      ],
+      [
+        "X"
+      ],
+      [
+        "Y"
+      ],
+      [
+        "Z"
+      ],
+      [
+        "^"
+      ],
+      [
+        "_"
+      ],
+      [
+        "`"
+      ],
+      [
+        "a"
+      ],
+      [
+        "b"
+      ],
+      [
+        "c"
+      ],
+      [
+        "d"
+      ],
+      [
+        "e"
+      ],
+      [
+        "f"
+      ],
+      [
+        "g"
+      ],
+      [
+        "h"
+      ],
+      [
+        "i"
+      ],
+      [
+        "j"
+      ],
+      [
+        "k"
+      ],
+      [
+        "l"
+      ],
+      [
+        "m"
+      ],
+      [
+        "o"
+      ],
+      [
+        "p"
+      ],
+      [
+        "q"
+      ],
+      [
+        "s"
+      ],
+      [
+        "t"
+      ],
+      [
+        "u"
+      ],
+      [
+        "v"
+      ],
+      [
+        "w"
+      ],
+      [
+        "x"
+      ],
+      [
+        "y"
+      ],
+      [
+        "z"
+      ],
+      [
+        "{"
+      ],
+      [
+        "|"
+      ],
+      [
+        "}"
+      ],
+      [
+        "~"
+      ]
+    ],
+    "<_func__OR_170>": [
+      [
+        "<_func__SEQ_171>"
+      ]
+    ],
+    "<_func__SEQ_171>": [
+      [
+        "<_LPAREN_sp_>",
+        "<expression>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<_LPAREN_sp_>": [
+      [
+        "<_SKIP>",
+        "<LPAREN>"
+      ]
+    ],
+    "<_RPAREN_sp_>": [
+      [
+        "<_SKIP>",
+        "<RPAREN>"
+      ]
+    ],
+    "<LPAREN>": [
+      [
+        "("
+      ]
+    ],
+    "<RPAREN>": [
+      [
+        ")"
+      ]
+    ],
+    "<_ABS_sp_>": [
+      [
+        "<_SKIP>",
+        "<ABS>"
+      ]
+    ],
+    "<ABS>": [
+      [
+        "ABS"
+      ],
+      [
+        "abs"
+      ]
+    ],
+    "<_ASC_sp_>": [
+      [
+        "<_SKIP>",
+        "<ASC>"
+      ]
+    ],
+    "<ASC>": [
+      [
+        "ASC"
+      ],
+      [
+        "asc"
+      ]
+    ],
+    "<_ATN_sp_>": [
+      [
+        "<_SKIP>",
+        "<ATN>"
+      ]
+    ],
+    "<ATN>": [
+      [
+        "ATN"
+      ],
+      [
+        "atn"
+      ]
+    ],
+    "<_CHR_sp_>": [
+      [
+        "<_SKIP>",
+        "<CHR>"
+      ]
+    ],
+    "<CHR>": [
+      [
+        "CHR$"
+      ]
+    ],
+    "<_COS_sp_>": [
+      [
+        "<_SKIP>",
+        "<COS>"
+      ]
+    ],
+    "<COS>": [
+      [
+        "COS"
+      ],
+      [
+        "cos"
+      ]
+    ],
+    "<_EXP_sp_>": [
+      [
+        "<_SKIP>",
+        "<EXP>"
+      ]
+    ],
+    "<EXP>": [
+      [
+        "EXP"
+      ],
+      [
+        "exp"
+      ]
+    ],
+    "<_FN_sp_>": [
+      [
+        "<_SKIP>",
+        "<FN>"
+      ]
+    ],
+    "<var_>": [
+      [
+        "<varname>",
+        "<_var__re_214>"
+      ]
+    ],
+    "<FN>": [
+      [
+        "FN"
+      ],
+      [
+        "fn"
+      ]
+    ],
+    "<varname>": [
+      [
+        "<_LETTERS_sp_>",
+        "<_varname_re_219>"
+      ]
+    ],
+    "<_var__re_214>": [
+      [
+        "<_var__Q_213>"
+      ]
+    ],
+    "<_LETTERS_sp_>": [
+      [
+        "<_SKIP>",
+        "<LETTERS>"
+      ]
+    ],
+    "<_varname_re_219>": [
+      [
+        "<_varname_STAR_215>"
+      ]
+    ],
+    "<LETTERS>": [
+      [
+        "<_LETTERS_re_244>"
+      ]
+    ],
+    "<_LETTERS_re_244>": [
+      [
+        "<_LETTERS_PLUS_238>"
+      ]
+    ],
+    "<_LETTERS_PLUS_238>": [
+      [
+        "<_LETTERS_OR_239>"
+      ],
+      [
+        "<_LETTERS_OR_239>",
+        "<_LETTERS_PLUS_238>"
+      ]
+    ],
+    "<_LETTERS_OR_239>": [
+      [
+        "<_LETTERS_SEQ_240>"
+      ],
+      [
+        "<_LETTERS_SEQ_242>"
+      ]
+    ],
+    "<_LETTERS_SEQ_240>": [
+      [
+        "<_LETTERS_CHARRANGE_241>"
+      ]
+    ],
+    "<_LETTERS_SEQ_242>": [
+      [
+        "<_LETTERS_CHARRANGE_243>"
+      ]
+    ],
+    "<_LETTERS_CHARRANGE_241>": [
+      [
+        "a"
+      ],
+      [
+        "b"
+      ],
+      [
+        "c"
+      ],
+      [
+        "d"
+      ],
+      [
+        "e"
+      ],
+      [
+        "f"
+      ],
+      [
+        "g"
+      ],
+      [
+        "h"
+      ],
+      [
+        "i"
+      ],
+      [
+        "j"
+      ],
+      [
+        "k"
+      ],
+      [
+        "l"
+      ],
+      [
+        "m"
+      ],
+      [
+        "n"
+      ],
+      [
+        "o"
+      ],
+      [
+        "p"
+      ],
+      [
+        "q"
+      ],
+      [
+        "r"
+      ],
+      [
+        "s"
+      ],
+      [
+        "t"
+      ],
+      [
+        "u"
+      ],
+      [
+        "v"
+      ],
+      [
+        "w"
+      ],
+      [
+        "x"
+      ],
+      [
+        "y"
+      ],
+      [
+        "z"
+      ]
+    ],
+    "<_LETTERS_CHARRANGE_243>": [
+      [
+        "A"
+      ],
+      [
+        "B"
+      ],
+      [
+        "C"
+      ],
+      [
+        "D"
+      ],
+      [
+        "E"
+      ],
+      [
+        "F"
+      ],
+      [
+        "G"
+      ],
+      [
+        "H"
+      ],
+      [
+        "I"
+      ],
+      [
+        "J"
+      ],
+      [
+        "K"
+      ],
+      [
+        "L"
+      ],
+      [
+        "M"
+      ],
+      [
+        "N"
+      ],
+      [
+        "O"
+      ],
+      [
+        "P"
+      ],
+      [
+        "Q"
+      ],
+      [
+        "R"
+      ],
+      [
+        "S"
+      ],
+      [
+        "T"
+      ],
+      [
+        "U"
+      ],
+      [
+        "V"
+      ],
+      [
+        "W"
+      ],
+      [
+        "X"
+      ],
+      [
+        "Y"
+      ],
+      [
+        "Z"
+      ]
+    ],
+    "<_varname_STAR_215>": [
+      [],
+      [
+        "<_varname_OR_216>",
+        "<_varname_STAR_215>"
+      ]
+    ],
+    "<_varname_OR_216>": [
+      [
+        "<_varname_SEQ_217>"
+      ],
+      [
+        "<_varname_SEQ_218>"
+      ]
+    ],
+    "<_varname_SEQ_217>": [
+      [
+        "<_LETTERS_sp_>"
+      ]
+    ],
+    "<_varname_SEQ_218>": [
+      [
+        "<_NUMBER_sp_>"
+      ]
+    ],
+    "<_var__Q_213>": [
+      [],
+      [
+        "<varsuffix>"
+      ]
+    ],
+    "<varsuffix>": [
+      [
+        "<_varsuffix_re_223>"
+      ]
+    ],
+    "<_varsuffix_re_223>": [
+      [
+        "<_varsuffix_OR_220>"
+      ]
+    ],
+    "<_varsuffix_OR_220>": [
+      [
+        "<_varsuffix_SEQ_221>"
+      ],
+      [
+        "<_varsuffix_SEQ_222>"
+      ]
+    ],
+    "<_varsuffix_SEQ_221>": [
+      [
+        "<_DOLLAR_sp_>"
+      ]
+    ],
+    "<_varsuffix_SEQ_222>": [
+      [
+        "<_PERCENT_sp_>"
+      ]
+    ],
+    "<_DOLLAR_sp_>": [
+      [
+        "<_SKIP>",
+        "<DOLLAR>"
+      ]
+    ],
+    "<DOLLAR>": [
+      [
+        "$"
+      ]
+    ],
+    "<_PERCENT_sp_>": [
+      [
+        "<_SKIP>",
+        "<PERCENT>"
+      ]
+    ],
+    "<PERCENT>": [
+      [
+        "%"
+      ]
+    ],
+    "<_FRE_sp_>": [
+      [
+        "<_SKIP>",
+        "<FRE>"
+      ]
+    ],
+    "<FRE>": [
+      [
+        "FRE"
+      ],
+      [
+        "fre"
+      ]
+    ],
+    "<_INTF_sp_>": [
+      [
+        "<_SKIP>",
+        "<INTF>"
+      ]
+    ],
+    "<INTF>": [
+      [
+        "INT"
+      ],
+      [
+        "int"
+      ]
+    ],
+    "<_LEFT_sp_>": [
+      [
+        "<_SKIP>",
+        "<LEFT>"
+      ]
+    ],
+    "<_COMMA_sp_>": [
+      [
+        "<_SKIP>",
+        "<COMMA>"
+      ]
+    ],
+    "<LEFT>": [
+      [
+        "LEFT$"
+      ]
+    ],
+    "<COMMA>": [
+      [
+        ","
+      ]
+    ],
+    "<_LEN_sp_>": [
+      [
+        "<_SKIP>",
+        "<LEN>"
+      ]
+    ],
+    "<LEN>": [
+      [
+        "LEN"
+      ],
+      [
+        "len"
+      ]
+    ],
+    "<_LOG_sp_>": [
+      [
+        "<_SKIP>",
+        "<LOG>"
+      ]
+    ],
+    "<LOG>": [
+      [
+        "LOG"
+      ],
+      [
+        "log"
+      ]
+    ],
+    "<_MID_sp_>": [
+      [
+        "<_SKIP>",
+        "<MID>"
+      ]
+    ],
+    "<MID>": [
+      [
+        "MID$"
+      ]
+    ],
+    "<_number_re_165>": [
+      [
+        "<_number_Q_161>"
+      ]
+    ],
+    "<_number_re_169>": [
+      [
+        "<_number_OR_166>"
+      ]
+    ],
+    "<_number_Q_161>": [
+      [],
+      [
+        "<_number_OR_162>"
+      ]
+    ],
+    "<_number_OR_162>": [
+      [
+        "<_number_SEQ_163>"
+      ],
+      [
+        "<_number_SEQ_164>"
+      ]
+    ],
+    "<_number_SEQ_163>": [
+      [
+        "<_SKIP>",
+        "+"
+      ]
+    ],
+    "<_number_SEQ_164>": [
+      [
+        "<_SKIP>",
+        "-"
+      ]
+    ],
+    "<_number_OR_166>": [
+      [
+        "<_number_SEQ_167>"
+      ],
+      [
+        "<_number_SEQ_168>"
+      ]
+    ],
+    "<_number_SEQ_167>": [
+      [
+        "<_NUMBER_sp_>"
+      ]
+    ],
+    "<_number_SEQ_168>": [
+      [
+        "<_FLOAT_sp_>"
+      ]
+    ],
+    "<_FLOAT_sp_>": [
+      [
+        "<_SKIP>",
+        "<FLOAT>"
+      ]
+    ],
+    "<FLOAT>": [
+      [
+        "<_FLOAT_re_261>",
+        ".",
+        "<_FLOAT_re_266>",
+        "<_FLOAT_re_277>"
+      ]
+    ],
+    "<_FLOAT_re_261>": [
+      [
+        "<_FLOAT_STAR_257>"
+      ]
+    ],
+    "<_FLOAT_re_266>": [
+      [
+        "<_FLOAT_PLUS_262>"
+      ]
+    ],
+    "<_FLOAT_re_277>": [
+      [
+        "<_FLOAT_STAR_267>"
+      ]
+    ],
+    "<_FLOAT_STAR_257>": [
+      [],
+      [
+        "<_FLOAT_OR_258>",
+        "<_FLOAT_STAR_257>"
+      ]
+    ],
+    "<_FLOAT_OR_258>": [
+      [
+        "<_FLOAT_SEQ_259>"
+      ]
+    ],
+    "<_FLOAT_SEQ_259>": [
+      [
+        "<_FLOAT_CHARRANGE_260>"
+      ]
+    ],
+    "<_FLOAT_CHARRANGE_260>": [
+      [
+        "0"
+      ],
+      [
+        "1"
+      ],
+      [
+        "2"
+      ],
+      [
+        "3"
+      ],
+      [
+        "4"
+      ],
+      [
+        "5"
+      ],
+      [
+        "6"
+      ],
+      [
+        "7"
+      ],
+      [
+        "8"
+      ],
+      [
+        "9"
+      ]
+    ],
+    "<_FLOAT_PLUS_262>": [
+      [
+        "<_FLOAT_OR_263>"
+      ],
+      [
+        "<_FLOAT_OR_263>",
+        "<_FLOAT_PLUS_262>"
+      ]
+    ],
+    "<_FLOAT_OR_263>": [
+      [
+        "<_FLOAT_SEQ_264>"
+      ]
+    ],
+    "<_FLOAT_SEQ_264>": [
+      [
+        "<_FLOAT_CHARRANGE_265>"
+      ]
+    ],
+    "<_FLOAT_CHARRANGE_265>": [
+      [
+        "0"
+      ],
+      [
+        "1"
+      ],
+      [
+        "2"
+      ],
+      [
+        "3"
+      ],
+      [
+        "4"
+      ],
+      [
+        "5"
+      ],
+      [
+        "6"
+      ],
+      [
+        "7"
+      ],
+      [
+        "8"
+      ],
+      [
+        "9"
+      ]
+    ],
+    "<_FLOAT_STAR_267>": [
+      [],
+      [
+        "<_FLOAT_OR_268>",
+        "<_FLOAT_STAR_267>"
+      ]
+    ],
+    "<_FLOAT_OR_268>": [
+      [
+        "<_FLOAT_SEQ_269>"
+      ]
+    ],
+    "<_FLOAT_SEQ_269>": [
+      [
+        "<_FLOAT_OR_270>",
+        "<_FLOAT_PLUS_273>"
+      ]
+    ],
+    "<_FLOAT_OR_270>": [
+      [
+        "<_FLOAT_SEQ_271>"
+      ],
+      [
+        "<_FLOAT_SEQ_272>"
+      ]
+    ],
+    "<_FLOAT_PLUS_273>": [
+      [
+        "<_FLOAT_OR_274>"
+      ],
+      [
+        "<_FLOAT_OR_274>",
+        "<_FLOAT_PLUS_273>"
+      ]
+    ],
+    "<_FLOAT_SEQ_271>": [
+      [
+        "e"
+      ]
+    ],
+    "<_FLOAT_SEQ_272>": [
+      [
+        "E"
+      ]
+    ],
+    "<_FLOAT_OR_274>": [
+      [
+        "<_FLOAT_SEQ_275>"
+      ]
+    ],
+    "<_FLOAT_SEQ_275>": [
+      [
+        "<_FLOAT_CHARRANGE_276>"
+      ]
+    ],
+    "<_FLOAT_CHARRANGE_276>": [
+      [
+        "0"
+      ],
+      [
+        "1"
+      ],
+      [
+        "2"
+      ],
+      [
+        "3"
+      ],
+      [
+        "4"
+      ],
+      [
+        "5"
+      ],
+      [
+        "6"
+      ],
+      [
+        "7"
+      ],
+      [
+        "8"
+      ],
+      [
+        "9"
+      ]
+    ],
+    "<_PDL_sp_>": [
+      [
+        "<_SKIP>",
+        "<PDL>"
+      ]
+    ],
+    "<PDL>": [
+      [
+        "PDL"
+      ],
+      [
+        "pdl"
+      ]
+    ],
+    "<_PEEK_sp_>": [
+      [
+        "<_SKIP>",
+        "<PEEK>"
+      ]
+    ],
+    "<PEEK>": [
+      [
+        "PEEK"
+      ],
+      [
+        "peek"
+      ]
+    ],
+    "<_POS_sp_>": [
+      [
+        "<_SKIP>",
+        "<POS>"
+      ]
+    ],
+    "<POS>": [
+      [
+        "POS"
+      ],
+      [
+        "pos"
+      ]
+    ],
+    "<_RIGHT_sp_>": [
+      [
+        "<_SKIP>",
+        "<RIGHT>"
+      ]
+    ],
+    "<RIGHT>": [
+      [
+        "RIGHT$"
+      ]
+    ],
+    "<_RND_sp_>": [
+      [
+        "<_SKIP>",
+        "<RND>"
+      ]
+    ],
+    "<RND>": [
+      [
+        "RND"
+      ],
+      [
+        "rnd"
+      ]
+    ],
+    "<_SCRN_sp_>": [
+      [
+        "<_SKIP>",
+        "<SCRN>"
+      ]
+    ],
+    "<SCRN>": [
+      [
+        "SCRN"
+      ],
+      [
+        "scrn"
+      ]
+    ],
+    "<_SGN_sp_>": [
+      [
+        "<_SKIP>",
+        "<SGN>"
+      ]
+    ],
+    "<SGN>": [
+      [
+        "SGN"
+      ],
+      [
+        "sgn"
+      ]
+    ],
+    "<_SIN_sp_>": [
+      [
+        "<_SKIP>",
+        "<SIN>"
+      ]
+    ],
+    "<SIN>": [
+      [
+        "SIN"
+      ],
+      [
+        "sin"
+      ]
+    ],
+    "<_SPC_sp_>": [
+      [
+        "<_SKIP>",
+        "<SPC>"
+      ]
+    ],
+    "<SPC>": [
+      [
+        "SPC"
+      ],
+      [
+        "spc"
+      ]
+    ],
+    "<_SQR_sp_>": [
+      [
+        "<_SKIP>",
+        "<SQR>"
+      ]
+    ],
+    "<SQR>": [
+      [
+        "SQR"
+      ],
+      [
+        "sqr"
+      ]
+    ],
+    "<_STR_sp_>": [
+      [
+        "<_SKIP>",
+        "<STR>"
+      ]
+    ],
+    "<STR>": [
+      [
+        "STR$"
+      ]
+    ],
+    "<_TAB_sp_>": [
+      [
+        "<_SKIP>",
+        "<TAB>"
+      ]
+    ],
+    "<TAB>": [
+      [
+        "TAB"
+      ],
+      [
+        "tab"
+      ]
+    ],
+    "<_TAN_sp_>": [
+      [
+        "<_SKIP>",
+        "<TAN>"
+      ]
+    ],
+    "<TAN>": [
+      [
+        "TAN"
+      ],
+      [
+        "tan"
+      ]
+    ],
+    "<_USR_sp_>": [
+      [
+        "<_SKIP>",
+        "<USR>"
+      ]
+    ],
+    "<USR>": [
+      [
+        "USR"
+      ],
+      [
+        "usr"
+      ]
+    ],
+    "<_VAL_sp_>": [
+      [
+        "<_SKIP>",
+        "<VAL>"
+      ]
+    ],
+    "<VAL>": [
+      [
+        "VAL"
+      ],
+      [
+        "val"
+      ]
+    ],
+    "<_vardecl_re_47>": [
+      [
+        "<_vardecl_STAR_44>"
+      ]
+    ],
+    "<_vardecl_STAR_44>": [
+      [],
+      [
+        "<_vardecl_OR_45>",
+        "<_vardecl_STAR_44>"
+      ]
+    ],
+    "<_vardecl_OR_45>": [
+      [
+        "<_vardecl_SEQ_46>"
+      ]
+    ],
+    "<_vardecl_SEQ_46>": [
+      [
+        "<_LPAREN_sp_>",
+        "<exprlist>",
+        "<_RPAREN_sp_>"
+      ]
+    ],
+    "<exprlist>": [
+      [
+        "<expression>",
+        "<_exprlist_re_231>"
+      ]
+    ],
+    "<_exprlist_re_231>": [
+      [
+        "<_exprlist_STAR_228>"
+      ]
+    ],
+    "<_exprlist_STAR_228>": [
+      [],
+      [
+        "<_exprlist_OR_229>",
+        "<_exprlist_STAR_228>"
+      ]
+    ],
+    "<_exprlist_OR_229>": [
+      [
+        "<_exprlist_SEQ_230>"
+      ]
+    ],
+    "<_exprlist_SEQ_230>": [
+      [
+        "<_COMMA_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<_CALL_sp_>": [
+      [
+        "<_SKIP>",
+        "<CALL>"
+      ]
+    ],
+    "<CALL>": [
+      [
+        "CALL"
+      ],
+      [
+        "call"
+      ]
+    ],
+    "<_COLOR_sp_>": [
+      [
+        "<_SKIP>",
+        "<COLOR>"
+      ]
+    ],
+    "<COLOR>": [
+      [
+        "COLOR"
+      ],
+      [
+        "color"
+      ]
+    ],
+    "<_DATA_sp_>": [
+      [
+        "<_SKIP>",
+        "<DATA>"
+      ]
+    ],
+    "<datum>": [
+      [
+        "<_STRINGLITERAL_sp_>"
+      ],
+      [
+        "<number>"
+      ]
+    ],
+    "<_datastmt_re_140>": [
+      [
+        "<_datastmt_STAR_136>"
+      ]
+    ],
+    "<DATA>": [
+      [
+        "DATA"
+      ],
+      [
+        "data"
+      ]
+    ],
+    "<_datastmt_STAR_136>": [
+      [],
+      [
+        "<_datastmt_OR_137>",
+        "<_datastmt_STAR_136>"
+      ]
+    ],
+    "<_datastmt_OR_137>": [
+      [
+        "<_datastmt_SEQ_138>"
+      ]
+    ],
+    "<_datastmt_SEQ_138>": [
+      [
+        "<_COMMA_sp_>",
+        "<_datastmt_Q_139>"
+      ]
+    ],
+    "<_datastmt_Q_139>": [
+      [],
+      [
+        "<datum>"
+      ]
+    ],
+    "<_DEF_sp_>": [
+      [
+        "<_SKIP>",
+        "<DEF>"
+      ]
+    ],
+    "<_defstmt_re_154>": [
+      [
+        "<_defstmt_Q_153>"
+      ]
+    ],
+    "<DEF>": [
+      [
+        "DEF"
+      ],
+      [
+        "def"
+      ]
+    ],
+    "<_defstmt_Q_153>": [
+      [],
+      [
+        "<_FN_sp_>"
+      ]
+    ],
+    "<_DIM_sp_>": [
+      [
+        "<_SKIP>",
+        "<DIM>"
+      ]
+    ],
+    "<varlist>": [
+      [
+        "<vardecl>",
+        "<_varlist_re_227>"
+      ]
+    ],
+    "<DIM>": [
+      [
+        "DIM"
+      ],
+      [
+        "dim"
+      ]
+    ],
+    "<_varlist_re_227>": [
+      [
+        "<_varlist_STAR_224>"
+      ]
+    ],
+    "<_varlist_STAR_224>": [
+      [],
+      [
+        "<_varlist_OR_225>",
+        "<_varlist_STAR_224>"
+      ]
+    ],
+    "<_varlist_OR_225>": [
+      [
+        "<_varlist_SEQ_226>"
+      ]
+    ],
+    "<_varlist_SEQ_226>": [
+      [
+        "<_COMMA_sp_>",
+        "<vardecl>"
+      ]
+    ],
+    "<_DRAW_sp_>": [
+      [
+        "<_SKIP>",
+        "<DRAW>"
+      ]
+    ],
+    "<_drawstmt_re_152>": [
+      [
+        "<_drawstmt_Q_149>"
+      ]
+    ],
+    "<DRAW>": [
+      [
+        "DRAW"
+      ],
+      [
+        "draw"
+      ]
+    ],
+    "<_drawstmt_Q_149>": [
+      [],
+      [
+        "<_drawstmt_OR_150>"
+      ]
+    ],
+    "<_drawstmt_OR_150>": [
+      [
+        "<_drawstmt_SEQ_151>"
+      ]
+    ],
+    "<_drawstmt_SEQ_151>": [
+      [
+        "<_AT_sp_>",
+        "<expression>",
+        "<_COMMA_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<_AT_sp_>": [
+      [
+        "<_SKIP>",
+        "<AT>"
+      ]
+    ],
+    "<AT>": [
+      [
+        "AT"
+      ],
+      [
+        "at"
+      ]
+    ],
+    "<_END_sp_>": [
+      [
+        "<_SKIP>",
+        "<END>"
+      ]
+    ],
+    "<END>": [
+      [
+        "END"
+      ],
+      [
+        "end"
+      ]
+    ],
+    "<_FOR_sp_>": [
+      [
+        "<_SKIP>",
+        "<FOR>"
+      ]
+    ],
+    "<_TO_sp_>": [
+      [
+        "<_SKIP>",
+        "<TO>"
+      ]
+    ],
+    "<_forstmt1_re_88>": [
+      [
+        "<_forstmt1_Q_85>"
+      ]
+    ],
+    "<_forstmt1_re_93>": [
+      [
+        "<_forstmt1_Q_89>"
+      ]
+    ],
+    "<FOR>": [
+      [
+        "FOR"
+      ],
+      [
+        "for"
+      ]
+    ],
+    "<TO>": [
+      [
+        "TO"
+      ],
+      [
+        "to"
+      ]
+    ],
+    "<_forstmt1_Q_85>": [
+      [],
+      [
+        "<_forstmt1_OR_86>"
+      ]
+    ],
+    "<_forstmt1_OR_86>": [
+      [
+        "<_forstmt1_SEQ_87>"
+      ]
+    ],
+    "<_forstmt1_SEQ_87>": [
+      [
+        "<_STEP_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<_STEP_sp_>": [
+      [
+        "<_SKIP>",
+        "<STEP>"
+      ]
+    ],
+    "<STEP>": [
+      [
+        "STEP"
+      ],
+      [
+        "step"
+      ]
+    ],
+    "<_forstmt1_Q_89>": [
+      [],
+      [
+        "<_forstmt1_OR_90>"
+      ]
+    ],
+    "<_forstmt1_OR_90>": [
+      [
+        "<_forstmt1_SEQ_91>"
+      ]
+    ],
+    "<_forstmt1_SEQ_91>": [
+      [
+        "<statement>",
+        "<_NEXT_sp_>",
+        "<_forstmt1_Q_92>"
+      ]
+    ],
+    "<_NEXT_sp_>": [
+      [
+        "<_SKIP>",
+        "<NEXT>"
+      ]
+    ],
+    "<_forstmt1_Q_92>": [
+      [],
+      [
+        "<vardecl>"
+      ]
+    ],
+    "<NEXT>": [
+      [
+        "NEXT"
+      ],
+      [
+        "next"
+      ]
+    ],
+    "<_forstmt2_re_97>": [
+      [
+        "<_forstmt2_Q_94>"
+      ]
+    ],
+    "<_forstmt2_Q_94>": [
+      [],
+      [
+        "<_forstmt2_OR_95>"
+      ]
+    ],
+    "<_forstmt2_OR_95>": [
+      [
+        "<_forstmt2_SEQ_96>"
+      ]
+    ],
+    "<_forstmt2_SEQ_96>": [
+      [
+        "<_STEP_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<_GET_sp_>": [
+      [
+        "<_SKIP>",
+        "<GET>"
+      ]
+    ],
+    "<GET>": [
+      [
+        "GET"
+      ],
+      [
+        "get"
+      ]
+    ],
+    "<_GOSUB_sp_>": [
+      [
+        "<_SKIP>",
+        "<GOSUB>"
+      ]
+    ],
+    "<GOSUB>": [
+      [
+        "GOSUB"
+      ],
+      [
+        "gosub"
+      ]
+    ],
+    "<_GOTO_sp_>": [
+      [
+        "<_SKIP>",
+        "<GOTO>"
+      ]
+    ],
+    "<GOTO>": [
+      [
+        "GOTO"
+      ],
+      [
+        "goto"
+      ]
+    ],
+    "<_HCOLOR_sp_>": [
+      [
+        "<_SKIP>",
+        "<HCOLOR>"
+      ]
+    ],
+    "<HCOLOR>": [
+      [
+        "HCOLOR"
+      ],
+      [
+        "hcolor"
+      ]
+    ],
+    "<_HIMEM_sp_>": [
+      [
+        "<_SKIP>",
+        "<HIMEM>"
+      ]
+    ],
+    "<_COLON_sp_>": [
+      [
+        "<_SKIP>",
+        "<COLON>"
+      ]
+    ],
+    "<HIMEM>": [
+      [
+        "HIMEM"
+      ],
+      [
+        "himem"
+      ]
+    ],
+    "<COLON>": [
+      [
+        ":"
+      ]
+    ],
+    "<_HLIN_sp_>": [
+      [
+        "<_SKIP>",
+        "<HLIN>"
+      ]
+    ],
+    "<HLIN>": [
+      [
+        "HLIN"
+      ],
+      [
+        "hlin"
+      ]
+    ],
+    "<_HPLOT_sp_>": [
+      [
+        "<_SKIP>",
+        "<HPLOT>"
+      ]
+    ],
+    "<_hplotstmt_re_115>": [
+      [
+        "<_hplotstmt_Q_112>"
+      ]
+    ],
+    "<_hplotstmt_re_119>": [
+      [
+        "<_hplotstmt_STAR_116>"
+      ]
+    ],
+    "<HPLOT>": [
+      [
+        "HPLOT"
+      ],
+      [
+        "hplot"
+      ]
+    ],
+    "<_hplotstmt_Q_112>": [
+      [],
+      [
+        "<_hplotstmt_OR_113>"
+      ]
+    ],
+    "<_hplotstmt_OR_113>": [
+      [
+        "<_hplotstmt_SEQ_114>"
+      ]
+    ],
+    "<_hplotstmt_SEQ_114>": [
+      [
+        "<expression>",
+        "<_COMMA_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<_hplotstmt_STAR_116>": [
+      [],
+      [
+        "<_hplotstmt_OR_117>",
+        "<_hplotstmt_STAR_116>"
+      ]
+    ],
+    "<_hplotstmt_OR_117>": [
+      [
+        "<_hplotstmt_SEQ_118>"
+      ]
+    ],
+    "<_hplotstmt_SEQ_118>": [
+      [
+        "<_TO_sp_>",
+        "<expression>",
+        "<_COMMA_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<_HTAB_sp_>": [
+      [
+        "<_SKIP>",
+        "<HTAB>"
+      ]
+    ],
+    "<HTAB>": [
+      [
+        "HTAB"
+      ],
+      [
+        "htab"
+      ]
+    ],
+    "<_IF_sp_>": [
+      [
+        "<_SKIP>",
+        "<IF>"
+      ]
+    ],
+    "<_ifstmt_re_80>": [
+      [
+        "<_ifstmt_Q_79>"
+      ]
+    ],
+    "<_ifstmt_re_84>": [
+      [
+        "<_ifstmt_OR_81>"
+      ]
+    ],
+    "<IF>": [
+      [
+        "IF"
+      ],
+      [
+        "if"
+      ]
+    ],
+    "<_ifstmt_Q_79>": [
+      [],
+      [
+        "<_THEN_sp_>"
+      ]
+    ],
+    "<_THEN_sp_>": [
+      [
+        "<_SKIP>",
+        "<THEN>"
+      ]
+    ],
+    "<THEN>": [
+      [
+        "THEN"
+      ],
+      [
+        "then"
+      ]
+    ],
+    "<_ifstmt_OR_81>": [
+      [
+        "<_ifstmt_SEQ_82>"
+      ],
+      [
+        "<_ifstmt_SEQ_83>"
+      ]
+    ],
+    "<_ifstmt_SEQ_82>": [
+      [
+        "<statement>"
+      ]
+    ],
+    "<_ifstmt_SEQ_83>": [
+      [
+        "<linenumber>"
+      ]
+    ],
+    "<_INCLUDE_sp_>": [
+      [
+        "<_SKIP>",
+        "<INCLUDE>"
+      ]
+    ],
+    "<INCLUDE>": [
+      [
+        "INCLUDE"
+      ],
+      [
+        "include"
+      ]
+    ],
+    "<_INPUT_sp_>": [
+      [
+        "<_SKIP>",
+        "<INPUT>"
+      ]
+    ],
+    "<_inputstmt_re_111>": [
+      [
+        "<_inputstmt_Q_105>"
+      ]
+    ],
+    "<INPUT>": [
+      [
+        "INPUT"
+      ],
+      [
+        "input"
+      ]
+    ],
+    "<_inputstmt_Q_105>": [
+      [],
+      [
+        "<_inputstmt_OR_106>"
+      ]
+    ],
+    "<_inputstmt_OR_106>": [
+      [
+        "<_inputstmt_SEQ_107>"
+      ]
+    ],
+    "<_inputstmt_SEQ_107>": [
+      [
+        "<_STRINGLITERAL_sp_>",
+        "<_inputstmt_OR_108>"
+      ]
+    ],
+    "<_inputstmt_OR_108>": [
+      [
+        "<_inputstmt_SEQ_109>"
+      ],
+      [
+        "<_inputstmt_SEQ_110>"
+      ]
+    ],
+    "<_inputstmt_SEQ_109>": [
+      [
+        "<_COMMA_sp_>"
+      ]
+    ],
+    "<_inputstmt_SEQ_110>": [
+      [
+        "<_SEMICOLON_sp_>"
+      ]
+    ],
+    "<_SEMICOLON_sp_>": [
+      [
+        "<_SKIP>",
+        "<SEMICOLON>"
+      ]
+    ],
+    "<SEMICOLON>": [
+      [
+        ";"
+      ]
+    ],
+    "<_INNUMBER_sp_>": [
+      [
+        "<_SKIP>",
+        "<INNUMBER>"
+      ]
+    ],
+    "<INNUMBER>": [
+      [
+        "IN#"
+      ]
+    ],
+    "<_letstmt_re_63>": [
+      [
+        "<_letstmt_Q_62>"
+      ]
+    ],
+    "<variableassignment>": [
+      [
+        "<vardecl>",
+        "<_EQ_sp_>",
+        "<exprlist>"
+      ]
+    ],
+    "<_letstmt_Q_62>": [
+      [],
+      [
+        "<_LET_sp_>"
+      ]
+    ],
+    "<_LET_sp_>": [
+      [
+        "<_SKIP>",
+        "<LET>"
+      ]
+    ],
+    "<LET>": [
+      [
+        "LET"
+      ],
+      [
+        "let"
+      ]
+    ],
+    "<_LIST_sp_>": [
+      [
+        "<_SKIP>",
+        "<LIST>"
+      ]
+    ],
+    "<_liststmt_re_156>": [
+      [
+        "<_liststmt_Q_155>"
+      ]
+    ],
+    "<LIST>": [
+      [
+        "LIST"
+      ],
+      [
+        "list"
+      ]
+    ],
+    "<_liststmt_Q_155>": [
+      [],
+      [
+        "<expression>"
+      ]
+    ],
+    "<_LOMEM_sp_>": [
+      [
+        "<_SKIP>",
+        "<LOMEM>"
+      ]
+    ],
+    "<LOMEM>": [
+      [
+        "LOMEM"
+      ],
+      [
+        "lomem"
+      ]
+    ],
+    "<_nextstmt_re_104>": [
+      [
+        "<_nextstmt_Q_98>"
+      ]
+    ],
+    "<_nextstmt_Q_98>": [
+      [],
+      [
+        "<_nextstmt_OR_99>"
+      ]
+    ],
+    "<_nextstmt_OR_99>": [
+      [
+        "<_nextstmt_SEQ_100>"
+      ]
+    ],
+    "<_nextstmt_SEQ_100>": [
+      [
+        "<vardecl>",
+        "<_nextstmt_STAR_101>"
+      ]
+    ],
+    "<_nextstmt_STAR_101>": [
+      [],
+      [
+        "<_nextstmt_OR_102>",
+        "<_nextstmt_STAR_101>"
+      ]
+    ],
+    "<_nextstmt_OR_102>": [
+      [
+        "<_nextstmt_SEQ_103>"
+      ]
+    ],
+    "<_nextstmt_SEQ_103>": [
+      [
+        "<_SKIP>",
+        ",",
+        "<vardecl>"
+      ]
+    ],
+    "<_ONERR_sp_>": [
+      [
+        "<_SKIP>",
+        "<ONERR>"
+      ]
+    ],
+    "<ONERR>": [
+      [
+        "ONERR"
+      ],
+      [
+        "onerr"
+      ]
+    ],
+    "<_ON_sp_>": [
+      [
+        "<_SKIP>",
+        "<ON>"
+      ]
+    ],
+    "<_ongosubstmt_re_135>": [
+      [
+        "<_ongosubstmt_STAR_132>"
+      ]
+    ],
+    "<ON>": [
+      [
+        "ON"
+      ],
+      [
+        "on"
+      ]
+    ],
+    "<_ongosubstmt_STAR_132>": [
+      [],
+      [
+        "<_ongosubstmt_OR_133>",
+        "<_ongosubstmt_STAR_132>"
+      ]
+    ],
+    "<_ongosubstmt_OR_133>": [
+      [
+        "<_ongosubstmt_SEQ_134>"
+      ]
+    ],
+    "<_ongosubstmt_SEQ_134>": [
+      [
+        "<_COMMA_sp_>",
+        "<linenumber>"
+      ]
+    ],
+    "<_ongotostmt_re_131>": [
+      [
+        "<_ongotostmt_STAR_128>"
+      ]
+    ],
+    "<_ongotostmt_STAR_128>": [
+      [],
+      [
+        "<_ongotostmt_OR_129>",
+        "<_ongotostmt_STAR_128>"
+      ]
+    ],
+    "<_ongotostmt_OR_129>": [
+      [
+        "<_ongotostmt_SEQ_130>"
+      ]
+    ],
+    "<_ongotostmt_SEQ_130>": [
+      [
+        "<_COMMA_sp_>",
+        "<linenumber>"
+      ]
+    ],
+    "<_PLOT_sp_>": [
+      [
+        "<_SKIP>",
+        "<PLOT>"
+      ]
+    ],
+    "<PLOT>": [
+      [
+        "PLOT"
+      ],
+      [
+        "plot"
+      ]
+    ],
+    "<_POKE_sp_>": [
+      [
+        "<_SKIP>",
+        "<POKE>"
+      ]
+    ],
+    "<POKE>": [
+      [
+        "POKE"
+      ],
+      [
+        "poke"
+      ]
+    ],
+    "<_POP_sp_>": [
+      [
+        "<_SKIP>",
+        "<POP>"
+      ]
+    ],
+    "<_popstmt_re_160>": [
+      [
+        "<_popstmt_Q_157>"
+      ]
+    ],
+    "<POP>": [
+      [
+        "POP"
+      ],
+      [
+        "pop"
+      ]
+    ],
+    "<_popstmt_Q_157>": [
+      [],
+      [
+        "<_popstmt_OR_158>"
+      ]
+    ],
+    "<_popstmt_OR_158>": [
+      [
+        "<_popstmt_SEQ_159>"
+      ]
+    ],
+    "<_popstmt_SEQ_159>": [
+      [
+        "<expression>",
+        "<_COMMA_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<_printstmt1_re_51>": [
+      [
+        "<_printstmt1_OR_48>"
+      ]
+    ],
+    "<_printstmt1_re_53>": [
+      [
+        "<_printstmt1_Q_52>"
+      ]
+    ],
+    "<_printstmt1_OR_48>": [
+      [
+        "<_printstmt1_SEQ_49>"
+      ],
+      [
+        "<_printstmt1_SEQ_50>"
+      ]
+    ],
+    "<_printstmt1_SEQ_49>": [
+      [
+        "<_PRINT_sp_>"
+      ]
+    ],
+    "<_printstmt1_SEQ_50>": [
+      [
+        "<_QUESTION_sp_>"
+      ]
+    ],
+    "<_PRINT_sp_>": [
+      [
+        "<_SKIP>",
+        "<PRINT>"
+      ]
+    ],
+    "<PRINT>": [
+      [
+        "PRINT"
+      ],
+      [
+        "print"
+      ]
+    ],
+    "<_QUESTION_sp_>": [
+      [
+        "<_SKIP>",
+        "<QUESTION>"
+      ]
+    ],
+    "<QUESTION>": [
+      [
+        "?"
+      ]
+    ],
+    "<_printstmt1_Q_52>": [
+      [],
+      [
+        "<printlist>"
+      ]
+    ],
+    "<printlist>": [
+      [
+        "<expression>",
+        "<_printlist_re_61>"
+      ]
+    ],
+    "<_printlist_re_61>": [
+      [
+        "<_printlist_STAR_54>"
+      ]
+    ],
+    "<_printlist_STAR_54>": [
+      [],
+      [
+        "<_printlist_OR_55>",
+        "<_printlist_STAR_54>"
+      ]
+    ],
+    "<_printlist_OR_55>": [
+      [
+        "<_printlist_SEQ_56>"
+      ]
+    ],
+    "<_printlist_SEQ_56>": [
+      [
+        "<_printlist_OR_57>",
+        "<_printlist_Q_60>"
+      ]
+    ],
+    "<_printlist_OR_57>": [
+      [
+        "<_printlist_SEQ_58>"
+      ],
+      [
+        "<_printlist_SEQ_59>"
+      ]
+    ],
+    "<_printlist_Q_60>": [
+      [],
+      [
+        "<expression>"
+      ]
+    ],
+    "<_printlist_SEQ_58>": [
+      [
+        "<_COMMA_sp_>"
+      ]
+    ],
+    "<_printlist_SEQ_59>": [
+      [
+        "<_SEMICOLON_sp_>"
+      ]
+    ],
+    "<_PRNUMBER_sp_>": [
+      [
+        "<_SKIP>",
+        "<PRNUMBER>"
+      ]
+    ],
+    "<PRNUMBER>": [
+      [
+        "PR#"
+      ]
+    ],
+    "<_READ_sp_>": [
+      [
+        "<_SKIP>",
+        "<READ>"
+      ]
+    ],
+    "<READ>": [
+      [
+        "READ"
+      ],
+      [
+        "read"
+      ]
+    ],
+    "<_RECALL_sp_>": [
+      [
+        "<_SKIP>",
+        "<RECALL>"
+      ]
+    ],
+    "<RECALL>": [
+      [
+        "RECALL"
+      ],
+      [
+        "recall"
+      ]
+    ],
+    "<_RESTORE_sp_>": [
+      [
+        "<_SKIP>",
+        "<RESTORE>"
+      ]
+    ],
+    "<RESTORE>": [
+      [
+        "RESTORE"
+      ],
+      [
+        "restore"
+      ]
+    ],
+    "<_RETURN_sp_>": [
+      [
+        "<_SKIP>",
+        "<RETURN>"
+      ]
+    ],
+    "<RETURN>": [
+      [
+        "RETURN"
+      ],
+      [
+        "return"
+      ]
+    ],
+    "<_ROT_sp_>": [
+      [
+        "<_SKIP>",
+        "<ROT>"
+      ]
+    ],
+    "<ROT>": [
+      [
+        "ROT"
+      ],
+      [
+        "rot"
+      ]
+    ],
+    "<_SCALE_sp_>": [
+      [
+        "<_SKIP>",
+        "<SCALE>"
+      ]
+    ],
+    "<SCALE>": [
+      [
+        "SCALE"
+      ],
+      [
+        "scale"
+      ]
+    ],
+    "<_SPEED_sp_>": [
+      [
+        "<_SKIP>",
+        "<SPEED>"
+      ]
+    ],
+    "<SPEED>": [
+      [
+        "SPEED"
+      ],
+      [
+        "speed"
+      ]
+    ],
+    "<_STORE_sp_>": [
+      [
+        "<_SKIP>",
+        "<STORE>"
+      ]
+    ],
+    "<STORE>": [
+      [
+        "STORE"
+      ],
+      [
+        "store"
+      ]
+    ],
+    "<_VLIN_sp_>": [
+      [
+        "<_SKIP>",
+        "<VLIN>"
+      ]
+    ],
+    "<VLIN>": [
+      [
+        "VLIN"
+      ],
+      [
+        "vlin"
+      ]
+    ],
+    "<_VPLOT_sp_>": [
+      [
+        "<_SKIP>",
+        "<VPLOT>"
+      ]
+    ],
+    "<_vplotstmt_re_123>": [
+      [
+        "<_vplotstmt_Q_120>"
+      ]
+    ],
+    "<_vplotstmt_re_127>": [
+      [
+        "<_vplotstmt_STAR_124>"
+      ]
+    ],
+    "<VPLOT>": [
+      [
+        "VPLOT"
+      ],
+      [
+        "vplot"
+      ]
+    ],
+    "<_vplotstmt_Q_120>": [
+      [],
+      [
+        "<_vplotstmt_OR_121>"
+      ]
+    ],
+    "<_vplotstmt_OR_121>": [
+      [
+        "<_vplotstmt_SEQ_122>"
+      ]
+    ],
+    "<_vplotstmt_SEQ_122>": [
+      [
+        "<expression>",
+        "<_COMMA_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<_vplotstmt_STAR_124>": [
+      [],
+      [
+        "<_vplotstmt_OR_125>",
+        "<_vplotstmt_STAR_124>"
+      ]
+    ],
+    "<_vplotstmt_OR_125>": [
+      [
+        "<_vplotstmt_SEQ_126>"
+      ]
+    ],
+    "<_vplotstmt_SEQ_126>": [
+      [
+        "<_TO_sp_>",
+        "<expression>",
+        "<_COMMA_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<_VTAB_sp_>": [
+      [
+        "<_SKIP>",
+        "<VTAB>"
+      ]
+    ],
+    "<VTAB>": [
+      [
+        "VTAB"
+      ],
+      [
+        "vtab"
+      ]
+    ],
+    "<_WAIT_sp_>": [
+      [
+        "<_SKIP>",
+        "<WAIT>"
+      ]
+    ],
+    "<_waitstmt_re_144>": [
+      [
+        "<_waitstmt_Q_141>"
+      ]
+    ],
+    "<WAIT>": [
+      [
+        "WAIT"
+      ],
+      [
+        "wait"
+      ]
+    ],
+    "<_waitstmt_Q_141>": [
+      [],
+      [
+        "<_waitstmt_OR_142>"
+      ]
+    ],
+    "<_waitstmt_OR_142>": [
+      [
+        "<_waitstmt_SEQ_143>"
+      ]
+    ],
+    "<_waitstmt_SEQ_143>": [
+      [
+        "<_COMMA_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<_XDRAW_sp_>": [
+      [
+        "<_SKIP>",
+        "<XDRAW>"
+      ]
+    ],
+    "<_xdrawstmt_re_148>": [
+      [
+        "<_xdrawstmt_Q_145>"
+      ]
+    ],
+    "<XDRAW>": [
+      [
+        "XDRAW"
+      ],
+      [
+        "xdraw"
+      ]
+    ],
+    "<_xdrawstmt_Q_145>": [
+      [],
+      [
+        "<_xdrawstmt_OR_146>"
+      ]
+    ],
+    "<_xdrawstmt_OR_146>": [
+      [
+        "<_xdrawstmt_SEQ_147>"
+      ]
+    ],
+    "<_xdrawstmt_SEQ_147>": [
+      [
+        "<_AT_sp_>",
+        "<expression>",
+        "<_COMMA_sp_>",
+        "<expression>"
+      ]
+    ],
+    "<_amprstmt_OR_21>": [
+      [
+        "<_amprstmt_SEQ_22>"
+      ],
+      [
+        "<_amprstmt_SEQ_23>"
+      ]
+    ],
+    "<_amprstmt_SEQ_22>": [
+      [
+        "<_COMMENT_sp_>"
+      ]
+    ],
+    "<_amprstmt_SEQ_23>": [
+      [
+        "<_REM_sp_>"
+      ]
+    ],
+    "<_line_OR_9>": [
+      [
+        "<_line_SEQ_10>"
+      ]
+    ],
+    "<_line_SEQ_10>": [
+      [
+        "<_COLON_sp_>",
+        "<_line_Q_11>"
+      ]
+    ],
+    "<_line_Q_11>": [
+      [],
+      [
+        "<amprstmt>"
+      ]
+    ]
+  }
+}

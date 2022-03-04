@@ -69,7 +69,7 @@ After learning a given grammar, you can run the evaluation to obtain the precisi
 
 You can substitute `xml` with the name of the grammar you want to evaluate.
 
-To collect statistics of the learned grammar, i.e., number of non-terminals, rules, and terminals, run:
+To collect statistics of both source and synthesized grammars for a given subject, i.e., number of non-terminals, rules, and terminals, run:
 
     $ python3 analyze-grammar.py xml
 
@@ -86,4 +86,4 @@ The files containing recall scores are: `learn/results/eval_*_recall.txt`. Pleas
 
 The files containing execution statistics are: `learn/results/info_*.txt`.
 
-Statistics on the synthesized grammars are stored in `learn/results/eval_*_grammar.txt`.
+Statistics on source and synthesized grammars are stored in `learn/results/eval_*_grammar.txt`.
