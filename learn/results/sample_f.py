@@ -190,7 +190,12 @@ def sample(fn, ty):
 
 if __name__ == '__main__':
     import sys
-    antlr_programs = ['xpath', 'lua', 'pascal', 'mysql', 'c', 'tinyc', 'tiny', 'basic']
+
+    f = open('../../antlr4/config.json')
+    data = json.load(f)
+    antlr_programs = data['antlr_programs']
+    f.close()
+
     program = sys.argv[1]
     if program not in antlr_programs: sample(program, 'handwritten')
     sample(program, 'synthesized')

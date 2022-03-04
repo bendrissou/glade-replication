@@ -753,7 +753,7 @@ def read_seeds(program):
     inputs = []
     lengths = []
 
-    f = open('config.json')
+    f = open('../../../antlr4/config.json')
     data = json.load(f)
     antlr_programs = data['antlr_programs']
     f.close()

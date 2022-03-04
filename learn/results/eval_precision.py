@@ -76,7 +76,12 @@ def parse(g):
 if __name__ == '__main__':
     import sys
     program = sys.argv[1]
-    antlr_programs = ['xpath', 'lua', 'pascal', 'mysql', 'c', 'tinyc', 'tiny', 'basic']
+    
+    f = open('../../antlr4/config.json')
+    data = json.load(f)
+    antlr_programs = data['antlr_programs']
+    f.close()
+
     if program in antlr_programs:
         parse_antlr(program)
     else:
