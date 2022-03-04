@@ -47,7 +47,7 @@ def main(g):
 
     keys, rules, terminals = count(grammar)
 
-    output = "\n\n ++++++++ Stats of the " + str(g) + " synthesized grammar ++++++++ "
+    output = output + "\n\n ++++++++ Stats of the " + str(g) + " synthesized grammar ++++++++ "
     output = output + "\nTotal number of non-terminals: " + str(keys)
     output = output + "\nTotal number of rules: " + str(rules)
     output = output + "\nTotal number of terminals: " + str(len(set(terminals)))
