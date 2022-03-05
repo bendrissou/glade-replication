@@ -23,6 +23,8 @@ https://github.com/bendrissou/glade-replication
 The learning time for all grammars is 4 days (Table 1). With evaluation of
 results, the complete run can take more than one week.
 
+### A list of claims from the paper supported by the artifact
+
 Our submission contains 5 tables. These are:
 
 1. Glade II execution
