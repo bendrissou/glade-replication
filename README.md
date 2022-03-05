@@ -18,6 +18,11 @@ The corresponding GitHub repository for replication is:
 https://github.com/bendrissou/glade-replication
 ```
 
+### Time for Evaluation
+
+The learning time for all grammars is 4 days (Table 1). With evaluation of
+results, the complete run can take more than one week.
+
 Our submission contains 5 tables. These are:
 
 1. Glade II execution
