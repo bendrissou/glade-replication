@@ -12,6 +12,7 @@ antlr_programs = data['antlr_programs']
 f.close()
 
 def is_nonterminal(t):
+    if len(t) < 2: return False
     return (t[0], t[-1]) == ('<', '>')
 
 def count(grammar):

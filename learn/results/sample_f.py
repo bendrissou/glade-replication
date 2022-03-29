@@ -133,7 +133,6 @@ class LimitFuzzer(Fuzzer):
             clst = sorted([(self.cost[key][str(rule)], rule) for rule in self.grammar[key]])
             rules = [r for c,r in clst if c == clst[0][0]]
         else:
-            print("Key: " + key)
             rules = self.grammar[key]
         return self.gen_rule(random.choice(rules), depth+1, max_depth)
 

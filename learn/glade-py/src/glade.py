@@ -14,7 +14,7 @@ random.seed(10)
 PROGRAM = ""
 CHECKS = 0
 UNMERGED_GRAMMAR = {}
-
+sys.setrecursionlimit(100000)
 
 class Regex:
     def to_rules(self):
